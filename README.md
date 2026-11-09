@@ -5,6 +5,8 @@ Why do first-time mutual fund investors in India stop their SIPs before 12 insta
 **Live dashboard:** https://groww-sip-discovery-rho.vercel.app
 **API:** https://groww-sip-discovery-production.up.railway.app/api/health
 
+**MVP built from these findings:** the failed-instalment recovery prototype lives on its own [`mvp` branch](https://github.com/Anku46/groww-sip-discovery/tree/mvp), with separate history. It targets the engine's top theme: the first failed debit, after which most first-time investors quietly stop.
+
 The API runs on Railway's free plan, which puts it to sleep when idle: the first request after a quiet spell takes a few seconds while it wakes. The live API runs with BGE embeddings off to fit the free plan's memory; the deterministic and Groq engines are unaffected. To use the Groq engine on the live site, paste your own Groq key into the settings drawer (gear icon); it stays in that browser tab only.
 
 ## What's in this repo
