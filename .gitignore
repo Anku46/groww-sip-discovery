@@ -22,3 +22,6 @@ groww-sip-discovery/backend/.models/
 
 # Local tooling
 .claude/
+
+# Static upload folder for Vercel (built locally)
+groww-sip-discovery/frontend/.deploy/

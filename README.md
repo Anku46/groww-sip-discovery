@@ -2,7 +2,10 @@
 
 Why do first-time mutual fund investors in India stop their SIPs before 12 installments? This project answers that from real investor feedback, and ships it as an interactive dashboard: a live 4-stage discovery pipeline, a ranked opportunity matrix, a filterable dataset, and an evidence log that checks the engine against PM-labelled ground truth.
 
-**Live:** _added after deployment_
+**Live dashboard:** https://groww-sip-discovery-rho.vercel.app
+**API:** https://groww-sip-discovery-production.up.railway.app/api/health
+
+The API runs on Railway's free plan, which puts it to sleep when idle: the first request after a quiet spell takes a few seconds while it wakes. The live API runs with BGE embeddings off to fit the free plan's memory; the deterministic and Groq engines are unaffected. To use the Groq engine on the live site, paste your own Groq key into the settings drawer (gear icon); it stays in that browser tab only.
 
 ## What's in this repo
 
@@ -78,8 +81,15 @@ cd ../groww-sip-discovery && pnpm generate:data   # Phase 2 → typed data files
 
 ## Deployment
 
-- **Backend → Railway.** Builds `groww-sip-discovery/backend/Dockerfile` with the monorepo as context (`groww-sip-discovery/railway.json`). The BGE model is baked into the image. Health check: `/api/health`.
-- **Frontend → Vercel.** Project root `groww-sip-discovery/frontend` (`vercel.json`), build `pnpm build`, output `dist`.
+- **Backend → Railway.** Service root directory `/groww-sip-discovery`; variable `RAILWAY_DOCKERFILE_PATH=backend/Dockerfile` (Railway no longer reads `railway.json` for new services). Also set: `NODE_ENV=production`, `PORT=5000`, `EMBEDDINGS_ENABLED=false` (free plan), `CORS_ORIGIN=<Vercel URL>`. Redeploys on every push to `main`.
+- **Frontend → Vercel.** Built locally with the API URL baked in, then uploaded as a static site:
+
+  ```bash
+  cd groww-sip-discovery/frontend
+  VITE_API_BASE_URL=https://groww-sip-discovery-production.up.railway.app pnpm build
+  # copy dist/ plus a static vercel.json (SPA rewrite + headers) into .deploy/, then from .deploy/:
+  vercel deploy --prod
+  ```
 
 ## Data note
 
