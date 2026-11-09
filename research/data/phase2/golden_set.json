@@ -1,0 +1,422 @@
+[
+  {
+    "id": "GS-01",
+    "verbatimId": "YT-c55a697c2d",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "I have selected amount of rs.500 for SIP, but after payment when it comes for autopay it shows rs.15000/month . Why?",
+    "humanLabel": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "pmChanged": true,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-02",
+    "verbatimId": "YT-fbd7c3e67f",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Mai 2000 sip karna chahta hoo.. But abhi starting me 15000 ka mandate ask kar raha hai.. Please reply kyu",
+    "humanLabel": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "pmChanged": true,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-03",
+    "verbatimId": "YT-c8731e68cb",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Sir mera sip m set autopay option m start date 8 may 2024 to 7 may 2064 dikha rha h mne 2064 select kiya bhi nhi tha kya mera emi 2064 tkk ktega",
+    "humanLabel": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "pmChanged": true,
+    "whyTricky": "Hinglish; reads like a loan-EMI worry",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-04",
+    "verbatimId": "PS-04ff53cf14",
+    "source": "PlayStore",
+    "language": "English",
+    "rawText": "Have technical issue, I invested in mutual fund, payment successfull, amount deducted. Showing allotment in progress, after five days showing payment failed and after that amount refunded. That is this, what going on ?",
+    "humanLabel": {
+      "theme": "THEME_DEBIT_VISIBILITY",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_DEBIT_VISIBILITY",
+      "churnSeverity": 3
+    },
+    "pmChanged": false,
+    "whyTricky": "'payment failed' wording looks like a setup failure, but the money was taken and refunded",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-05",
+    "verbatimId": "YT-e1169600b1",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Sir jb maine buy ki sip tb kt gye, 3 din bad auto pay fail ho gya , ye 2 bar kyu kaat te h",
+    "humanLabel": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4
+    },
+    "pmChanged": true,
+    "whyTricky": "Hinglish; mentions autopay failing, but the complaint is being debited twice",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-06",
+    "verbatimId": "YT-cf814de541",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Sir mera ek sawal tha pls answer it . First payment hone ke baad next sip me paisa khud dalna hoga ki apne aap bank se kat jayega??? Anyone pls answer it",
+    "humanLabel": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "pmChanged": true,
+    "whyTricky": "Hinglish",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-07",
+    "verbatimId": "YT-871e2b378c",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "bhai maine same procedure mai sip star Kiya tha but 5 bar sip cancel huwa , aisa kyu huwa hai bata sakte ho kya",
+    "humanLabel": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4
+    },
+    "pmChanged": false,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-08",
+    "verbatimId": "YT-87f077cce3",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "Hello Sir.. ok now my confusion is- \n1. I chose one time investment for my monthly SIP fund coz of date issue, so will that amount be added into SIP amount. Right now it shows order of one time is processed. Don't want one time as well as SIP. Want that amount to be transferred in SIP somehow.\n2. How can I add monthly SIP amount without autopay ? N one of my fund has SIP of 500rs, n coz of date issue it asks for one time n it shows min.of 1000rs investment. What should I do ?",
+    "humanLabel": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 3
+    },
+    "pmChanged": true,
+    "whyTricky": "workaround described inside a setup problem",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-09",
+    "verbatimId": "YT-781475ace9",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii.",
+    "humanLabel": {
+      "theme": "THEME_LOSS_FEAR",
+      "churnSeverity": 5
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_LOSS_FEAR",
+      "churnSeverity": 5
+    },
+    "pmChanged": true,
+    "whyTricky": "mentions loss first, but the driver is bank bounce charges (misplaced blame)",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-10",
+    "verbatimId": "YT-7244673a53",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "1.Agar koi 1000 rs se sip karta hai 3Y  ke liye or achank bank dub jaye ya paise kahi fraud ho jaye to to paise ka insurance hota hai kya waha jaise \n\nStable money par 5 lakh ka insurance hai waise..\n\n\n2. Agar koi 3Y ke hisab se 1000 rs sip karta hai to usko return me kitna milega yah kaise pata kare 😮\n3. Hame agar withdrawal karna hai to hame pura nahi karna kuch pacific amount jaise 1000 sip kiya tha hoga 3 sal ke liye par 1 sal bad uska amount bad gaya hoga to wah kaha dekhe",
+    "humanLabel": {
+      "theme": "THEME_LOSS_FEAR",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_LOSS_FEAR",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "Hinglish; includes a return question (SEBI-adjacent) but the primary worry is safety",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-11",
+    "verbatimId": "YT-0717631aa4",
+    "source": "YouTube",
+    "language": "Hinglish",
+    "rawText": "Bhai hame SIP kholna hai  kya SIP sahi hai",
+    "humanLabel": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "pmChanged": true,
+    "whyTricky": "Hinglish; validation-seeking could read as advice-seeking",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-12",
+    "verbatimId": "YT-f623c39d56",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "What if i dont know nothing and just want to do a sip monthly best advice and company",
+    "humanLabel": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "SEBI-restricted",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-13",
+    "verbatimId": "YT-e1cb9d58c3",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "Bro I am new to SIP. Can you please suggest some good area to invest.",
+    "humanLabel": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "SEBI-restricted",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-14",
+    "verbatimId": "FM-75460b039f",
+    "source": "Forum",
+    "language": "English",
+    "rawText": "Thank you for sharing your experience. Your point about underestimating funds and later realizing the value of SIPs was particularly interesting.\n\nSince you have experience with both funds and direct equity I wanted to ask one more practical question. If you were 23 again today with ₹500 to ₹1,000, per month available to invest would you start with a simple Direct Index Fund while learning or would you wait until you had a much stronger understanding of investing before starting?\n\nAlso looking back at your own journey what is one thing you would definitely NOT do as a beginner today",
+    "humanLabel": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "SEBI-adjacent: asks what someone would do in their place",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-15",
+    "verbatimId": "YT-5d5cfade09",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "What is NAV price written on mutual funds",
+    "humanLabel": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-16",
+    "verbatimId": "FM-eb217305e9",
+    "source": "Forum",
+    "language": "English",
+    "rawText": "SIP of 12 months with 500Rs in ELSS wisely?\n\nHi,\n\nI read article Do not invest in ELSS with these wrong notions\n\nIn this article has line as follows: -\n\nFor Example:-\n\nIf I started today 1 SIP of 500Rs monthly for next 12 months ie. Dec 2018. Stop SIP.\n\nThen wait for 3 years ie Dec 2021. Then Withdraw money.\n\nSo Every SIP complete 3 years which I invest in Dec 2017 to Dec 2018.\n\nWill that Strategy works?\n\nAs I read following article also.\n\nBest ELSS to invest in 2017\n\nin this article has line as:-\n\nIf this strategy works then I will start actual investment in ELSS for more years.",
+    "humanLabel": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "ELSS strategy question could read as advice-seeking",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-17",
+    "verbatimId": "YT-a9e8c0f6ab",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "I have zero knowledge on SIP\nBut the person showing calculations in twitter is meaningful and very simple \nYou shown in excel with whole confusing by saying he invested for 100 years \nStick to basic example that he shown \n20 years 10k sip what is take home after paying whole taxes and inflation",
+    "humanLabel": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "pmChanged": false,
+    "whyTricky": "'zero knowledge' could read as thin onboarding; the ask is a return calculation",
+    "aiLabel": null
+  },
+  {
+    "id": "GS-18",
+    "verbatimId": "YT-f5061e8c90",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "@Groww Hi Team,\n\n\nThank you for clarifying the doubt around 5 years.\n\n\nHowever, I have a few follow up queries.\n\n\n1. As you have mentioned, there is flexibility and liquidity in investing via groww app and that we can cancel at any time, so if we do that are there any situations where there will be some kind of penalty levied or/and exit load that will be deducted?\n\n\n2. If I choose SIP per month, can I change the amount every month as per my convenience or does it have to be fixed as per my first investment amount?\n\nAlso, can I switch from monthly to one time i.e. annually payment option? If no, please elaborate the situations where we can.\n\n\n3. Can we really single click cancel and bring all money to our respective savings account without any penalty as the advertisement of groww app claims?\n\n\n4. If after investing for a period,say around a year, groww app company is dissolved or gone, so will we be able to track any policy number or equivalent proof with AMC wherein we invested to ensure that our money is safe and not vanished?\n\nIf yes, where can we find our security number or unique number for our safety?\n\n\nLooking forward to your detailed response on each query point I raised above.\n\n\n\nThanks",
+    "humanLabel": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "pmChanged": true,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-19",
+    "verbatimId": "FM-61a1c6ce0b",
+    "source": "Forum",
+    "language": "English",
+    "rawText": "AMC SIP Minimum Time\n\nI’m Willing to Do a Small Sip for Next 4 Months in ICICI Pru Tech or Tata Digital Ind Fund\n\nI’m seeing AMC Sip’s Minimum amount is 100/150rs\n\nCan i Please Know How Many Number of Amc sips should be Done in Order to Cancel/pause The Sip after 4 months\n\nAnd I’m finding On Amc website That sip can be Done Weekly,Monthly too\n\nWhy Aren’t Zerodha’s Weekly Amc Sip’s Allowed?",
+    "humanLabel": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "pmChanged": true,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-20",
+    "verbatimId": "YT-58a062d811",
+    "source": "YouTube",
+    "language": "English",
+    "rawText": "I started sip this month because of you only brother thanks alot.",
+    "humanLabel": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 1
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 1
+    },
+    "pmChanged": true,
+    "whyTricky": null,
+    "aiLabel": null
+  },
+  {
+    "id": "GS-21",
+    "verbatimId": "FM-fe212e54a4",
+    "source": "Forum",
+    "language": "English",
+    "rawText": "How do I pause and resume a SIP on Coin?\n\nI was reading this article yesterday which said that you can pause and resume your SIP’s. But this seems like an extremely tough task of having to send a physical request letter to the AMC and having to wait for a month to stop. Is this the same way on Coin app and the web?",
+    "humanLabel": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 3
+    },
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
+    "analystDraft": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 3
+    },
+    "pmChanged": false,
+    "whyTricky": "added after PM review so Rigid SIP controls has a golden item",
+    "aiLabel": null
+  }
+]

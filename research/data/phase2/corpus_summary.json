@@ -1,0 +1,39 @@
+{
+  "totalRaw": 6174,
+  "rawPerChannel": {
+    "PlayStore": 467,
+    "AppStore": 105,
+    "YouTube": 3871,
+    "Forum": 1731
+  },
+  "afterRuleFilter": 97,
+  "removedOnAnalystReview": 27,
+  "totalFiltered": 70,
+  "filteredPerChannel": {
+    "PlayStore": 4,
+    "AppStore": 0,
+    "YouTube": 50,
+    "Forum": 16
+  },
+  "filteredPerLanguage": {
+    "English": 46,
+    "Hinglish": 24
+  },
+  "ruleExclusionReasons": {
+    "exclude:not_sip_related": 3879,
+    "exclude:no_first_time_signal": 1584,
+    "exclude:experienced_investor": 201,
+    "exclude:praise_only": 143,
+    "exclude:other_language": 128,
+    "exclude:promo_or_link": 65,
+    "exclude:low_information": 52,
+    "exclude:ipo_not_sip": 20,
+    "exclude:support_or_staff_reply": 5
+  },
+  "inclusionReasons": {
+    "behavioral:mechanics_confusion": 19,
+    "behavioral:concept_question": 18,
+    "explicit": 31,
+    "behavioral:first_installment": 2
+  }
+}

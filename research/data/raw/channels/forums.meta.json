@@ -1,0 +1,29 @@
+{
+  "channel": "forums",
+  "fetchedAt": "2026-11-08T21:15:49+00:00",
+  "fetchedCount": 1759,
+  "params": {
+    "forums": {
+      "TradingQnA": "https://tradingqna.com",
+      "ValuePickr": "https://forum.valuepickr.com"
+    },
+    "queries": [
+      "SIP",
+      "first SIP",
+      "SIP mandate",
+      "SIP bounce",
+      "NACH",
+      "Groww SIP",
+      "SIP stopped",
+      "BSE StarMF"
+    ],
+    "searchPages": 3,
+    "maxTopicsPerForum": 80,
+    "maxPostsPerTopic": 20
+  },
+  "notes": [
+    "TradingQnA: 80 topics, 428 posts",
+    "ValuePickr: 80 topics, 1331 posts",
+    "Quora: no public API; add records by hand in data/manual/ (see README)"
+  ]
+}

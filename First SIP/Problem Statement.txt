@@ -1,0 +1,54 @@
+Build a modern, interactive, production-ready web application called **"Groww SIP Retention — AI Discovery Engine"**. 
+This app is a PM Discovery & Opportunity Sizing Engine designed to uncover why first-time mutual fund investors in India drop off before completing 12 monthly SIP instalments on Groww, strictly adhering to SEBI constraints (NO fund/stock recommendations, NO fear/FOMO/urgency nudges).
+
+### TECH & DESIGN REQUIREMENTS
+- Clean, modern Fintech analytical dashboard UI (Dark Navy `#0F172A` & Slate `#F8FAFC` theme with Okabe-Ito color-blind-safe accents: Teal `#0072B2` for positive/verified, Vermilion `#D55E00` for high-severity churn, Amber `#E69F00` for medium risk).
+- Fully functional interactive frontend (React / Next.js / Tailwind CSS + Lucide Icons) that works out-of-the-box for mentors testing the live URL without requiring them to enter their own API key (include an optional Groq/OpenAI/Gemini API key input in a settings drawer, plus a built-in deterministic + rule-augmented AI simulation engine so the live workflow NEVER fails during mentor grading).
+
+### CORE FEATURES & 4 INTERACTIVE TABS
+
+#### TAB 1: Live Interactive Discovery Workflow (Mentor Test Sandbox)
+Allow any mentor or user to test the 4-stage AI Discovery Pipeline on a single input or a batch of raw inputs:
+1. **Input Controls:**
+   - A text area where a mentor can type/paste any raw user review, Reddit post, or Hinglish comment about SIPs.
+   - 5 "Quick Load Real Verbatim" chips (e.g., Hinglish CIBIL/bounce fear, T-1 PhonePe mandate revocation, Month 5 flat return frustration, Salary date mismatch on the 25th, Request for best small-cap fund).
+   - A "Run 4-Stage Discovery Pipeline" button.
+2. **Visual 4-Stage Pipeline Execution (Animated Step-by-Step Cards):**
+   - **Stage 1: PII Scrubber & Hinglish Semantic Normalizer:** Shows raw text -> scrubbed & translated English semantic intent.
+   - **Stage 2: Indian MF Domain Rule Injector (NPCI / BSE StarMF Context):** Highlights domain mechanics detected (e.g., `T-3 Bank Mandate Lock-in Cutoff`, `₹295–₹590 Bank NACH/ECS Bounce Fee`, `UPI Autopay External Revocation`, `NAV Unit Averaging vs Absolute P&L`).
+   - **Stage 3: Structured Behavioural Extraction (JSON + Visual Badges):**
+     - `Investor Lifecycle Stage`: [Month 0-1 | Month 2-4 | Month 5-8 (Valley of Death) | Month 9-12]
+     - `User Segment`: [Young Salaried 22-28 | Irregular Income/Freelancer | Family-Influenced]
+     - `Primary Friction Theme`: (Mapped to 1 of 5 canonical clusters)
+     - `Inside-App Confusion`: What worried them in Groww
+     - `Outside-App Workaround`: What they did outside Groww (e.g., revoked mandate in PhonePe/GPay, switched to manual lumpsum, asked Reddit)
+     - `Churn Severity Score`: 1 to 5 scale with rationale
+   - **Stage 4: Constraint Check & Opportunity Contribution:**
+     - Checks against Case Constraints (`No Fund/Stock Advice`, `No FOMO/Urgency`). If the user is asking "which fund to buy", flags it as `Constraint Restricted (0.2x weight)`.
+
+#### TAB 2: Quantified Opportunity Matrix & 9 Discovery Questions (1,640 Analyzed Records)
+Display the aggregated findings from **4,820 raw scraped items -> 1,640 filtered first-time SIP conversations** (Play Store: 610, App Store: 185, Reddit r/personalfinanceindia & r/IndiaInvestments: 495, YouTube Comments: 240, TradingQ&A: 110):
+1. **Interactive Opportunity Scoring Table & Chart:**
+   Formula shown clearly: `Opportunity Score = Theme Share (%) × Mean Churn Severity (1-5) × Constraint Addressability (0-1)`
+   - **Rank #1:** Cashflow Timing Crunch + Bank Bounce Penalty Fear (₹295–₹590) + Late `T-3` Skip Cutoff -> **34.2% share | Severity 4.6 | Fit 1.0 | Score: 157.3**
+   - **Rank #2:** Months 3–7 "Flat/Negative Return Illusion" (P&L vs. Unit Accumulation Blindness) -> **26.8% share | Severity 4.2 | Fit 0.95 | Score: 106.9**
+   - **Rank #3:** Rigid SIP Amount/Date Modification ("All-or-Nothing" Cancellation when downsizing) -> **18.4% share | Severity 4.4 | Fit 1.0 | Score: 81.0**
+   - **Rank #4:** External UPI Autopay Mandate Revocation in GPay/PhonePe -> **11.5% share | Severity 4.8 | Fit 0.7 | Score: 38.6**
+   - **Rank #5:** Portfolio Over-diversification & "Which Fund to Switch?" -> **9.1% share | Severity 3.5 | Fit 0.2 (SEBI Restricted) | Score: 6.4**
+2. **Interactive Accordion/Grid Answering All 9 Prompt Discovery Questions:**
+   - Why people start & expect, how behaviour shifts M1->M8, what triggers pause/stop, what they check & how often, inside-app worries, outside-app workarounds, continuers vs. drop-offs, segment differences, and consistent unmet needs.
+
+#### TAB 3: Dataset Explorer (Filterable Sample of Corpus)
+- Provide a searchable, filterable table of 25 rich, representative multi-source user verbatims across Play Store, App Store, Reddit, YouTube, and TradingQ&A.
+- Filter by `Source`, `Lifecycle Month Bucket (M1, M2-4, M5-8, M9-12)`, `User Segment`, and `Primary Friction Theme`.
+
+#### TAB 4: AI Evidence Log & 20-Item Golden Set Validation
+1. **Golden Set Agreement Scorecard:**
+   - **Theme Agreement:** `17 / 20 (85.0% Exact Match)`
+   - **Severity Agreement (±0.5):** `18 / 20 (90.0%)`
+2. **Full 20-Item Golden Set Table:**
+   - Columns: `ID (G01–G20)`, `Source`, `Verbatim Snippet`, `Human PM Label (Ground Truth)`, `AI Engine v1 Label`, `Match Status (✅ / ❌)`, and `Failure / Root Cause Analysis`.
+3. **3 Highlighted Cards: "Where We Rejected or Corrected AI Output":**
+   - **Correction #1 (T-3 Bank Presentation Plumbing):** AI initially tagged "SIP deducted after I clicked pause yesterday!" as a payment gateway bug; corrected with BSE StarMF / NPCI `T-3` mandate lock-in rules.
+   - **Correction #2 (SEBI Regulatory Boundary):** Rejected AI's suggestion to build an "AI Fund Switcher/Optimizer" for Month 4 flat returns due to SEBI IA rules, exit loads, and case constraints.
+   - **Correction #3 ("Manual Lumpsum" False Positive):** AI tagged users saying "I cancelled SIP to invest manually on dips" as retained active investors; corrected to high-risk churn workaround (Severity 4).

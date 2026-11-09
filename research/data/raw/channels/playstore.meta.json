@@ -1,0 +1,22 @@
+{
+  "channel": "playstore",
+  "fetchedAt": "2026-11-08T21:12:03+00:00",
+  "fetchedCount": 468,
+  "params": {
+    "appId": "com.nextbillion.groww",
+    "country": "in",
+    "lang": "en",
+    "stars": [
+      1,
+      2,
+      3
+    ],
+    "maxPerStar": 3000,
+    "requireSipKeyword": true
+  },
+  "notes": [
+    "1-star: scanned 3000, kept 142 SIP-related",
+    "2-star: scanned 3000, kept 168 SIP-related",
+    "3-star: scanned 3000, kept 158 SIP-related"
+  ]
+}

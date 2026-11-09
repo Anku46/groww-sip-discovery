@@ -1,0 +1,47 @@
+[
+  {
+    "id": "CC-1",
+    "verbatimId": "YT-c55a697c2d",
+    "aiOutput": "Billing error: app tries to charge ₹15,000/month on a ₹500 SIP. Theme: overcharging. Severity 5.",
+    "rejectionReason": "₹15,000 is the UPI Autopay mandate's maximum limit, not the debit. Only the SIP amount is debited each month. Nothing was charged; the investor is confused, not harmed.",
+    "correctAnswer": "Theme: Autopay mandate setup & execution failures. Severity 3 (worry, no money lost).",
+    "domainRuleApplied": "RULE_UPI_MANDATE_LIMIT",
+    "verbatimText": "I have selected amount of rs.500 for SIP, but after payment when it comes for autopay it shows rs.15000/month . Why?"
+  },
+  {
+    "id": "CC-2",
+    "verbatimId": "YT-0a654eb8b6",
+    "aiOutput": "How-to question about using Google Pay. Theme: concept gap. Severity 2, low priority.",
+    "rejectionReason": "UPI Autopay mandates can be paused or revoked from any UPI app. Turning it off in Google Pay silently stops the Groww SIP's debits without the investor cancelling anything in Groww — a churn path outside Groww's control that the investor doesn't understand.",
+    "correctAnswer": "Theme: Autopay mandate setup & execution failures (platform-dependent). Severity 3.",
+    "domainRuleApplied": "RULE_UPI_REVOKE",
+    "verbatimText": "Jab Ham Koi first time SIP activate karte hain aur Google pay se auto pey karte hain aur vah mere bank se link ho jata hai agar Ham Google per band kar dete Hain To Kya Meri SIP ruk to nahin Jayegi direct bank se paise katenge na Agar Main Google per deactivate bhi kar do."
+  },
+  {
+    "id": "CC-3",
+    "verbatimId": "YT-686d890c18",
+    "aiOutput": "Concept question about Nifty 50 returns. Answer: 'yes, ~12% long-term is typical'. Addressability 1.0.",
+    "rejectionReason": "Confirming or predicting a return is prohibited under SEBI rules for a non-RIA platform. The need is real but can only be met with education, so addressability must be penalised.",
+    "correctAnswer": "Theme: Seeking fund picks & return assurances. SEBI_NO_RETURN_PRED → addressability 0.2.",
+    "domainRuleApplied": "SEBI_NO_RETURN_PRED",
+    "verbatimText": "Sir Ji Namaskar 🙏 \nIm From Surat, Gujarat I'm New Subscriber ❤. \nMe 10,000₹/ Month 40 saal ke Liye Nifty 50 me SIP karna Chahta Hu. To kya Safe Rahega ?  Aur 12 % Return Milega Ki nahi Kyuki Mera Short Term Invest nahi Long Time ke liye hai . \n\nI wait your Reply"
+  },
+  {
+    "id": "CC-4",
+    "verbatimId": "YT-781475ace9",
+    "aiOutput": "Billing complaint: Groww is charging extra fees and the SIP is stuck. Theme: mandate failure. Severity 3.",
+    "rejectionReason": "The extra deductions are NACH/UPI mandate bounce charges levied by the investor's bank when the balance is short, not Groww fees, so 'billing complaint' blames the wrong party. What drives the message is the loss the investor opens with: the charges compound a loss they already feel, and they want out.",
+    "correctAnswer": "Theme: Fear of loss & early negative returns. Severity 5 (wants to stop, can't).",
+    "domainRuleApplied": "RULE_NACH_BOUNCE",
+    "verbatimText": "Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii."
+  },
+  {
+    "id": "CC-5",
+    "verbatimId": "PS-4bfd911de1",
+    "aiOutput": "App performance complaint about slow status. Theme: app bug. Severity 3.",
+    "rejectionReason": "Mutual-fund orders move through payment, order placement and unit allotment over a few business days; 'in progress' is normal. The reviewer also reports a real drop-off — their brother never invested again after the same experience — which makes this a retention signal, not a cosmetic bug.",
+    "correctAnswer": "Theme: Debit & allotment visibility gap. Severity 5 (documented abandonment).",
+    "domainRuleApplied": "RULE_NAV_ALLOC_DELAY",
+    "verbatimText": "I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this."
+  }
+]

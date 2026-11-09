@@ -1,0 +1,24 @@
+# Secrets — never commit
+.env
+.env.*
+!.env.example
+
+# Dependencies and build output
+node_modules/
+dist/
+.vercel/
+*.log
+__pycache__/
+*.pyc
+
+# Python virtualenv
+research/.venv/
+
+# Local smoke-run output (re-creatable with `python -m fetcher --quick`)
+research/data_quick/
+
+# BGE model cache (downloaded by `pnpm model:download`; the Docker build bakes it in)
+groww-sip-discovery/backend/.models/
+
+# Local tooling
+.claude/

@@ -1,0 +1,264 @@
+﻿id,source,subSource,language,date,url,rawText,inclusionReason,primaryThemeId,churnSeverity,lifecycleStage,userSegment,ageBand,analystNote
+PS-04ff53cf14,PlayStore,com.nextbillion.groww,English,2024-06-26,https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=23f84a29-584d-432f-9668-5d9199db7e13,"Have technical issue, I invested in mutual fund, payment successfull, amount deducted. Showing allotment in progress, after five days showing payment failed and after that amount refunded. That is this, what going on ?",behavioral:mechanics_confusion,THEME_DEBIT_VISIBILITY,3,MONTH_0_1,UNKNOWN,UNKNOWN,"paid, 'allotment in progress' for 5 days, then failed + refunded"
+PS-4bfd911de1,PlayStore,com.nextbillion.groww,English,2024-10-14,https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=882f86fd-e4ef-42f4-b986-3d7712fb04bb,"I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this.",behavioral:mechanics_confusion,THEME_DEBIT_VISIBILITY,5,MONTH_0_1,PEER_LED,UNKNOWN,stuck 'in progress'; brother abandoned investing after same issue
+PS-1d44112697,PlayStore,com.nextbillion.groww,Hinglish,2025-09-04,https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=f7950780-3103-4e54-839f-b8fcdd30b7a9,SIP hai kya isme bhi paisa doob jata h..,behavioral:concept_question,THEME_LOSS_FEAR,3,PRE_START,UNKNOWN,UNKNOWN,asks if SIP money can vanish
+PS-3228b3c7fb,PlayStore,com.nextbillion.groww,English,2026-06-06,https://play.google.com/store/apps/details?id=com.nextbillion.groww&reviewId=b447a7e5-ebc8-4385-af14-f37f50d33961,"Worst experience. It was much better. I'm unable to setup autopay for SIP. It asks once, if you miss it, only God knows where to find it.",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,4,MONTH_0_1,UNKNOWN,UNKNOWN,can't set up autopay; prompt shown once then lost
+YT-a6c9adf8f7,YouTube,8A3s9WP_7l4,English,2018-08-04,https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=UgyIQvZTWpYK3m3g8OB4AaABAg,"I didn't know a single thing about mutual funds, this video surely helped me understand and get the idea about it.
+Thanks sir, keep doing the great work. A recent big fan  :)",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNKNOWN,knew nothing before the video
+YT-e21d33bfae,YouTube,8A3s9WP_7l4,English,2018-08-05,https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=Ugw3ljMCOjEX4r-I5794AaABAg.8jXnAxd2GmR8jZPMDG9yq5,"Dhruv Rathee  sir I am a beginner invester  in mutual funds . For a long time I want to know about this.finally I got it by u. thanks a lot.
+Can you make A video on ""indian Tribes "" .",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNKNOWN,"beginner, learned from the video"
+YT-12a02a086a,YouTube,8A3s9WP_7l4,English,2019-03-02,https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=Ugzckx1J4lSV0qorpht4AaABAg,"Shukriya useful information,  This is what i'm waiting to learn from scratch about mutual funds...
+SUBSCRIBED",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNKNOWN,learning from scratch
+YT-89218aa1f2,YouTube,L0yTgTagvL8,Hinglish,2020-04-02,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgzsufwY6N6A--PLEVd4AaABAg,NAV har month sip installment k according applicable hoti h ya first installment ki jo NAV h hmesha rhti h,behavioral:first_installment,THEME_CONCEPT_GAPS,2,MONTH_0_1,UNKNOWN,UNKNOWN,which NAV applies to each installment
+YT-cf09350a73,YouTube,L0yTgTagvL8,English,2020-04-25,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgyD3kbNvNDMelOHjpB4AaABAg,"Sir, i have already done first sip payment. now there is a message about need of mandate , actually i can't complete mandate procedures for more than single month.What can i do....is my money lost?",explicit,THEME_MANDATE_SETUP_FAILURE,4,MONTH_0_1,UNKNOWN,UNKNOWN,"paid first SIP, can't complete mandate; 'is my money lost?'"
+YT-5d5cfade09,YouTube,8A3s9WP_7l4,English,2020-05-29,https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=UgwNr1arxhEJQdK63Xx4AaABAg.8yHXfTF-jhY99FONdJSRUz,What is NAV price written on mutual funds,behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,what is NAV
+YT-f5061e8c90,YouTube,L0yTgTagvL8,English,2020-06-16,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=Ugyf7L4rTt3StZJOhA94AaABAg.99v6oIzBu6399x_hIyeSyL,"@Groww Hi Team,
+
+
+Thank you for clarifying the doubt around 5 years.
+
+
+However, I have a few follow up queries.
+
+
+1. As you have mentioned, there is flexibility and liquidity in investing via groww app and that we can cancel at any time, so if we do that are there any situations where there will be some kind of penalty levied or/and exit load that will be deducted?
+
+
+2. If I choose SIP per month, can I change the amount every month as per my convenience or does it have to be fixed as per my first investment amount?
+
+Also, can I switch from monthly to one time i.e. annually payment option? If no, please elaborate the situations where we can.
+
+
+3. Can we really single click cancel and bring all money to our respective savings account without any penalty as the advertisement of groww app claims?
+
+
+4. If after investing for a period,say around a year, groww app company is dissolved or gone, so will we be able to track any policy number or equivalent proof with AMC wherein we invested to ensure that our money is safe and not vanished?
+
+If yes, where can we find our security number or unique number for our safety?
+
+
+Looking forward to your detailed response on each query point I raised above.
+
+
+
+Thanks",explicit,THEME_THIN_ONBOARDING,2,PRE_START,UNKNOWN,UNKNOWN,cancel penalty? can amount change monthly?
+YT-87f077cce3,YouTube,L0yTgTagvL8,English,2020-08-07,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgwpnEfTXPl6r6K0MTR4AaABAg,"Hello Sir.. ok now my confusion is- 
+1. I chose one time investment for my monthly SIP fund coz of date issue, so will that amount be added into SIP amount. Right now it shows order of one time is processed. Don't want one time as well as SIP. Want that amount to be transferred in SIP somehow.
+2. How can I add monthly SIP amount without autopay ? N one of my fund has SIP of 500rs, n coz of date issue it asks for one time n it shows min.of 1000rs investment. What should I do ?",behavioral:mechanics_confusion,THEME_THIN_ONBOARDING,3,MONTH_0_1,UNKNOWN,UNKNOWN,SIP date issue forced a one-time order; wants SIP without autopay
+YT-6cad39cf19,YouTube,ACpQo1a_RBk,English,2021-04-27,https://www.youtube.com/watch?v=ACpQo1a_RBk&lc=Ugxxxwy5WOj97HvEysN4AaABAg,"Literally was searching a video on mutual funds today morning, I’m a newbie investor 
+And my favourite finance content creator made it today 
+Literally manifested it 🙈😂♥️",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNKNOWN,"newbie, follows creator"
+YT-0ddb8894ab,YouTube,L0yTgTagvL8,Hinglish,2021-05-13,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgyjK8wFHpWSf8yLLKx4AaABAg,Stocks me sip kaise kare groww me???,behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,how to SIP into stocks
+YT-4c581ec0db,YouTube,L0yTgTagvL8,Hinglish,2021-05-19,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgwwgAbWDs7HYuBOTdR4AaABAg,"Maine 500 Ka SIP proceed kiya tha aur bank as below msg aaya hai...usme jo “1 lakh” hai woh kya hai yeh mein samjh nhi pa raha
+
+“Dear Customer, OTP TO INITIATE E-MANDATE SBI REQUEST ID TM12471*** OF RS. 100000.00 IN A/C NO. XXXX45** IS ........ DO NOT SHARE IT WITH ANYONE. -SBI”",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹500 SIP, bank OTP for ₹1 lakh e-mandate"
+YT-d2b0e4b8de,YouTube,L0yTgTagvL8,Hinglish,2021-05-29,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgzjO7MuQWqhzW4Vm594AaABAg,Mene first sip 1000 ka kiya to usme payable amount 559 dikha raha h,explicit,THEME_DEBIT_VISIBILITY,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹1,000 first SIP shows payable ₹559"
+YT-d7922ee8ab,YouTube,ACpQo1a_RBk,English,2022-05-15,https://www.youtube.com/watch?v=ACpQo1a_RBk&lc=UgwEl2-h5HZgoIhkSKF4AaABAg,"I am a beginner and honestly this is the best and easy video by which I quickly understood the basic concepts of mutual fund and moreover motivated me to start investing for my family.
+Gratitude.",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNKNOWN,beginner motivated to invest for family
+YT-e1cd70053d,YouTube,8A3s9WP_7l4,English,2024-02-10,https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=UgyH619TuiQPeo3ju_N4AaABAg,Thanks brother...I am a Girl from Assam....I am a teacher..I wanted to save and invest some money... everyone told me that mutual fund is good but I was not able to understand what is mutual funds...but thnks to you brother...my fvrt YouTuber 😊,behavioral:concept_question,THEME_THIN_ONBOARDING,1,PRE_START,PEER_LED,UNKNOWN,everyone told her MF is good; didn't understand it
+YT-04d89b7c58,YouTube,L0yTgTagvL8,English,2024-03-02,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgxiK5nVs2xF9GNIO2J4AaABAg,"Hi Team
+I am new to grow...why it is not showing any time period while investing in mutual funds?",explicit,THEME_CONCEPT_GAPS,2,MONTH_0_1,UNKNOWN,UNKNOWN,new to Groww; expects a time period for MF
+YT-c8731e68cb,YouTube,MExMf8_g4CE,Hinglish,2024-05-08,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgzFWQWWbpe1UTlw51R4AaABAg,Sir mera sip m set autopay option m start date 8 may 2024 to 7 may 2064 dikha rha h mne 2064 select kiya bhi nhi tha kya mera emi 2064 tkk ktega,behavioral:concept_question,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,autopay end date 2064 — will it debit till 2064?
+YT-58a062d811,YouTube,C2p7Bf1vNeA,English,2024-05-09,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=UgwjSsTxo-ZRRi7l-HF4AaABAg,I started sip this month because of you only brother thanks alot.,explicit,THEME_ADVICE_SEEKING,1,MONTH_0_1,INFLUENCER_LED,UNKNOWN,started this month because of creator
+YT-bf4e047361,YouTube,C2p7Bf1vNeA,English,2024-05-09,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=Ugz8dBxlTe2b1BaIvvR4AaABAg,"i'm 19 yo , i started my sip this month , majorly because of you , thank you boson
+and i have a doubt !! is nifty 50 , small cap 250 etc is just one entity governed by one or there are multiple version in the same such as nippon , kotak etc or am i confusing btw mutual funds and index. please guide me",explicit,THEME_CONCEPT_GAPS,2,MONTH_0_1,INFLUENCER_LED,UNDER_25,"19, started this month; confuses index vs fund"
+YT-3bd904df09,YouTube,C2p7Bf1vNeA,English,2024-05-10,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=UgxCDcjcBJ1NRUhscqB4AaABAg,"Im 32, just started sip after watching your videos..on thinking of better late then never.. my son is now 8 and he already saved 22k cash.. me and him together seeing your videos, started sip.. now this sip which I started is for him.. Im late but my Son on time in investing.. all thanks to you bro..",explicit,THEME_THIN_ONBOARDING,1,MONTH_0_1,INFLUENCER_LED,AGE_25_40,"32, started SIP for son"
+YT-194c098f4a,YouTube,C2p7Bf1vNeA,English,2024-05-11,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=Ugw9l8c9TUDpZ1scAn54AaABAg,@Finance Boosan - I'm following u in recent times and I have seen all your videos. It's really helpful and motivated. I have started my first SIP this month. It's really bcoz of your motivation I should say. Thank you so much for your hard work.... I have to know one thing. SIP works in compounding effect in growth Option. But how it works? Will a get equivalent unit for my profit at year end? How does it really works when it comes to compounding? Can u give us with example of 10-15 years pls..,explicit,THEME_CONCEPT_GAPS,2,MONTH_0_1,INFLUENCER_LED,UNKNOWN,first SIP this month; how does compounding work
+YT-dcbc697f9b,YouTube,C2p7Bf1vNeA,English,2024-05-14,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=UgxqOefU-AdXa5hvDPF4AaABAg,Sir your detailed explanation is crystal clear and i need to invest in sip but my age is 45. Should i start on my name or my sons age is 16. Which age is better for starting sip. Please cleary doubt,behavioral:concept_question,THEME_ADVICE_SEEKING,2,PRE_START,UNKNOWN,OVER_40,"45, whose name/age to start SIP in"
+YT-e1cb9d58c3,YouTube,C2p7Bf1vNeA,English,2024-05-31,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=UgzLdSTNxmYHqiHLwOV4AaABAg.A3nEdqv4sLgA45LPPOqd8l,Bro I am new to SIP. Can you please suggest some good area to invest.,explicit,THEME_ADVICE_SEEKING,2,PRE_START,UNKNOWN,UNKNOWN,"new to SIP, asks where to invest"
+YT-8f4b2874b3,YouTube,L0yTgTagvL8,English,2024-06-16,https://www.youtube.com/watch?v=L0yTgTagvL8&lc=Ugy6aD0W5zaeU39TU-54AaABAg,Why groww is asking me to pay 15k for a SIP as initial investment can anyone explain it please. Maximum mandate.,behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,asked to pay ₹15k for SIP
+YT-fbd7c3e67f,YouTube,MExMf8_g4CE,Hinglish,2024-08-03,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgwgcojozSuc4FND9Md4AaABAg,Mai 2000 sip karna chahta hoo.. But abhi starting me 15000 ka mandate ask kar raha hai.. Please reply kyu,explicit,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹2,000 SIP, ₹15,000 mandate asked"
+YT-781475ace9,YouTube,MExMf8_g4CE,Hinglish,2024-08-22,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgwDv09k0d76OV6Az454AaABAg,Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii.,behavioral:concept_question,THEME_LOSS_FEAR,5,UNKNOWN,UNKNOWN,UNKNOWN,bounce charges when balance short; SIP won't close; in loss
+YT-346aaf6b6f,YouTube,C2p7Bf1vNeA,English,2024-08-25,https://www.youtube.com/watch?v=C2p7Bf1vNeA&lc=Ugyq6mxnbvUGx58VpqJ4AaABAg,U are spreading what u have learnt by your experience to common people very clearly which is very appreciatable...ur explanations are crystal clear thanks for the video.... Feel proud of todays generation younger ones.. Keep doing the best work....all the best... As a beginners l i had small doubts and fears about my money which invested in mutual funds via sip and most of them are cleared here🎉Am subscribing the channel now and awaiting for the upcoming share markets related videos... Thanks❤,explicit,THEME_THIN_ONBOARDING,2,UNKNOWN,INFLUENCER_LED,UNKNOWN,"beginner with doubts and fears, cleared by video"
+YT-cf814de541,YouTube,MExMf8_g4CE,Hinglish,2024-09-01,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgxagAzGqirkFE2OYXN4AaABAg,Sir mera ek sawal tha pls answer it . First payment hone ke baad next sip me paisa khud dalna hoga ki apne aap bank se kat jayega??? Anyone pls answer it,behavioral:first_installment,THEME_THIN_ONBOARDING,2,MONTH_0_1,UNKNOWN,UNKNOWN,"after first payment, is next one automatic?"
+YT-8daa9c3e1a,YouTube,MExMf8_g4CE,Hinglish,2024-11-04,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgxIX6ZvfxTsoNOpUyJ4AaABAg.9tCnm1XHL8cAAQkfUtZKhc,"agar maine november 1 ko sip start kari aur payment kar diya 
+sip date select kare 6th of every month toh kya sip 6th nov ko phirse amount katega ??????
+ ya next mahine ke 6th date ko deduct hogi direct ?",behavioral:mechanics_confusion,THEME_DEBIT_VISIBILITY,3,MONTH_0_1,UNKNOWN,UNKNOWN,"paid on 1st, SIP date 6th — debited again same month?"
+YT-871e2b378c,YouTube,MExMf8_g4CE,Hinglish,2025-02-18,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=Ugx06J9xmHKWAuiOJSB4AaABAg,"bhai maine same procedure mai sip star Kiya tha but 5 bar sip cancel huwa , aisa kyu huwa hai bata sakte ho kya",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,4,MONTH_0_1,INFLUENCER_LED,UNKNOWN,followed video; SIP cancelled 5 times
+YT-e1169600b1,YouTube,MExMf8_g4CE,Hinglish,2025-02-22,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgwCWUdsHDgUwG2usPl4AaABAg,"Sir jb maine buy ki sip tb kt gye, 3 din bad auto pay fail ho gya , ye 2 bar kyu kaat te h",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,4,MONTH_0_1,UNKNOWN,UNKNOWN,"debited on purchase, autopay failed, 'why cut twice'"
+YT-c2e22c6678,YouTube,ZXLATRO3Ifw,English,2025-03-03,https://www.youtube.com/watch?v=ZXLATRO3Ifw&lc=UgxeqxCJQhOy3CNfza54AaABAg,"Sir ,as a beginner at the age of 19 , starting the investment journey. I sawed u first in the YT shorts in someone's podcast ur way of talking and thinking for the youth stole my mind and luckily got the video to learn from u ....I searched 4-6 videos regarding SIP but no one sir explained as that u put forth",explicit,THEME_THIN_ONBOARDING,1,PRE_START,INFLUENCER_LED,UNDER_25,"19, starting via creator"
+YT-6b72ee4430,YouTube,7pJdibIhNCQ,Hinglish,2025-09-17,https://www.youtube.com/watch?v=7pJdibIhNCQ&lc=UgxUMmDTPRKs9iU3jtd4AaABAg,Autopay me 15000 ka payment dikha raha .muje 500 ki sip krni h. Kya kre,behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹500 SIP, autopay shows ₹15,000"
+YT-f6c8f2912b,YouTube,MExMf8_g4CE,English,2025-09-27,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgypyIVxgSmiIz2baHd4AaABAg,Sir please Tell me If I want to stop SIP how can I do,behavioral:mechanics_confusion,THEME_SIP_CONTROL,5,UNKNOWN,UNKNOWN,UNKNOWN,wants to stop SIP
+YT-654aec4949,YouTube,MExMf8_g4CE,Hinglish,2025-11-12,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=Ugwc_4ndAAssvYzKAmp4AaABAg,"Ham 
+Sbi  gold direct plan with grow 
+Me SIP kiy h 
+But mujhe pata nhi h k कितने दिनों के लिए ये रहेगा
+ओर मैने Autopay v kar Diya hai 
+Lekin ab dar lagta h 
+क्या करे sir 😢😢
+Plz help me",behavioral:mechanics_confusion,THEME_LOSS_FEAR,4,MONTH_0_1,UNKNOWN,UNKNOWN,"set up autopay, doesn't know duration, 'dar lagta h'"
+YT-c55a697c2d,YouTube,MExMf8_g4CE,English,2025-12-26,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgzbLTrYI5H3XdOErsh4AaABAg,"I have selected amount of rs.500 for SIP, but after payment when it comes for autopay it shows rs.15000/month . Why?",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹500 SIP, autopay shows ₹15,000/month"
+YT-ac0a7a0881,YouTube,7pJdibIhNCQ,Hinglish,2026-01-02,https://www.youtube.com/watch?v=7pJdibIhNCQ&lc=UgwhHcHFk__jyC6rj214AaABAg,Sir ..grow pe fund select karne ke bad payment mode pa jata hu to waha 15000 dikha raha hai jab ki mene sip amt 1000 dal raha hu ..kya mera 15000 katega ya sirf 1000 hi katega,behavioral:concept_question,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"₹1,000 SIP, ₹15,000 shown — which will be debited?"
+YT-b30f668b12,YouTube,7pJdibIhNCQ,Hinglish,2026-02-01,https://www.youtube.com/watch?v=7pJdibIhNCQ&lc=UgzeU4mOpeIwcd5vPy14AaABAg,Bhaii daily sip kaise kare?,behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,how to do daily SIP
+YT-bb62935050,YouTube,MExMf8_g4CE,English,2026-04-02,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=Ugz3mVrS7JhdnHsCN0Z4AaABAg,I am new to groww so I have a question sip bank account se cut ta ha,explicit,THEME_DEBIT_VISIBILITY,2,MONTH_0_1,UNKNOWN,UNKNOWN,new to Groww; is SIP debited from bank?
+YT-3dcb235232,YouTube,ZXLATRO3Ifw,English,2026-05-13,https://www.youtube.com/watch?v=ZXLATRO3Ifw&lc=UgwV0Qc481rLIQVR6nt4AaABAg,I am 24 now and just started SIP with ₹1000 per month,explicit,THEME_THIN_ONBOARDING,1,MONTH_0_1,UNKNOWN,UNDER_25,"24, just started ₹1,000/month"
+YT-0a654eb8b6,YouTube,-cQzwIwNPmA,Hinglish,2026-05-16,https://www.youtube.com/watch?v=-cQzwIwNPmA&lc=Ugx8GzQg0GfapguGYhZ4AaABAg,Jab Ham Koi first time SIP activate karte hain aur Google pay se auto pey karte hain aur vah mere bank se link ho jata hai agar Ham Google per band kar dete Hain To Kya Meri SIP ruk to nahin Jayegi direct bank se paise katenge na Agar Main Google per deactivate bhi kar do.,behavioral:concept_question,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,UNKNOWN,UNKNOWN,"if autopay is turned off in Google Pay, does SIP stop?"
+YT-51aa12f654,YouTube,7pJdibIhNCQ,Hinglish,2026-06-01,https://www.youtube.com/watch?v=7pJdibIhNCQ&lc=UgwsIYdufQ8PSYvToQZ4AaABAg,per day sip kaise kare sir ?,behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,how to do per-day SIP
+YT-091789372e,YouTube,MExMf8_g4CE,Hinglish,2026-07-19,https://www.youtube.com/watch?v=MExMf8_g4CE&lc=Ugwa23lYy3BkfNK3Uq14AaABAg,Sir hum apne sip amounts kaha dekh skte hain application pe jaise main mera first sip start Kiya june 16 ko 2k se and 2nd 16 july ko detect hua toh 4 k dekhegay app pe? Vo kaha check kr skte h ?,explicit,THEME_DEBIT_VISIBILITY,2,MONTH_2_4,UNKNOWN,UNKNOWN,2nd installment done; where to see total in app
+YT-a39c7d51fd,YouTube,Y58SpRq1SdA,Hinglish,2026-07-26,https://www.youtube.com/watch?v=Y58SpRq1SdA&lc=Ugxg1CZBmGQPPgxFNFV4AaABAg,"Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?
+
+Ky baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h",behavioral:mechanics_confusion,THEME_DEBIT_VISIBILITY,4,MONTH_0_1,UNKNOWN,UNKNOWN,"debited from bank to ICCL, nothing on dashboard"
+YT-a9e8c0f6ab,YouTube,hXnWvBq_o4M,English,2026-07-31,https://www.youtube.com/watch?v=hXnWvBq_o4M&lc=UgxAsD4IZDPzLqmLPHB4AaABAg,"I have zero knowledge on SIP
+But the person showing calculations in twitter is meaningful and very simple 
+You shown in excel with whole confusing by saying he invested for 100 years 
+Stick to basic example that he shown 
+20 years 10k sip what is take home after paying whole taxes and inflation",explicit,THEME_CONCEPT_GAPS,2,PRE_START,INFLUENCER_LED,UNKNOWN,zero knowledge; wants simple post-tax return example
+YT-c965a5aa73,YouTube,ZXLATRO3Ifw,English,2026-08-12,https://www.youtube.com/watch?v=ZXLATRO3Ifw&lc=Ugy8lvlIQ5eA0uZVcwB4AaABAg,"37 year old.. just started sip with 20k. And 65k lumpsum. Goal is to continue investing till 55.
+Hopefully will get back to this comment in future!",explicit,THEME_THIN_ONBOARDING,1,MONTH_0_1,SELF_DIRECTED,AGE_25_40,"37, just started; goal to invest till 55"
+YT-686d890c18,YouTube,-cQzwIwNPmA,Hinglish,2026-08-22,https://www.youtube.com/watch?v=-cQzwIwNPmA&lc=UgwhSM36GaCoqHaHpHJ4AaABAg,"Sir Ji Namaskar 🙏 
+Im From Surat, Gujarat I'm New Subscriber ❤. 
+Me 10,000₹/ Month 40 saal ke Liye Nifty 50 me SIP karna Chahta Hu. To kya Safe Rahega ?  Aur 12 % Return Milega Ki nahi Kyuki Mera Short Term Invest nahi Long Time ke liye hai . 
+
+I wait your Reply",explicit,THEME_ADVICE_SEEKING,2,PRE_START,INFLUENCER_LED,UNKNOWN,"will ₹10k/month in Nifty 50 be safe, will 12% come"
+YT-0717631aa4,YouTube,ds_2gLO1r9w,Hinglish,2026-08-31,https://www.youtube.com/watch?v=ds_2gLO1r9w&lc=UgxYuNWLSaBX7pwx_rp4AaABAg,Bhai hame SIP kholna hai  kya SIP sahi hai,behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,want to open SIP — is SIP right/safe?
+YT-c44d602746,YouTube,Mr5hz8IpNxI,Hinglish,2026-10-04,https://www.youtube.com/watch?v=Mr5hz8IpNxI&lc=Ugwq_HMbXXNv_swmsCV4AaABAg,Aapke kehne pr sip chalu ki Nifty 50 Main ab loss ho gya kyakre😢😢,behavioral:concept_question,THEME_LOSS_FEAR,4,UNKNOWN,INFLUENCER_LED,UNKNOWN,"started Nifty 50 SIP on creator's advice, now in loss"
+YT-7244673a53,YouTube,__GhfUAo3JE,Hinglish,2026-10-08,https://www.youtube.com/watch?v=__GhfUAo3JE&lc=UgwrRK7SymSYYx1s0Rh4AaABAg,"1.Agar koi 1000 rs se sip karta hai 3Y  ke liye or achank bank dub jaye ya paise kahi fraud ho jaye to to paise ka insurance hota hai kya waha jaise 
+
+Stable money par 5 lakh ka insurance hai waise..
+
+
+2. Agar koi 3Y ke hisab se 1000 rs sip karta hai to usko return me kitna milega yah kaise pata kare 😮
+3. Hame agar withdrawal karna hai to hame pura nahi karna kuch pacific amount jaise 1000 sip kiya tha hoga 3 sal ke liye par 1 sal bad uska amount bad gaya hoga to wah kaha dekhe",behavioral:concept_question,THEME_LOSS_FEAR,2,PRE_START,UNKNOWN,UNKNOWN,is SIP money insured if bank fails; how much return
+YT-f623c39d56,YouTube,__GhfUAo3JE,English,2026-10-14,https://www.youtube.com/watch?v=__GhfUAo3JE&lc=UgwOZqtDFORbRIi7Snh4AaABAg,What if i dont know nothing and just want to do a sip monthly best advice and company,explicit,THEME_ADVICE_SEEKING,2,PRE_START,UNKNOWN,UNKNOWN,"knows nothing, wants best company for SIP"
+FM-6c24b683f9,Forum,TradingQnA,English,2017-09-27,https://tradingqna.com/t/initial-investment-for-sip/21144/1,"""Initial Investment"" for SIP
+
+I am new to Coin, in fact new to entire Zerodha family. I am trying to setup a monthly SIP for one of the funds. When I click on Direct SIP button to initiate the investment, I am presented with an mandatory option of putting in an initial investment.
+
+For my selected fund it is a minimum of Rs.5000/-. And the process won’t proceed any further if I select any amount lesser than 5K there.
+
+I am not sure if this sort of mandate is applicable for SIP investments. I had not been asked for this initial investment by my current investment broker when I first started my SIP there in the same fund.
+
+Can anyone suggest if I will have to pay this initial investment to initiate the SIP?
+
+Fund: Mirae Asset India Opportunities Fund - Direct Plan - Growth",explicit,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,SELF_DIRECTED,UNKNOWN,"new; ₹5,000 mandatory initial investment for SIP"
+FM-eb217305e9,Forum,TradingQnA,English,2017-12-20,https://tradingqna.com/t/sip-of-12-months-with-500rs-in-elss-wisely/29093/1,"SIP of 12 months with 500Rs in ELSS wisely?
+
+Hi,
+
+I read article Do not invest in ELSS with these wrong notions
+
+In this article has line as follows: -
+
+For Example:-
+
+If I started today 1 SIP of 500Rs monthly for next 12 months ie. Dec 2018. Stop SIP.
+
+Then wait for 3 years ie Dec 2021. Then Withdraw money.
+
+So Every SIP complete 3 years which I invest in Dec 2017 to Dec 2018.
+
+Will that Strategy works?
+
+As I read following article also.
+
+Best ELSS to invest in 2017
+
+in this article has line as:-
+
+If this strategy works then I will start actual investment in ELSS for more years.",behavioral:mechanics_confusion,THEME_CONCEPT_GAPS,2,PRE_START,SELF_DIRECTED,UNKNOWN,₹500 ELSS for 12 months — lock-in mechanics
+FM-355bac1237,Forum,TradingQnA,English,2018-03-21,https://tradingqna.com/t/what-will-happen-if-i-dont-have-money-in-my-equity-wallet-and-my-sips-are-active/35749/1,"What will happen if I don't have money in my equity wallet, and my SIP's are active?
+
+CASE:
+
+Consider I have 1 ongoing SIP and scheduled date for payment is 5th of every month.
+
+Query:
+
+If I don’t have any fund in my equity wallet, will it purchase on 5th and show negative balance in my account or it will automatically pause my SIP for that month?
+
+Can I change my SIP scheduled date later? Like from 5th of every month, can I change to 10th of every month?",behavioral:mechanics_confusion,THEME_SIP_CONTROL,2,UNKNOWN,SELF_DIRECTED,UNKNOWN,what if no money on SIP date; can date change
+FM-fe212e54a4,Forum,TradingQnA,English,2018-06-26,https://tradingqna.com/t/how-do-i-pause-and-resume-a-sip-on-coin/41314/1,"How do I pause and resume a SIP on Coin?
+
+I was reading this article yesterday which said that you can pause and resume your SIP’s. But this seems like an extremely tough task of having to send a physical request letter to the AMC and having to wait for a month to stop. Is this the same way on Coin app and the web?",behavioral:concept_question,THEME_SIP_CONTROL,3,UNKNOWN,SELF_DIRECTED,UNKNOWN,how to pause/resume; heard it needs a letter to AMC
+FM-65b8662049,Forum,TradingQnA,English,2019-05-22,https://tradingqna.com/t/sip-on-coin-different-than-a-conventional-sip/58552/1,"SIP on Coin different than a conventional SIP
+
+Hi,
+
+I would like to know in terms of profit/loss how SIP on Coin different than a conventional SIP.
+
+Lot of people is thinking its different hence not buying in zerodha. But people like me has already invested and i want to know the difference in short mathmetical form how it differs. Any difference in profit/loss compared to conventions or difference in return interest rate. Also what are the pros and cons of these 2.
+
+Thanks in advance",behavioral:concept_question,THEME_CONCEPT_GAPS,2,MONTH_0_1,PEER_LED,UNKNOWN,already invested; how is this SIP type different
+FM-ee9db71bab,Forum,TradingQnA,English,2019-11-15,https://tradingqna.com/t/initial-investment-for-sip/21144/6,"If I start an SIP with an initial amount of 5000 in a MF for eg - SBI small cap, what will happen if I cancel the SIP before even doing the first SIP instalment. Do I loose any money in the process. The Initial amount is sent to the AMC will they refund it?",explicit,THEME_SIP_CONTROL,3,MONTH_0_1,SELF_DIRECTED,UNKNOWN,cancel before first installment — lose money?
+FM-9bec0331bd,Forum,ValuePickr,English,2020-05-04,https://forum.valuepickr.com/t/mutual-fund-investment-suggestions/33580/1,"Mutual Fund Investment suggestions
+
+Hi. I am planning to start investing in mutual funds now. I am a beginner and young(28). I plan on doing investments as a lump sum and SIP. I plan to invest 5 lakhs via lump sum now and SIP of 20k per month for next 3 years starting this month. I plan to diversify my investments across multiple types of funds by taking moderate risk.
+
+Lumpsum Strategy: Invest 50% across hybrid funds (Kotak Dynamic Bond Fund, Tata Balanced Advantage FUnd) and expect a return of 10-12% over a horizon of 1.5 years. And invest the rest in midcap/smallcap equity funds which have portfolio investments in FMCG, Oil,Aviation and Gold related mutual funds, expecting returns of around 15-17% annualized over a horizon of 3 to 4 years.
+
+SIP Strategy: Play safe by investing in big funds which have portfolios comprising of big, stable companies. Invest in large cap equity funds (Axis Focused 25, Axis bluechip fund, ICICI Prudential Value Discovery fund) over a horizon of 3 years and expect returns of minimum 10-12% annualized.
+
+Please comment on my strategy and any suggestions on which funds (& sectors to focus on) to be invested in for lumpsum and SIP based on the returns I am expecting, would be highly appreciated.",explicit,THEME_ADVICE_SEEKING,2,PRE_START,SELF_DIRECTED,AGE_25_40,"28, beginner; plan review with named funds"
+FM-36421fb26e,Forum,ValuePickr,English,2022-01-18,https://forum.valuepickr.com/t/list-of-5-sip-stocks/74041/12,"I began investing in mid 2021 (I am a novice invester) , Here are the stocks that I am currently buying these ETFs/stocks as SIP every month ,
+
+PGINVIT
+
+ITC
+
+Niftybees
+
+Juniorbees
+
+MON100
+
+NETFIT
+
+Stocks that Im planning to add to my list of SIPs are below
+
+HDFC
+
+Granules
+
+Most of my SIPs are ETFs since I wanted to make safe bets when I started with zero knowledge last year. Would welcome constructive criticism on my list as well .",explicit,THEME_ADVICE_SEEKING,2,MONTH_5_8,SELF_DIRECTED,UNKNOWN,novice since mid-2021; wants critique of ETF SIP list
+FM-c63c24d831,Forum,TradingQnA,English,2022-02-12,https://tradingqna.com/t/sip-detail-explanation-about-sip-mutual-fund/126970/1,"SIP - Detail explanation about SIP Mutual fund
+
+Can someone explain how does SIP works ? How to buy on Zerodha platform.",behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,UNKNOWN,UNKNOWN,how does SIP work
+FM-ca46c089cb,Forum,TradingQnA,English,2022-02-25,https://tradingqna.com/t/coin-sip-vs-amc-sip/127618/1,"Coin SIP vs AMC SIP
+
+Hello,
+
+I am new to Zerodha. I want to understand the difference between Coin SIP and AMC SIP.
+
+I am interested in coin SIP because I can have control over SIP modification. How do I start such SIP? I tried to visit Zerodha support but it has only AMC SIP details.
+
+Also is there a tutorial/demo on how coin works in general?",explicit,THEME_CONCEPT_GAPS,2,PRE_START,SELF_DIRECTED,UNKNOWN,new; difference between two SIP types
+FM-61a1c6ce0b,Forum,TradingQnA,English,2022-11-18,https://tradingqna.com/t/amc-sip-minimum-time/139340/1,"AMC SIP Minimum Time
+
+I’m Willing to Do a Small Sip for Next 4 Months in ICICI Pru Tech or Tata Digital Ind Fund
+
+I’m seeing AMC Sip’s Minimum amount is 100/150rs
+
+Can i Please Know How Many Number of Amc sips should be Done in Order to Cancel/pause The Sip after 4 months
+
+And I’m finding On Amc website That sip can be Done Weekly,Monthly too
+
+Why Aren’t Zerodha’s Weekly Amc Sip’s Allowed?",behavioral:mechanics_confusion,THEME_THIN_ONBOARDING,2,PRE_START,SELF_DIRECTED,UNKNOWN,how many installments before cancel is allowed
+FM-ba9e7531bc,Forum,TradingQnA,English,2024-08-10,https://tradingqna.com/t/how-to-pay-using-the-payment-gateway-method-for-amc-sips/171612/1,"How to pay using the payment gateway method for AMC SIPs?
+
+I chose the payment gateway method for funding my AMC SIPs instead of the mandate. But I couldn’t figure out how to make the payment. Please help.
+
+Screenshot_2024-08-10-15-46-28-49_4e36d33e4de36f27fb3cebd15b0869811080×1813 133 KB",behavioral:mechanics_confusion,THEME_MANDATE_SETUP_FAILURE,3,MONTH_0_1,SELF_DIRECTED,UNKNOWN,chose payment-gateway method; can't figure how to pay
+FM-f4676ccb86,Forum,TradingQnA,English,2024-08-15,https://tradingqna.com/t/are-all-mfs-via-coin-sip-are-direct-or-need-to-select-direct-or-regular/171839/1,"Are all MFs via Coin SIP are Direct? Or need to select Direct or Regular?
+
+Hello All,
+
+Can someone confirm if the SIPs done via Coin are Direct or Regular?
+
+Also, if not direct how do I select Direct?
+
+Also, is there difference of Direct or Regular in COIN SIP and AMC SIP?
+
+Any help on it will be appreciated.",behavioral:concept_question,THEME_CONCEPT_GAPS,2,PRE_START,SELF_DIRECTED,UNKNOWN,direct or regular plan?
+FM-582c9ce2c8,Forum,TradingQnA,English,2026-08-07,https://tradingqna.com/t/introducing-updated-stock-sip-experience-on-kite-web/195837/12,@nithin_kumrr for UPI Autopay will money come to my zerodha account and then get debit for SIP or without coming to Zerodha account?,behavioral:mechanics_confusion,THEME_DEBIT_VISIBILITY,2,PRE_START,SELF_DIRECTED,UNKNOWN,"with UPI Autopay, where does the money flow?"
+FM-369e8d725a,Forum,ValuePickr,English,2026-08-21,https://forum.valuepickr.com/t/beginner-investing-questions-about-direct-vs-regular-mutual-funds-mistakes-and-learning-resources/223838/3,"Thank you for the detailed answer. The point about starting early and learning properly makes sense.
+
+I wanted to clarify one thing about Direct versus Regular plans. Since I am only planning to start with around 500 to 1000 rupees per month and I am willing to do my own research, would you personally choose a Direct plan in my situation?
+
+Also, when you say to keep the money in a long term FD until I am ready to venture into mutual funds, what would you consider someone needs to understand before they are ready to start a simple long term SIP?
+
+I am mainly trying to avoid making unnecessary mistakes as a beginner rather than trying to maximise returns immediately.",explicit,THEME_ADVICE_SEEKING,2,PRE_START,PEER_LED,UNKNOWN,"₹500–1,000/month; would you choose Direct for me?"
+FM-75460b039f,Forum,ValuePickr,English,2026-08-25,https://forum.valuepickr.com/t/beginner-investing-questions-about-direct-vs-regular-mutual-funds-mistakes-and-learning-resources/223838/12,"Thank you for sharing your experience. Your point about underestimating funds and later realizing the value of SIPs was particularly interesting.
+
+Since you have experience with both funds and direct equity I wanted to ask one more practical question. If you were 23 again today with ₹500 to ₹1,000, per month available to invest would you start with a simple Direct Index Fund while learning or would you wait until you had a much stronger understanding of investing before starting?
+
+Also looking back at your own journey what is one thing you would definitely NOT do as a beginner today",explicit,THEME_ADVICE_SEEKING,2,PRE_START,PEER_LED,UNKNOWN,asks what a 23-yo should do; start index fund now or wait?

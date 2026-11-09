@@ -1,0 +1,42 @@
+{
+  "channel": "reddit",
+  "fetchedAt": "2026-11-08T21:12:43+00:00",
+  "fetchedCount": 0,
+  "params": {
+    "subreddits": [
+      "personalfinanceindia",
+      "IndiaInvestments"
+    ],
+    "queries": [
+      "SIP",
+      "Groww",
+      "cancel SIP",
+      "SIP loss",
+      "first SIP",
+      "stop SIP",
+      "SIP mandate"
+    ],
+    "maxPostsPerQuery": 100,
+    "commentThreads": 40,
+    "maxCommentsPerThread": 100
+  },
+  "notes": [
+    "auth mode: public-json",
+    "r/personalfinanceindia 'SIP': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'Groww': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'cancel SIP': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'SIP loss': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'first SIP': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'stop SIP': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/personalfinanceindia 'SIP mandate': HTTP 403 for https://www.reddit.com/r/personalfinanceindia/search.json",
+    "r/IndiaInvestments 'SIP': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'Groww': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'cancel SIP': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'SIP loss': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'first SIP': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'stop SIP': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "r/IndiaInvestments 'SIP mandate': HTTP 403 for https://www.reddit.com/r/IndiaInvestments/search.json",
+    "Reddit returned 403 for public JSON requests from this network; no Reddit records collected. Import posts by hand via data/manual/ if needed (see README).",
+    "0 unique posts, 0 comments from 0 threads"
+  ]
+}

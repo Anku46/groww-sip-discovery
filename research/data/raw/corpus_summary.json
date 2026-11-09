@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-11-08T21:15:51+00:00",
+  "totalRaw": 6174,
+  "perChannel": {
+    "PlayStore": 467,
+    "AppStore": 105,
+    "Reddit": 0,
+    "YouTube": 3871,
+    "Forum": 1731
+  },
+  "perChannelWithSipKeyword": {
+    "PlayStore": 467,
+    "AppStore": 11,
+    "Reddit": 0,
+    "YouTube": 1015,
+    "Forum": 697
+  },
+  "perLanguage": {
+    "English": 5059,
+    "Hinglish": 1048,
+    "Hindi": 67
+  },
+  "perSubSource": {
+    "Forum / TradingQnA": 418,
+    "Forum / ValuePickr": 1313
+  },
+  "datedRecords": 6174,
+  "piiFlagged": 66,
+  "loadedBeforeCleaning": 6990,
+  "droppedTooShort": 429,
+  "duplicatesRemoved": 387,
+  "manualRecords": 0,
+  "channelsMissing": [
+    "Reddit"
+  ],
+  "csv": "data/raw/raw_corpus.csv"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "groww-sip-discovery",
+  "private": true,
+  "packageManager": "pnpm@10.34.9",
+  "scripts": {
+    "generate:data": "pnpm --filter @groww-sip/shared generate:data",
+    "typecheck": "pnpm -r typecheck",
+    "test": "pnpm -r test"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp", "onnxruntime-node", "protobufjs"]
+  }
+}

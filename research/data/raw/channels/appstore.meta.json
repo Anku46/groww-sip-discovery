@@ -1,0 +1,19 @@
+{
+  "channel": "appstore",
+  "fetchedAt": "2026-11-08T21:12:14+00:00",
+  "fetchedCount": 105,
+  "params": {
+    "appId": 1404871703,
+    "country": "in",
+    "stars": [
+      1,
+      2,
+      3
+    ],
+    "maxPages": 10,
+    "requireSipKeyword": false
+  },
+  "notes": [
+    "scanned 500 reviews, kept 105 with stars [1, 2, 3]"
+  ]
+}

@@ -1,0 +1,713 @@
+﻿id,source,ruleDecision,ruleReason,reviewDecision,reviewReason,rawText
+AS-b6e1c7ff94,AppStore,include,explicit,exclude,"matched '3 months ago'; redemption delay, no first-time signal","Worst app
+
+I havent got my money from the mutual funds i sold 3 months ago and have emailed them many times but still the same response"
+FM-141a544ae1,Forum,include,behavioral:concept_question,exclude,long-form index-investing analysis,"Analysis on Index Investing in India
+
+INTRODUCTION
+
+We all know that a buy and hold (aka: shut up & wait/buy & forget) strategy has worked for investors investing in INDEX FUNDS in the US equity markets. But how has this approach fared for domestic Indian investors in an Indian INDEX? To answer this question I have analysed returns of an Indian index investor over the past 20 years ACROSS VARIOUS ROLLING TIME PERIODS.
+
+In addition to analysing whether index fund investing has worked, I have also tried to analyse whether index funds have beaten Fixed Deposits, what is the ideal holding period for an index fund, how are the returns been for SIP investors, etc
+
+METHODOLOGY
+
+To analyse the returns for Indian Index investors, the first thing to decide is which index to use. I chose the most popular index – the NIFTY 50. However, if we just the Nifty it would understate the actual returns as it does not consider the returns arising from dividends. To get a true & complete picture of returns, the dividends received also need to be factored in. This is where the Nifty TRI (Total Return Index) comes to our aid as it provides the return including the dividends. NSE provides historical data for the Nifty TRI from June 1999 onwards on its website.
+
+The second question to decide is the timeframe. I have come across several misleading posts/write-ups/brochures, etc where people cherry pick the starting and ending date of their analysis to make their point. In order to address this issue I have taken every month from January 2000 until July 2021 and provided returns for every possible rolling One year period, Three year period, Five year period, Seven year period, and Ten year period.
+
+For e.g. January 2000 to January 2001 is the first one year period, February 2000 to February 2001 is the next one year period…………July 2020 to July 2021 is the last one year period. The same thing has been done for the other time periods as well. Consequently, we get 247 One year periods, 223 Three year periods, 199 Five year periods 175 Seven year periods, 139 Ten year periods.
+
+The next question to decide is the method of investment: whether a lump sum investment or whether a Systematic Investment Plan (SIP). To get a comprehensive view, I have calculated the returns for all periods for both methods of investments. For the SIP calculation, I have assumed that a SIP investor will make a fixed investment ONCE every month (on the last trading day of the month) and shall continue to do it for the entire time period without fail. It is important to note that even a monthly SIP can be broken into many smaller investments over the course of month (instead of one large investment at the end of month) but I have not considered the effect of this complication (yet).
+
+Now that we have the returns for the 1/3/5/7/10 year periods, we can run the usual descriptive statistics on them. However to make it more intuitive & visual I have also plotted the returns for each period on a histogram that has the same scale and same bucket size so as to make comparison easy.
+
+Thereafter, I compared the Nifty TRI returns with the Fixed Deposit (FD) rates prevailing exactly at that time period and calculated the excess return over the FD for all the aforesaid time periods. The data regarding the FD rates is taken from the RBI website
+
+NOTE: You may ask why January 2000 and why not earlier. The reason for this is that NSE website provides data for the Nifty TRI only from June 1999 onwards and consequently only from January 2000 onwards we get data for the entire calendar year. If someone knows of any reputed data source providing NIFTY TRI data earlier than June 1999, then please do let me know and also provide me with the data
+
+AN IMPORTANT FACTOR TO KEEP IN MIND
+
+Before talking about the results, one must keep in mind that the Nifty has shown a secular growth trend in the past 20 years (you can see it here). While there have been some years of flat/negative returns, our market is yet to see a LARGE time period (say a decade or more) of flat/negative returns. Hence, in the past 20 years, if you remained invested in the Index for longer time periods of 7 years & more you have ALWAYS got positive returns and that too greater than 5% even if you invested in the worst periods. No wonder that the mutual fund industry always tells that investing for longer periods yields good returns and treats the same as gospel truth.
+
+However, this has not been necessary true for all indices even in the case of growing countries. For e.g. If you see the Shanghai Composite Index, it is around the same level today as it was in July 2009 and AT THE INDEX LEVEL there have been no returns. Now of course if we include dividends & buyback then the returns will be better but then if we invested in such a period then, intuitively, our returns are almost bond like as they are restricted merely to dividends/buybacks. If I manage to find the time, I shall try to do a more detailed study of returns for such markets in a follow up post.
+
+Hence, in case we extrapolate the results given below into the future we must remember that we are implicitly also stating that the future will continue to remain like the past. While that may be the case it may not necessarily be true. Also the returns must be viewed in the context of prevailing inflation. With this in mind let us see the results below
+
+ANALYSIS OF RETURNS OF INVESTMENT DONE THROUGH SIP
+
+sip-02736×1824 168 KB
+
+SIP-12736×1824 156 KB
+
+SIP-32736×1824 156 KB
+
+SIP-52736×1824 146 KB
+
+SIP-72736×1824 153 KB
+
+SIP-102736×1824 153 KB
+
+desc stats2368×888 283 KB
+
+One Year Period: As expected, the returns from one year periods were very volatile as seen from the wide range (max-min) and high standard deviation. Importantly, in 25% of the time we lost money and 1/3 of the time our returns were below 5%. The data seems to be normally distributed (though this is not evident in the above histogram due to the way I have made my buckets)
+
+Three Year Period: The 3 year returns were much less volatile and range & standard deviation drop significantly. We lost money only in 8% of the time (as compared to 25% in the one year period). The data is moderately skewed to the right
+
+Five Year Period: The volatility further reduces in the 5 year period. Also we did not lose money in any of the periods. Furthermore in 54% of the time our returns were in 5%-15% range. The data is heavily positively skewed
+
+Seven Year Period: From this period onwards the results start getting interesting. The volatility continues to narrow and the dispersion of the returns is closer to the average. Not only there is no loss of money, but also the returns in virtually all periods were above 5%. Furthermore 74% of the time our returns were above 10%. The data is heavily positively skewed and with high peaks
+
+Ten Year Period: The results continue to get better and a staggering 89% of the times, the returns were above 10%. However the returns>20% were only 12% of the time compared to 21% of the time in the 7 year period. NOTE: y-axis has been topped at 45% despite the fact that there is a data point above that number because I wanted to maintain comparison with charts of other time periods
+
+ANALYSIS OF RETURNS OF INVESTMENT DONE THROUGH LUMPSUM
+
+I have done an analysis of even the lumpsum investment and the detailed images for the same are on my blog post. Not posting it here as this write up already has too many images
+
+However, the key takeways are:
+
+*The results of even a lumpsum investment across the 1/3/5 year time periods mirrors the basic pattern seen in the SIP histograms. However the 7 and 10 year periods are different.
+
+The 7 year lumpsum return has a lesser range of 24% vis-a-vis 38% in the SIP return and thus the dispersion of returns is much lesser. This can also evident from the negative kurtosis of the lumpsum return vis-a-vis the positive kurtosis of the SIP return. A negative kurtosis typically means lesser data at the tails as compared to a normal distribution
+
+While the 10 year lumpsum return shows the same average, standard deviation and range as that of the SIP return, it has a significantly different distribution. As evident from the high negative kurtosis, the data shows a kind of uniform distribution which is very different then that of the SIP. It shows that 40% of the time the returns were in the 15-20% bucket as opposed to only 14% in the SIP. But 22% of the times, your returns could also be in the 5%-10% bucket as compared to only 11% in the SIP.
+
+OUTPERFORMANCE OF LUMPSUM INVESTMENT OVER A FIXED DEPOSIT
+
+FD outperformance1336×526 128 KB
+
+As seen above, the times when the Index outperformed the Fixed Deposit improved significantly from the Year 7 onwards
+
+CONCLUSION
+
+If you want only one single takeaway from all of the above (with the caveat that the future would be similar to the past as stated earlier) then it is this: The ideal time frame for investment in an index is 7 years and above as not only did you not lose any money but also managed to get a return>5% in ALL of the periods. Furthermore, also remember how a return is calculated: it assumes that you WILL exit after your timeframe is over even if the market is pessimistic at that point of time. However, if you are not in need of any funds but are willing to wait till the tide turns (and even assuming that you don’t invest further money) then your returns could improve and more so in the case of an SIP where your exit matters more than the entry
+
+If you want to print the results and wish to share them I have made a handy PDF for you to download from my blog. I would love to hear your critique on my process as well as your take on the results through comments / twitter.
+
+There are many follow through analysis that can be done and if I get the time to do it I will post it here."
+FM-240adf1d92,Forum,include,behavioral:concept_question,exclude,promotional article,"Redeem or Continue? Clear your SIP doubts
+
+The lockdown may have impacted your investments.
+
+In hindsight, the market crash was nothing more than a bump in the long journey to wealth creation.
+
+Today we discuss why this time is as good as any other to kick start your SIP engine to life.
+
+Yes, it’s not too late!
+
+It is certainly possible to revive your financial goals, regardless of any market situation.
+
+So here we present our SIP prescription for you to accumulate wealth for your financial goals.
+
+I’m facing a threat to my income? What should I do?
+
+Job losses, and salary or business income cuts have pushed many to rethink their SIPs.
+
+Of course if you have any of the above problems, your primary focus should be on ensuring your emergency corpus is solid.
+
+Shore up your corpus such that you have at least 12-18 months’ worth of living expenses.
+
+If you have planned well, then still try and continue your SIPs by cutting your expenses.
+
+If not, once you have an emergency corpus in place, resume your SIPs to accumulate wealth for your financial goals.
+
+I am facing a minor income cut, should I be worried?
+
+It’s great if you have faced little or no change in your income. In this case there is no reason that you shouldn’t continue your SIPS as before.
+
+In fact, given the opportunities around, you could consider cutting back on expenses and squeezing out extra cash for another SIP.
+
+If your portfolio is exposed only to equity mutual funds, then consider adding some liquid funds. This will diversify your portfolio and allow you to raise money for short term goals.
+
+Gold is a popular choice when it comes to diversifying portfolios. During times of market volatility gold prices generally go up when the markets are down. Consider allocating 10-15% of your portfolio to Gold.
+
+This volatility is unsettling, what should I do?
+
+It’s true that volatility in recent years has tested investors’ patience.
+
+But this doesn’t imply that you should stop or redeem your SIPs. Remember that patience and tenacity are the hallmarks of wealth creation.
+
+A better course of action would be to keep your expectations in check.
+
+In a down market, expecting higher returns will only demotivate you.
+
+And if you are invested in SIPs, you don’t need to time markets or decide every month where to invest.
+
+Simply continue your SIPs as before.
+
+Continuing your SIPs at the same level means buying more units when markets are down. This also brings down your cost of acquisition.
+
+What should I do if my goals have not changed and I have enough time?
+
+For example let’s say you have 7 to 10 years to achieve your goal. In this case, allow the portfolio to recover its value, and don’t disturb your SIPs.
+
+Holding on to your nerves is difficult when you see markets slipping to new lows.
+
+The very action of committing to an SIP removes the need to identify market peaks and bottoms.
+
+It also gives your portfolio the chance to benefit from the volatility.
+
+I really need money urgently. Should I redeem my SIPs?
+
+Consider redeeming investments in falling markets only in truly extreme situations.
+
+Even if you have no choice but to redeem, consider all other options first.
+
+In conclusion, to be able to reap benefits when markets do recover, it is important to remain invested.
+
+Disclaimer, Statutory Details & Risk Factors:
+
+The views expressed here in this article / video are for general information and reading purpose only and do not constitute any guidelines and recommendations on any course of action to be followed by the reader. Quantum AMC / Quantum Mutual Fund is not guaranteeing / offering / communicating any indicative yield on investments made in the scheme(s). The views are not meant to serve as a professional guide / investment advice / intended to be an offer or solicitation for the purchase or sale of any financial product or instrument or mutual fund units for the reader. The article has been prepared on the basis of publicly available information, internally developed data and other sources believed to be reliable. Whilst no action has been solicited based upon the information provided herein, due care has been taken to ensure that the facts are accurate and views given are fair and reasonable as on date. Readers of this article should rely on information/data arising out of their own investigations and advised to seek independent professional advice and arrive at an informed decision before making any investments.
+
+Mutual fund investments are subject to market risks read all scheme related documents carefully.
+
+Please visit – www.QuantumAMC.com to read scheme specific risk factors. Investors in the Scheme(s) are not being offered a guaranteed or assured rate of return and there can be no assurance that the schemes objective will be achieved and the NAV of the scheme(s) may go up and down depending upon the factors and forces affecting securities market. Investment in mutual fund units involves investment risk such as trading volumes, settlement risk, liquidity risk, default risk including possible loss of capital. Past performance of the sponsor / AMC / Mutual Fund does not indicate the future performance of the Scheme(s). Statutory Details: Quantum Mutual Fund (the Fund) has been constituted as a Trust under the Indian Trusts Act, 1882. Sponsor: Quantum Advisors Private Limited. (liability of Sponsor limited to Rs. 1,00,000/-) Trustee: Quantum Trustee Company Private Limited. Investment Manager: Quantum Asset Management Company Private Limited. The Sponsor, Trustee and Investment Manager are incorporated under the Companies Act, 1956."
+FM-355bac1237,Forum,include,behavioral:mechanics_confusion,include,,"What will happen if I don't have money in my equity wallet, and my SIP's are active?
+
+CASE:
+
+Consider I have 1 ongoing SIP and scheduled date for payment is 5th of every month.
+
+Query:
+
+If I don’t have any fund in my equity wallet, will it purchase on 5th and show negative balance in my account or it will automatically pause my SIP for that month?
+
+Can I change my SIP scheduled date later? Like from 5th of every month, can I change to 10th of every month?"
+FM-36421fb26e,Forum,include,explicit,include,,"I began investing in mid 2021 (I am a novice invester) , Here are the stocks that I am currently buying these ETFs/stocks as SIP every month ,
+
+PGINVIT
+
+ITC
+
+Niftybees
+
+Juniorbees
+
+MON100
+
+NETFIT
+
+Stocks that Im planning to add to my list of SIPs are below
+
+HDFC
+
+Granules
+
+Most of my SIPs are ETFs since I wanted to make safe bets when I started with zero knowledge last year. Would welcome constructive criticism on my list as well ."
+FM-369e8d725a,Forum,include,explicit,include,,"Thank you for the detailed answer. The point about starting early and learning properly makes sense.
+
+I wanted to clarify one thing about Direct versus Regular plans. Since I am only planning to start with around 500 to 1000 rupees per month and I am willing to do my own research, would you personally choose a Direct plan in my situation?
+
+Also, when you say to keep the money in a long term FD until I am ready to venture into mutual funds, what would you consider someone needs to understand before they are ready to start a simple long term SIP?
+
+I am mainly trying to avoid making unnecessary mistakes as a beginner rather than trying to maximise returns immediately."
+FM-3a31070d73,Forum,include,explicit,exclude,"newbie in direct equity stocks, not SIP / mutual funds","Newbie portfolio and investing style inputs
+
+Hi guys,
+
+I have recently started investing directly in equity and majority of the portfolio is built off the conviction from Valuepickr discussions. I have put up my portfolio for your review and suggestions:
+
+CERA
+21%
+
+HDFC Bank
+21%
+
+KSCL
+20%
+
+Unichem
+15%
+
+Gruh
+11%
+
+GIC Housing
+6%
+
+Monsanto
+4%
+
+Symphony
+3%
+
+Being a newbie with a rather smallish portfolio, I havent really conquered my impatience just as yet. I am just starting off with investment intuition, and wanted to know from the seniors on their investing styles at the start of the building their portfolios.
+
+* Buy and Hold vs. Rotation: Currently, as the portfolio size is small, the returns on the time/effort for even passive strategy (buy and hold, and then trying to time the buy) is quite small. At the same time, an active management (rotation between 6-7 stocks) will probably mean very high transaction costs.
+
+* Rotation between stocks: how do we time the rotations between the selected list of stocks? Do folks here rely on technical signals to sell and buy a stock? The reasoning here is that not all stocks will rise/fall at the same time, is there a way to time the gains within an already concentrated stocklist?
+
+* When to sell?: What are the typical thresholds that seniors rely on for making these decisions? What are the typical costs (or thresholds) associated with selling a stock and then rebuying it at a lower price?
+
+* Target returns: For an SIP-driven (here SIP means monthly investments on salary, not pure SIP) portfolio, what are the typical returns one should expect from an equity portfolio? Is 10% excess return over the market a good target?
+
+* Capital allocation for SIP-driven strategy: How should one allocate the monthly capital that one gets from a salary. Do we distribute it across stocks equally, or buy a few opportunistically based on target weights, or keep cash in hand for relatively larger bulk buys?"
+FM-4f2ba5dba4,Forum,include,explicit,exclude,explainer article on ELSS SIP vs lumpsum,"Should Investors Opt For An SIP or lumpsum Mode When Investing In An ELSS?
+
+An ELSS is an Equity Linked Saving Scheme that allows investors tax exemption of Rs.1.5 lakhs in a financial year and offers tax savings up to Rs. 46,800 for investors in the highest tax bracket. An ELSS is also referred to as a tax-saving fund. These funds invest a minimum of 80% of the total assets in equity and equity-related instruments. Due to its underlying equity component, it has the potential to cope better with inflation over the long term.
+
+image940×940 93.5 KB
+
+See Related: How Does ELSS Compare With Other Tax Saving Investments? - Mutual Funds & ETFs - Trading Q&A by Zerodha - All your queries on trading and markets answered (tradingqna.com)
+
+Investors can start investing using an SIP (Systematic Investment Plan) or lumpsum mode of investment. With a lumpsum, investors have the flexibility of withdrawing once the lock-in period of three-year ends. However, with an SIP, each instalment gets locked in as a separate investment for three years and one will only be able to withdraw the first SIP that will get unlocked after 3 years.
+
+How do SIP installments work in an ELSS investment?
+
+Suppose an investor invests Rs.10,000 per month in an ELSS investment. He will be able to redeem the first SIP investment after the lock-in period of 3 years is completed. The same process applies for subsequent instalments as shown below:
+
+Date of investment
+Total investment
+NAV (Assumed)
+Units Purchased
+Eligible for redemption
+
+01.04.2021
+10000
+100
+100.00
+01.04.2024
+
+02.05.2021
+10000
+95
+105.26
+02.05.2024
+
+01.06.2021
+10000
+98
+102.04
+01.06.2024
+
+01.07.2021
+10000
+102
+98.04
+01.07.2024
+
+01.08.2021
+10000
+110
+90.91
+01.08.2024
+
+The above illustration is only for explaining the lock-in period in ELSS SIP investments.
+
+On the positive side, an SIP mode of investment has several advantages:
+
+Ensures enforced discipline: With an SIP, one invests regularly and brings discipline to their investing process due to the lock-in, thereby negating any need for impulse investment decisions.
+
+Averages cost of investment: An SIP buys more units when the markets are falling and less when markets are rising, thereby averaging out the cost of investment.
+
+Does away the need to time the market : One does not need to time the right entry and exit point for one’s investments.
+
+Flexibility to invest in smaller amounts: Instead of investing Rs.150,000 at a time, you can invest in smaller amounts at regular intervals using an SIP.
+
+Regardless of whether one plans an SIP or lumpsum investment mode, what matters is time in the market. The longer one stays invested, the better the potential for risk-adjusted returns. For investors looking to achieve their long-term financial goals and save tax, these tax-saving mutual funds can be considered a good option.
+
+Mutual Fund investments are subject to market risks, read all scheme related documents carefully.
+
+Disclaimer: The views expressed here in this Article / Video are for general information and reading purpose only and do not constitute any guidelines and recommendations on any course of action to be followed by the reader. Quantum AMC / Quantum Mutual Fund is not guaranteeing / offering / communicating any indicative yield on investments made in the scheme(s). The views are not meant to serve as a professional guide / investment advice / intended to be an offer or solicitation for the purchase or sale of any financial product or instrument or mutual fund units for the reader. The Article / Video has been prepared on the basis of publicly available information, internally developed data and other sources believed to be reliable. Whilst no action has been solicited based upon the information provided herein, due care has been taken to ensure that the facts are accurate and views given are fair and reasonable as on date. Readers of the Article / Video should rely on information/data arising out of their own investigations and advised to seek independent professional advice and arrive at an informed decision before making any investments. None of the Quantum Advisors, Quantum AMC, Quantum Trustee or Quantum Mutual Fund, their Affiliates or Representative shall be liable for any direct, indirect, special, incidental, consequential, punitive or exemplary losses or damages including lost profits arising in any way on account of any action taken basis the data / information / views provided in the Article / video."
+FM-514beb421c,Forum,include,behavioral:mechanics_confusion,exclude,answer to another user's question,"To make it more clear, and to add on to what @Bhuvan mentioned, as SBI Small Cap fund is an AMC SIP fund (i.e suspended from lumpsum investment) there is no initial investment in these funds, even if you create a SIP on lets say 2nd August and mention the SIP day as 1st of every month the first order will not be placed on 2nd August rather it will be executed on the due date i.e (1st September) so from 2nd August to 31st August there wont be any deductions and you cam cancel the SIP. You can also refer to this link to know more about these funds."
+FM-517c8a283a,Forum,include,behavioral:mechanics_confusion,exclude,reply in an economics debate,"I am not clear on your question. By SIP above I meant regular monthly investments. It doesn’t have to be automated via a mandate.
+
+We have no choice but to invest in monthly / regular intervals except when we get a big chunk of money in the forum of a sale / bonus / inheritance.
+
+Please explain how it’s creating a bubble in the economy."
+FM-582c9ce2c8,Forum,include,behavioral:mechanics_confusion,include,,@nithin_kumrr for UPI Autopay will money come to my zerodha account and then get debit for SIP or without coming to Zerodha account?
+FM-5d3857e526,Forum,include,behavioral:mechanics_confusion,exclude,opinion piece on SIP returns,"SIPs have an inherent flaw as there is no intelligence involved & the averaging math doesn’t help. So, that’s the reason you see most equity MFs failed to generate good returns even in past 5 yrs.
+
+Now, many would argue & go back to 2009-2010 or 2014 when there are was a huge spike in markets which skew the entire stats but note that these are just outliers…if you understand statistics …do your data analysis.
+
+Our fund managers have hardly beaten benchmarks to generate alpha…so a good equity strategy with index funds or ETFs can help you build your capital. I’m happy to have built decent returns & IRR using my strategy. This is just a food for thought…i would not react to criticisms. I’m not saying that you should all stop SIPs etc but would love to see any forum here for creative DIY strategies."
+FM-61a1c6ce0b,Forum,include,behavioral:mechanics_confusion,include,,"AMC SIP Minimum Time
+
+I’m Willing to Do a Small Sip for Next 4 Months in ICICI Pru Tech or Tata Digital Ind Fund
+
+I’m seeing AMC Sip’s Minimum amount is 100/150rs
+
+Can i Please Know How Many Number of Amc sips should be Done in Order to Cancel/pause The Sip after 4 months
+
+And I’m finding On Amc website That sip can be Done Weekly,Monthly too
+
+Why Aren’t Zerodha’s Weekly Amc Sip’s Allowed?"
+FM-652740dbce,Forum,include,explicit,exclude,mid-cap vs large-cap stock discussion,"There are two separate points above:
+
+Comparison with mid-caps: Of course Mid caps will be more volatile than Large caps, but a larger number of mid-caps also will keel over and never recover. Information differential is one aspect of the mid-cap/large-cap story, but there’s also the fact that a smaller percentage of mid-caps recover than a Nestle, or a Sun Pharma.
+
+@nishantkandoi - No, buying a large cap when price falls 50% is not necessarily for long term, though that would work well too. It ought to be like what @Yogesh_s says above, bootstrap it once price target is reached. While this sounds dangerously like trading, this is actually pure value investing - Buy low, sell high. Growth investing on the other hand is buy companies for growth and hold on forever ( ideally). Hitting a 50% on a large cap per year sounds easy pickings, but in reality, it only happens when the market is in fear and one has the gumption to buy when everyone else is fearful! The other half of the coin also needs to be played out - sell when everyone else is greedy . Investing in Growth stocks/Midcaps on the other hand is to buy, and hold till the growth plays out, in the strategy above wrt large caps, the holding period is only till market overcomes temporary fear.
+
+Another obvious, but important point of investing in large caps is - how much of one’s wealth is one willing to invest? How big a bet can one make? If one hits just one stock a year at 50%, how much capital allocation is one willing to make? This makes a huge difference in the results. 50% compounding for even a few years can yield extra-ordinary results!
+
+@Yogesh_s is already implementing this strategy of buying blue chips and refurbishing annually so nothing new here. I recently started on this journey of investing in large caps at discount. My learning, and stomach still needs to improve on allocation of capital
+
+Cheers,
+
+Arun"
+FM-65b8662049,Forum,include,behavioral:concept_question,include,,"SIP on Coin different than a conventional SIP
+
+Hi,
+
+I would like to know in terms of profit/loss how SIP on Coin different than a conventional SIP.
+
+Lot of people is thinking its different hence not buying in zerodha. But people like me has already invested and i want to know the difference in short mathmetical form how it differs. Any difference in profit/loss compared to conventions or difference in return interest rate. Also what are the pros and cons of these 2.
+
+Thanks in advance"
+FM-6c24b683f9,Forum,include,explicit,include,,"""Initial Investment"" for SIP
+
+I am new to Coin, in fact new to entire Zerodha family. I am trying to setup a monthly SIP for one of the funds. When I click on Direct SIP button to initiate the investment, I am presented with an mandatory option of putting in an initial investment.
+
+For my selected fund it is a minimum of Rs.5000/-. And the process won’t proceed any further if I select any amount lesser than 5K there.
+
+I am not sure if this sort of mandate is applicable for SIP investments. I had not been asked for this initial investment by my current investment broker when I first started my SIP there in the same fund.
+
+Can anyone suggest if I will have to pay this initial investment to initiate the SIP?
+
+Fund: Mirae Asset India Opportunities Fund - Direct Plan - Growth"
+FM-73ef79ea1e,Forum,include,behavioral:mechanics_confusion,exclude,has used SIPs for over a year,"Trying to understand how SIPs work in Coin
+
+I’ve been using COIN SIPs for well over a year now and I’m trying to understand how exactly the SIPs work - especially the order dates.
+
+Say I have a bunch of SIPs for the 26th of every month through NACH mandates and one of them is a AMC SIP. This is what happened for the current month:
+
+All the non-AMC SIPs were placed on 24th 02:15 AM
+
+The AMC SIP was placed on 26th morning at 06:15 AM
+
+The actual money transfer for all of them happened today morning at around 09:15 AM.
+
+Could someone explain what’s happening? This doesn’t actually affect me in anyway, I’m just trying to understand what’s happening under the hood.
+
+Why are the non-AMC SIPs getting placed 2 days prior?
+
+Why does the money transfer itself waits until the date I set it up for? (26th)
+
+How is the process different for non-AMC SIPs v/s AMC SIPs? (i.e., what is the flow of the money from my account to the Mutual Fund in both the cases)?
+
+Finally - also wanted to know what happens if a NACH mandate fails on the 26th for whatever reason. Will Coin keep trying (which means I’ll keep getting NACH failure charges from my bank)?"
+FM-75460b039f,Forum,include,explicit,include,,"Thank you for sharing your experience. Your point about underestimating funds and later realizing the value of SIPs was particularly interesting.
+
+Since you have experience with both funds and direct equity I wanted to ask one more practical question. If you were 23 again today with ₹500 to ₹1,000, per month available to invest would you start with a simple Direct Index Fund while learning or would you wait until you had a much stronger understanding of investing before starting?
+
+Also looking back at your own journey what is one thing you would definitely NOT do as a beginner today"
+FM-7799610730,Forum,include,behavioral:first_installment,exclude,experienced investor moving an existing holding into an AMC SIP,"Please tell me, how will it play out? I don’t get the complete picture.
+
+Suppose I have invested 50K (including previous profit on the Mutual Fund and minus broker fee, exit load etc. the total comes out to be 50K) via SIP(periodic lumpsum), then the AMC stops accepting fresh lumpsum investment.
+
+In comes Zerodha they take our stash & start an AMC SIP, with first installment of 50K then monthly uninterruptable installment of desired amount, say, Rs X?
+
+Did I understand it right or am I dead wrong?
+
+Thanks."
+FM-871bd1fcf3,Forum,include,behavioral:mechanics_confusion,exclude,experienced user setting up ETF SIPs,"Right way to setup ETF SIPs without bank mandates
+
+As a passive trader, I’d been exposed to MF SIPs only, but recently I setup ETF SIP through Kite. I have a basket setup with X qty of the ETF, and a SIP using that basket setup to trigger twice a month. I do not have bank mandate setup. For my Coin SIP orders (for MFs), I had all of my SIPs setup to be executed on same day of the week, and every week I’d use UPI to transfer-in the money for the SIPs to execute successfully. However in case of Kite, I am not sure what I am doing wrong, as I had added the requisite amount of Funds as per the indicated Margin for the SIP (in fact about 2K more), 2 days before the ETF SIP date (on Kite) but the SIP didn’t execute and I found that it was reporting insufficient funds. Wondering if I am doing this the wrong way ? Also, doesn’t Kite send any notification or SMS of pending SIP order where funds are insufficient ? Is it expected to fail silently ?"
+FM-8e6ecfa78e,Forum,include,explicit,exclude,discussion prompt about investors in general,"Would younger investors prefer flexible investing over traditional fixed SIP commitments?
+
+Many younger investors today seem to prefer flexibility over long-term fixed commitments. Traditional SIPs are still popular, but newer investors often look for options where they can pause, increase, decrease, or switch investments based on changing income, goals, or market conditions.
+
+For salaried professionals, freelancers, and first-time investors, financial priorities can change quickly. A flexible investing approach gives them more control and reduces the pressure of fixed monthly commitments. Features like step-up SIPs, pause options, and goal-based investing are becoming more attractive because they match modern financial lifestyles better.
+
+At the same time, disciplined investing remains important. Many investors still value SIPs because they help build consistency and long-term wealth. The preference is not necessarily against SIPs — it’s more about having flexibility within the investment journey.
+
+What do you think?
+
+Would you choose a completely fixed SIP, or a more flexible investment option that adapts to your income and goals over time?"
+FM-91962fe717,Forum,include,behavioral:mechanics_confusion,exclude,"stock analysis (HDFC Bank), not investor experience","This is very true.
+
+HDFC Bank is in sweet spot. With impeccable asset quality, garnering more than 50% of card market, majority of car loan market and consistent growth. It will not be surprising that this may continue to grow at good pace for a decade.
+
+HDFC - Growth has slowed a bit due to sluggish reality market but is likely to bounce back sooner than later. Good insurance subsidiaries. Trying to create a niche in education loan thru Credia. This is going to be huge going by developed country trends.
+
+Cholamadlam - Has navigated commercial vehicle market in far better manner than Shriram Transport Finance. Shows in results. Has been up 2.5 times in 2 years where STF is at same level.
+
+AB Nuvo - Extremely cheap. Consolidated PE < 6 at CMP. Good play on insurance and MF. MF is reaching a tipping point beyond which it will grow exponentially.
+
+Gruh: Good play on loan in non-salaried. But PE/PB is much higher than HDFC bank. For a 20% grower HDFC bank is preferable.
+
+Repco: Good growth. NPA is a concern. Even larger concern is that it is a government company at end of the day run by babus.
+
+Disclaimer: First four are my core holdings"
+FM-9bec0331bd,Forum,include,explicit,include,,"Mutual Fund Investment suggestions
+
+Hi. I am planning to start investing in mutual funds now. I am a beginner and young(28). I plan on doing investments as a lump sum and SIP. I plan to invest 5 lakhs via lump sum now and SIP of 20k per month for next 3 years starting this month. I plan to diversify my investments across multiple types of funds by taking moderate risk.
+
+Lumpsum Strategy: Invest 50% across hybrid funds (Kotak Dynamic Bond Fund, Tata Balanced Advantage FUnd) and expect a return of 10-12% over a horizon of 1.5 years. And invest the rest in midcap/smallcap equity funds which have portfolio investments in FMCG, Oil,Aviation and Gold related mutual funds, expecting returns of around 15-17% annualized over a horizon of 3 to 4 years.
+
+SIP Strategy: Play safe by investing in big funds which have portfolios comprising of big, stable companies. Invest in large cap equity funds (Axis Focused 25, Axis bluechip fund, ICICI Prudential Value Discovery fund) over a horizon of 3 years and expect returns of minimum 10-12% annualized.
+
+Please comment on my strategy and any suggestions on which funds (& sectors to focus on) to be invested in for lumpsum and SIP based on the returns I am expecting, would be highly appreciated."
+FM-af992d1f00,Forum,include,behavioral:mechanics_confusion,exclude,"expert explanation of NACH mechanics (used as domain reference, not investor voice)","The pause/play button feature for SIP is unique to Zerodha MF platform only.
+
+In traditional SIP the only way to stop an SIP is to cancel the ECS/NACH mandate form that would be given to the bank to debit money every month. This would typically require you to walk into a bank. Also if any month there was no money in the bank on the SIP date, it would be treated like a cheque bounce and charge applied. Also if on two such SIP dates there was no money in the bank, the ECS/NACH mandate gets cancelled and SIP is forcibly stopped and a new NACH mandate has to be sent to the bank. Btw, a separate NACH form is required to start SIP for every different AMC/Fund house (there are 40 AMC’s in India).
+
+With Zerodha MF, we have taken away all of the above issues by introducing Pause/Play button. You can stop SIP whenever you want, start anytime you want - all without need of signing any NACH mandate forms or having to worry about paying any cheque bounce charges (if a particular month you are kind of tight to make the SIP payment).
+
+Why would anyone want to stop? Multiple reasons, maybe if you are short money in your bank account any particular month, maybe if you believe that markets have run upto excessive levels, maybe if you want to stop SIP in one fund and start another.
+
+In case of ELSS/Tax saving funds, if you stop it may not meet your yearly target that you have set for tax savings under section 80C. Otherwise all the advantages that I have mentioned above also applies for ELSS also."
+FM-b6a1f9ffae,Forum,include,behavioral:mechanics_confusion,exclude,feature request from an existing weekly-SIP user,"Feature Request for Day based Weekly SIP in Coin
+
+Hi team,
+
+Request:
+
+Users should have an option to choose day of the week to place SIP orders for Mutual funds in Coin.
+
+Current Workflow:
+
+We can place weekly SIP orders. It starts on a weekly basis from the date when we started. But this can change if there is a holiday in between.
+
+Problem I faced:
+
+I started weekly SIP for a MF on Tuesday. Every week the funds were debited on Tuesday and the order was placed on Tuesday (this was optimised).
+
+Last week because of Holiday (Holi), the money was debited on Sunday and now my weekly SIPs have shifted to Sunday. So, every week the money will debit on Sunday and the order would be placed on Monday. This is not optimal.
+
+The solution I was suggested by Customer Care was to cancel the current SIP and place the weekly SIP order again. This is a bad approach because then I need to monitor and might need to readjust it multiple times.
+
+If Zerodha can add a feature where request would be placed on specific day of the week, then we would not need to monitor this. I am okay, if because of a Holiday the funds are debited a day in advance or the order is placed next day of Holiday. But this cancelling of the SIP and restarting is what I want to avoid.
+
+Please note that I am not concerned about the returns of SIP from different days / dates. I would just like money to be debited from my account only on the day the order will be placed. This would reflect good for my bank account as well as the interests earned.
+
+Thanks
+
+Ronak"
+FM-ba9e7531bc,Forum,include,behavioral:mechanics_confusion,include,,"How to pay using the payment gateway method for AMC SIPs?
+
+I chose the payment gateway method for funding my AMC SIPs instead of the mandate. But I couldn’t figure out how to make the payment. Please help.
+
+Screenshot_2024-08-10-15-46-28-49_4e36d33e4de36f27fb3cebd15b0869811080×1813 133 KB"
+FM-c63c24d831,Forum,include,behavioral:concept_question,include,,"SIP - Detail explanation about SIP Mutual fund
+
+Can someone explain how does SIP works ? How to buy on Zerodha platform."
+FM-ca46c089cb,Forum,include,explicit,include,,"Coin SIP vs AMC SIP
+
+Hello,
+
+I am new to Zerodha. I want to understand the difference between Coin SIP and AMC SIP.
+
+I am interested in coin SIP because I can have control over SIP modification. How do I start such SIP? I tried to visit Zerodha support but it has only AMC SIP details.
+
+Also is there a tutorial/demo on how coin works in general?"
+FM-ce0dae280f,Forum,include,behavioral:mechanics_confusion,exclude,"has 12 linked SIPs, experienced","Bank mandate not able to add for AMC daily SIP
+
+I already setup bank mandate and it is active for SIP and the SIPS are going properly. In my bank mandate, I already have one zerodha SIP which is daily SIP. Totally I have 12 linked SIPs in the same bank mandate but only one is daily SIP.
+
+Now I am trying to add one more SIP which is AMC SIP and frequency is daily. But I got this error - Error placing sip order: Please select a UPI autopay for Daily frequency.
+
+I don’t know why this error occurred. If anyone knows means please tell me."
+FM-cff00db781,Forum,include,behavioral:mechanics_confusion,exclude,commentary about other investors,"Most SIP investors set it up & forget. This helps AMCs, advisors etc to pocket regular money. Some investors who monitor their portfolio panic in such continuous market fall & stop SIPs…this is a regular phenomena. All ads on MF sahi hai etc have built the euphoria during market peaks & many are sitting on losses. As investors you need to understand the market dynamics & invest in quality stocks/index funds during such oversold territories, then book regular profits. This is the only mechanism which can deliver decent returns. I see that many who had invested in smallcase & other fancy products are all in shock as we see that more than 250 stocks have hit a new 52 week low on NSE (latest news)."
+FM-df986cfd90,Forum,include,explicit,exclude,explainer article on ELSS,"How do SIPs work in ELSS mutual fund?
+
+ELSS or Equity Linked Saving Scheme, like all other tax-saving investments, comes with a mandatory lock-in period. In the case of ELSS, the lock-in period is lowest in its category of tax saving funds u/s 80C which is three years.
+
+When you are making a lumpsum investment, it is easy to understand how the lock-in period works. Suppose the amount invested is Rs. 1 lakh you can withdraw the entire amount once the investment completes three years. If you are investing via an SIP, the three-year lock-in period is applicable to every SIP instalment. That means, only the first SIP instalment will complete three-year lock-in period at the end of three years.
+
+Every SIP installment is treated as a separate investment and it will be locked for 3 years. For example, your SIP investment on 08 Jan 2021 will be locked till 08 Jan 2024 and your next SIP investment on 08 Feb 2021 will be unlocked on 08 Feb 2024 and so on.
+
+Remember, it is not mandatory to redeem your units after the lock-in period ends. It is suggested to invest in equity for the long-term (7-10 years), the lock-in should not make a difference to the way you treat your investment.
+
+Disclaimer: The views expressed here in this Article / Video are for general information and reading purpose only and do not constitute any guidelines and recommendations on any course of action to be followed by the reader. Quantum AMC / Quantum Mutual Fund is not guaranteeing / offering / communicating any indicative yield on investments made in the scheme(s). The views are not meant to serve as a professional guide / investment advice / intended to be an offer or solicitation for the purchase or sale of any financial product or instrument or mutual fund units for the reader. The Article / Video has been prepared on the basis of publicly available information, internally developed data and other sources believed to be reliable. Whilst no action has been solicited based upon the information provided herein, due care has been taken to ensure that the facts are accurate and views given are fair and reasonable as on date. Readers of the Article / Video should rely on information/data arising out of their own investigations and advised to seek independent professional advice and arrive at an informed decision before making any investments. None of the Quantum Advisors, Quantum AMC, Quantum Trustee or Quantum Mutual Fund, their Affiliates or Representative shall be liable for any direct, indirect, special, incidental, consequential, punitive or exemplary losses or damages including lost profits arising in any way on account of any action taken basis the data / information / views provided in the Article / video.
+
+Mutual Fund investments are subject to market risks, read all scheme related documents carefully."
+FM-ea282a1248,Forum,include,explicit,exclude,has run SIPs for 2-3 years,"Guidance on Mutual Fund SIP Portfolio
+
+Dear all,
+
+I am Adarsh and of 40 years now.
+
+I started SIP 2 to 3 years back and have some funds but need advice if all my SIP Funds are good enough to yield me good returns as I will invest for another 18 years.
+
+Please advice on the balance of different type of funds I should have as SIP. Please guide. also advice on the amount I should have for these SIP as my intent is to have atleast 2 crore by next 18 yrs
+
+Screenshot_20201022-1251221440×3120 887 KB"
+FM-eb217305e9,Forum,include,behavioral:mechanics_confusion,include,,"SIP of 12 months with 500Rs in ELSS wisely?
+
+Hi,
+
+I read article Do not invest in ELSS with these wrong notions
+
+In this article has line as follows: -
+
+For Example:-
+
+If I started today 1 SIP of 500Rs monthly for next 12 months ie. Dec 2018. Stop SIP.
+
+Then wait for 3 years ie Dec 2021. Then Withdraw money.
+
+So Every SIP complete 3 years which I invest in Dec 2017 to Dec 2018.
+
+Will that Strategy works?
+
+As I read following article also.
+
+Best ELSS to invest in 2017
+
+in this article has line as:-
+
+If this strategy works then I will start actual investment in ELSS for more years."
+FM-ee9db71bab,Forum,include,explicit,include,,"If I start an SIP with an initial amount of 5000 in a MF for eg - SBI small cap, what will happen if I cancel the SIP before even doing the first SIP instalment. Do I loose any money in the process. The Initial amount is sent to the AMC will they refund it?"
+FM-f454cba40a,Forum,include,behavioral:concept_question,exclude,experienced stock investor's portfolio update,"Portfolio update - exited LT Foods, Meghmani Organics (have been hearing on the bad management, last thing want to hold stocks with bad management after Yes bank story) with loss to invest further in ITC, Agrovet. Im happy that the dividend that I am going to receive from ITC for this year, would cover the losses due to these sell off.
+
+Sequent is more than double from my buy price, sold off too quickly with ~5% profit.
+
+Have been investing regularly in SIP, with only Franklin smaller companies having negative returns and Axis/Mirae/PPFAS returning ~15% profit.
+
+Overall direct equity portfolio is down ~33%."
+FM-f4676ccb86,Forum,include,behavioral:concept_question,include,,"Are all MFs via Coin SIP are Direct? Or need to select Direct or Regular?
+
+Hello All,
+
+Can someone confirm if the SIPs done via Coin are Direct or Regular?
+
+Also, if not direct how do I select Direct?
+
+Also, is there difference of Direct or Regular in COIN SIP and AMC SIP?
+
+Any help on it will be appreciated."
+FM-f48e825d5d,Forum,include,behavioral:mechanics_confusion,exclude,experienced daily/weekly SIP user,"I have tired the daily SIPs as well and that is bugged too.
+
+The eNACH mandate does not work properly with the daily SIPs - it only debits money once and then stops from the next day onwards. The support suggested to use UPI mandate - i did that too. Some days it debits money, some days it does not. Unreliable.
+
+The point you mentioned here is the problem - it should not place three orders on Monday, only one. I have weekly SIPs setup for days of the week, and few of them got triggered yesterday - even though it was a holiday yesterday.
+
+You did not really understand my problem here - i am not concerned about how many orders get placed - the issue is with orders triggering on holidays and weekends which should not get placed. This is something that is missing right now - AMC SIPs skip such dates but they are only on non-weekly modes so they do not work here."
+FM-fe212e54a4,Forum,include,behavioral:concept_question,include,,"How do I pause and resume a SIP on Coin?
+
+I was reading this article yesterday which said that you can pause and resume your SIP’s. But this seems like an extremely tough task of having to send a physical request letter to the AMC and having to wait for a month to stop. Is this the same way on Coin app and the web?"
+FM-ff00bbd0ce,Forum,include,behavioral:mechanics_confusion,exclude,market-flows commentary,"New SIPs are down to March 2017 levels while old SIP cancellations are making new highs. What does this mean for the markets?
+
+Came across this interesting chart
+
+image1484×745 78.5 KB
+
+This adds on to this post I had created a while ago. Broader markets are going through a lot of pain and the falling Mutual Fund flows do seem to be a reaction to the pain. No matter what day and age, I guess retail investors will always buy high and sell low.
+
+What do you guys think?"
+PS-0209e91625,PlayStore,include,behavioral:mechanics_confusion,exclude,"IPO mandate complaint; SIP is incidental, no first-time signal","another 1 star, have applied for multiple IPOs but haven't received for upi request for any of those from last 3 hours this app silently deducting brokerage charge even if the transaction is unsuccessful. people need to pay attention on this. why it forcefully asking to approve autopay if I don't want to, for sip installments?"
+PS-04ff53cf14,PlayStore,include,behavioral:mechanics_confusion,include,,"Have technical issue, I invested in mutual fund, payment successfull, amount deducted. Showing allotment in progress, after five days showing payment failed and after that amount refunded. That is this, what going on ?"
+PS-1d44112697,PlayStore,include,behavioral:concept_question,include,,SIP hai kya isme bhi paisa doob jata h..
+PS-3228b3c7fb,PlayStore,include,behavioral:mechanics_confusion,include,,"Worst experience. It was much better. I'm unable to setup autopay for SIP. It asks once, if you miss it, only God knows where to find it."
+PS-4bfd911de1,PlayStore,include,behavioral:mechanics_confusion,include,,"I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this."
+PS-adc4ed1d54,PlayStore,include,explicit,exclude,"matched '2 months ago'; cancelled-SIP notification bug, no first-time signal","Even after raising tickets 4 times, the issue is not yet resolved. Repeatedly getting notifications of failed sip payment, even after the the sip is cancelled 2 months ago."
+YT-02d0bc3914,YouTube,include,explicit,exclude,says they stopped a SIP but nothing indicates a first-time investor,"Lol, Already stopped SIP three months ago 😂"
+YT-04d89b7c58,YouTube,include,explicit,include,,"Hi Team
+I am new to grow...why it is not showing any time period while investing in mutual funds?"
+YT-0717631aa4,YouTube,include,behavioral:concept_question,include,,Bhai hame SIP kholna hai  kya SIP sahi hai
+YT-091789372e,YouTube,include,explicit,include,,Sir hum apne sip amounts kaha dekh skte hain application pe jaise main mera first sip start Kiya june 16 ko 2k se and 2nd 16 july ko detect hua toh 4 k dekhegay app pe? Vo kaha check kr skte h ?
+YT-0a654eb8b6,YouTube,include,behavioral:concept_question,include,,Jab Ham Koi first time SIP activate karte hain aur Google pay se auto pey karte hain aur vah mere bank se link ho jata hai agar Ham Google per band kar dete Hain To Kya Meri SIP ruk to nahin Jayegi direct bank se paise katenge na Agar Main Google per deactivate bhi kar do.
+YT-0ddb8894ab,YouTube,include,behavioral:concept_question,include,,Stocks me sip kaise kare groww me???
+YT-11d9d0ac29,YouTube,include,behavioral:concept_question,exclude,"another commenter answering a question, not investor's own experience","nhi, jab bhi aap SIP band kar denge tabhi band ho jayga, but mandate dete samay vo maximum samay ka karwate hain taaki lambe samay tak bhi aap rhna chahe to dikkat na ho"
+YT-12a02a086a,YouTube,include,explicit,include,,"Shukriya useful information,  This is what i'm waiting to learn from scratch about mutual funds...
+SUBSCRIBED"
+YT-194c098f4a,YouTube,include,explicit,include,,@Finance Boosan - I'm following u in recent times and I have seen all your videos. It's really helpful and motivated. I have started my first SIP this month. It's really bcoz of your motivation I should say. Thank you so much for your hard work.... I have to know one thing. SIP works in compounding effect in growth Option. But how it works? Will a get equivalent unit for my profit at year end? How does it really works when it comes to compounding? Can u give us with example of 10-15 years pls..
+YT-346aaf6b6f,YouTube,include,explicit,include,,U are spreading what u have learnt by your experience to common people very clearly which is very appreciatable...ur explanations are crystal clear thanks for the video.... Feel proud of todays generation younger ones.. Keep doing the best work....all the best... As a beginners l i had small doubts and fears about my money which invested in mutual funds via sip and most of them are cleared here🎉Am subscribing the channel now and awaiting for the upcoming share markets related videos... Thanks❤
+YT-3bd904df09,YouTube,include,explicit,include,,"Im 32, just started sip after watching your videos..on thinking of better late then never.. my son is now 8 and he already saved 22k cash.. me and him together seeing your videos, started sip.. now this sip which I started is for him.. Im late but my Son on time in investing.. all thanks to you bro.."
+YT-3dcb235232,YouTube,include,explicit,include,,I am 24 now and just started SIP with ₹1000 per month
+YT-4c581ec0db,YouTube,include,behavioral:mechanics_confusion,include,,"Maine 500 Ka SIP proceed kiya tha aur bank as below msg aaya hai...usme jo “1 lakh” hai woh kya hai yeh mein samjh nhi pa raha
+
+“Dear Customer, OTP TO INITIATE E-MANDATE SBI REQUEST ID TM12471*** OF RS. 100000.00 IN A/C NO. XXXX45** IS ........ DO NOT SHARE IT WITH ANYONE. -SBI”"
+YT-51aa12f654,YouTube,include,behavioral:concept_question,include,,per day sip kaise kare sir ?
+YT-58a062d811,YouTube,include,explicit,include,,I started sip this month because of you only brother thanks alot.
+YT-5d5cfade09,YouTube,include,behavioral:concept_question,include,,What is NAV price written on mutual funds
+YT-654aec4949,YouTube,include,behavioral:mechanics_confusion,include,,"Ham 
+Sbi  gold direct plan with grow 
+Me SIP kiy h 
+But mujhe pata nhi h k कितने दिनों के लिए ये रहेगा
+ओर मैने Autopay v kar Diya hai 
+Lekin ab dar lagta h 
+क्या करे sir 😢😢
+Plz help me"
+YT-686d890c18,YouTube,include,explicit,include,,"Sir Ji Namaskar 🙏 
+Im From Surat, Gujarat I'm New Subscriber ❤. 
+Me 10,000₹/ Month 40 saal ke Liye Nifty 50 me SIP karna Chahta Hu. To kya Safe Rahega ?  Aur 12 % Return Milega Ki nahi Kyuki Mera Short Term Invest nahi Long Time ke liye hai . 
+
+I wait your Reply"
+YT-6b72ee4430,YouTube,include,behavioral:mechanics_confusion,include,,Autopay me 15000 ka payment dikha raha .muje 500 ki sip krni h. Kya kre
+YT-6cad39cf19,YouTube,include,explicit,include,,"Literally was searching a video on mutual funds today morning, I’m a newbie investor 
+And my favourite finance content creator made it today 
+Literally manifested it 🙈😂♥️"
+YT-7244673a53,YouTube,include,behavioral:concept_question,include,,"1.Agar koi 1000 rs se sip karta hai 3Y  ke liye or achank bank dub jaye ya paise kahi fraud ho jaye to to paise ka insurance hota hai kya waha jaise 
+
+Stable money par 5 lakh ka insurance hai waise..
+
+
+2. Agar koi 3Y ke hisab se 1000 rs sip karta hai to usko return me kitna milega yah kaise pata kare 😮
+3. Hame agar withdrawal karna hai to hame pura nahi karna kuch pacific amount jaise 1000 sip kiya tha hoga 3 sal ke liye par 1 sal bad uska amount bad gaya hoga to wah kaha dekhe"
+YT-781475ace9,YouTube,include,behavioral:concept_question,include,,Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii.
+YT-871e2b378c,YouTube,include,behavioral:mechanics_confusion,include,,"bhai maine same procedure mai sip star Kiya tha but 5 bar sip cancel huwa , aisa kyu huwa hai bata sakte ho kya"
+YT-87f077cce3,YouTube,include,behavioral:mechanics_confusion,include,,"Hello Sir.. ok now my confusion is- 
+1. I chose one time investment for my monthly SIP fund coz of date issue, so will that amount be added into SIP amount. Right now it shows order of one time is processed. Don't want one time as well as SIP. Want that amount to be transferred in SIP somehow.
+2. How can I add monthly SIP amount without autopay ? N one of my fund has SIP of 500rs, n coz of date issue it asks for one time n it shows min.of 1000rs investment. What should I do ?"
+YT-89218aa1f2,YouTube,include,behavioral:first_installment,include,,NAV har month sip installment k according applicable hoti h ya first installment ki jo NAV h hmesha rhti h
+YT-8daa9c3e1a,YouTube,include,behavioral:mechanics_confusion,include,,"agar maine november 1 ko sip start kari aur payment kar diya 
+sip date select kare 6th of every month toh kya sip 6th nov ko phirse amount katega ??????
+ ya next mahine ke 6th date ko deduct hogi direct ?"
+YT-8f4b2874b3,YouTube,include,behavioral:mechanics_confusion,include,,Why groww is asking me to pay 15k for a SIP as initial investment can anyone explain it please. Maximum mandate.
+YT-a39c7d51fd,YouTube,include,behavioral:mechanics_confusion,include,,"Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?
+
+Ky baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h"
+YT-a6c9adf8f7,YouTube,include,explicit,include,,"I didn't know a single thing about mutual funds, this video surely helped me understand and get the idea about it.
+Thanks sir, keep doing the great work. A recent big fan  :)"
+YT-a9e8c0f6ab,YouTube,include,explicit,include,,"I have zero knowledge on SIP
+But the person showing calculations in twitter is meaningful and very simple 
+You shown in excel with whole confusing by saying he invested for 100 years 
+Stick to basic example that he shown 
+20 years 10k sip what is take home after paying whole taxes and inflation"
+YT-ac0a7a0881,YouTube,include,behavioral:concept_question,include,,Sir ..grow pe fund select karne ke bad payment mode pa jata hu to waha 15000 dikha raha hai jab ki mene sip amt 1000 dal raha hu ..kya mera 15000 katega ya sirf 1000 hi katega
+YT-b30f668b12,YouTube,include,behavioral:concept_question,include,,Bhaii daily sip kaise kare?
+YT-bb62935050,YouTube,include,explicit,include,,I am new to groww so I have a question sip bank account se cut ta ha
+YT-bf4e047361,YouTube,include,explicit,include,,"i'm 19 yo , i started my sip this month , majorly because of you , thank you boson
+and i have a doubt !! is nifty 50 , small cap 250 etc is just one entity governed by one or there are multiple version in the same such as nippon , kotak etc or am i confusing btw mutual funds and index. please guide me"
+YT-c2e22c6678,YouTube,include,explicit,include,,"Sir ,as a beginner at the age of 19 , starting the investment journey. I sawed u first in the YT shorts in someone's podcast ur way of talking and thinking for the youth stole my mind and luckily got the video to learn from u ....I searched 4-6 videos regarding SIP but no one sir explained as that u put forth"
+YT-c44d602746,YouTube,include,behavioral:concept_question,include,,Aapke kehne pr sip chalu ki Nifty 50 Main ab loss ho gya kyakre😢😢
+YT-c55a697c2d,YouTube,include,behavioral:mechanics_confusion,include,,"I have selected amount of rs.500 for SIP, but after payment when it comes for autopay it shows rs.15000/month . Why?"
+YT-c8731e68cb,YouTube,include,behavioral:concept_question,include,,Sir mera sip m set autopay option m start date 8 may 2024 to 7 may 2064 dikha rha h mne 2064 select kiya bhi nhi tha kya mera emi 2064 tkk ktega
+YT-c965a5aa73,YouTube,include,explicit,include,,"37 year old.. just started sip with 20k. And 65k lumpsum. Goal is to continue investing till 55.
+Hopefully will get back to this comment in future!"
+YT-cf09350a73,YouTube,include,explicit,include,,"Sir, i have already done first sip payment. now there is a message about need of mandate , actually i can't complete mandate procedures for more than single month.What can i do....is my money lost?"
+YT-cf814de541,YouTube,include,behavioral:first_installment,include,,Sir mera ek sawal tha pls answer it . First payment hone ke baad next sip me paisa khud dalna hoga ki apne aap bank se kat jayega??? Anyone pls answer it
+YT-d2b0e4b8de,YouTube,include,explicit,include,,Mene first sip 1000 ka kiya to usme payable amount 559 dikha raha h
+YT-d7922ee8ab,YouTube,include,explicit,include,,"I am a beginner and honestly this is the best and easy video by which I quickly understood the basic concepts of mutual fund and moreover motivated me to start investing for my family.
+Gratitude."
+YT-dcbc697f9b,YouTube,include,behavioral:concept_question,include,,Sir your detailed explanation is crystal clear and i need to invest in sip but my age is 45. Should i start on my name or my sons age is 16. Which age is better for starting sip. Please cleary doubt
+YT-e1169600b1,YouTube,include,behavioral:mechanics_confusion,include,,"Sir jb maine buy ki sip tb kt gye, 3 din bad auto pay fail ho gya , ye 2 bar kyu kaat te h"
+YT-e1cb9d58c3,YouTube,include,explicit,include,,Bro I am new to SIP. Can you please suggest some good area to invest.
+YT-e1cd70053d,YouTube,include,behavioral:concept_question,include,,Thanks brother...I am a Girl from Assam....I am a teacher..I wanted to save and invest some money... everyone told me that mutual fund is good but I was not able to understand what is mutual funds...but thnks to you brother...my fvrt YouTuber 😊
+YT-e21d33bfae,YouTube,include,explicit,include,,"Dhruv Rathee  sir I am a beginner invester  in mutual funds . For a long time I want to know about this.finally I got it by u. thanks a lot.
+Can you make A video on ""indian Tribes "" ."
+YT-f5061e8c90,YouTube,include,explicit,include,,"@Groww Hi Team,
+
+
+Thank you for clarifying the doubt around 5 years.
+
+
+However, I have a few follow up queries.
+
+
+1. As you have mentioned, there is flexibility and liquidity in investing via groww app and that we can cancel at any time, so if we do that are there any situations where there will be some kind of penalty levied or/and exit load that will be deducted?
+
+
+2. If I choose SIP per month, can I change the amount every month as per my convenience or does it have to be fixed as per my first investment amount?
+
+Also, can I switch from monthly to one time i.e. annually payment option? If no, please elaborate the situations where we can.
+
+
+3. Can we really single click cancel and bring all money to our respective savings account without any penalty as the advertisement of groww app claims?
+
+
+4. If after investing for a period,say around a year, groww app company is dissolved or gone, so will we be able to track any policy number or equivalent proof with AMC wherein we invested to ensure that our money is safe and not vanished?
+
+If yes, where can we find our security number or unique number for our safety?
+
+
+Looking forward to your detailed response on each query point I raised above.
+
+
+
+Thanks"
+YT-f623c39d56,YouTube,include,explicit,include,,What if i dont know nothing and just want to do a sip monthly best advice and company
+YT-f6c8f2912b,YouTube,include,behavioral:mechanics_confusion,include,,Sir please Tell me If I want to stop SIP how can I do
+YT-fbd7c3e67f,YouTube,include,explicit,include,,Mai 2000 sip karna chahta hoo.. But abhi starting me 15000 ka mandate ask kar raha hai.. Please reply kyu

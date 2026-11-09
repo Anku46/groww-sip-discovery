@@ -1,0 +1,101 @@
+{
+  "generatedAt": "2026-11-09T02:08:41.432Z",
+  "engine": "llm:openai/gpt-oss-120b",
+  "labels": {
+    "GS-01": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 2,
+      "rootCause": "Severity: engine 2 (The investor is confused about the displayed autopay amount but does not express frustration or intent to stop), PM 3. Rules matched: RULE_UPI_MANDATE_LIMIT."
+    },
+    "GS-02": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 2,
+      "rootCause": "Severity: engine 2 (The investor is confused and mildly frustrated but has not yet committed money or indicated intent to stop investing), PM 3. Rules matched: RULE_UPI_MANDATE_LIMIT."
+    },
+    "GS-03": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 3
+    },
+    "GS-04": {
+      "theme": "THEME_DEBIT_VISIBILITY",
+      "churnSeverity": 4,
+      "rootCause": "Severity: engine 4 (The investor's money is stuck and the status flips, causing frustration and risk of losing trust), PM 3. Rules matched: RULE_NAV_ALLOC_DELAY, RULE_INSTALLMENT_VS_DEBIT."
+    },
+    "GS-05": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4
+    },
+    "GS-06": {
+      "theme": "THEME_THIN_ONBOARDING",
+      "churnSeverity": 2
+    },
+    "GS-07": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 4,
+      "rootCause": "Theme: engine chose \"Rigid SIP controls (pause / skip / cancel / modify)\", PM says \"Autopay mandate setup & execution failures\". Rules matched: RULE_T3_LOCKOUT, RULE_MANDATE_REGEN."
+    },
+    "GS-08": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 2,
+      "rootCause": "Theme: engine chose \"Autopay mandate setup & execution failures\", PM says \"Influencer-led start on thin understanding\". Severity: engine 2 (The investor is confused but not expressing intent to stop investing), PM 3. Rules matched: none."
+    },
+    "GS-09": {
+      "theme": "THEME_MANDATE_SETUP_FAILURE",
+      "churnSeverity": 4,
+      "rootCause": "Theme: engine chose \"Autopay mandate setup & execution failures\", PM says \"Fear of loss & early negative returns\". Severity: engine 4 (Investor sees money being deducted and SIP not closing, indicating fear and stuck funds), PM 5. Rules matched: RULE_NACH_BOUNCE, RULE_NAV_CONFUSION, RULE_MANDATE_REGEN."
+    },
+    "GS-10": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2,
+      "rootCause": "Theme: engine chose \"Basic concept gaps\", PM says \"Fear of loss & early negative returns\". Rules matched: RULE_NAV_CONFUSION, RULE_SEBI_ADVISORY."
+    },
+    "GS-11": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "GS-12": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "GS-13": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 2
+    },
+    "GS-14": {
+      "theme": "THEME_ADVICE_SEEKING",
+      "churnSeverity": 1,
+      "rootCause": "Severity: engine 1 (The user is merely seeking guidance without expressing frustration or intent to stop), PM 2. Rules matched: none."
+    },
+    "GS-15": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "GS-16": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "GS-17": {
+      "theme": "THEME_CONCEPT_GAPS",
+      "churnSeverity": 2
+    },
+    "GS-18": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 2,
+      "rootCause": "Theme: engine chose \"Rigid SIP controls (pause / skip / cancel / modify)\", PM says \"Influencer-led start on thin understanding\". Rules matched: RULE_T3_LOCKOUT, RULE_NACH_BOUNCE, RULE_INSTALLMENT_VS_DEBIT."
+    },
+    "GS-19": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 2,
+      "rootCause": "Theme: engine chose \"Rigid SIP controls (pause / skip / cancel / modify)\", PM says \"Influencer-led start on thin understanding\". Rules matched: RULE_T3_LOCKOUT."
+    },
+    "GS-20": {
+      "theme": "UNCLASSIFIED",
+      "churnSeverity": 1,
+      "rootCause": "Theme: engine chose \"UNCLASSIFIED\", PM says \"Seeking fund picks & return assurances\". Rules matched: none."
+    },
+    "GS-21": {
+      "theme": "THEME_SIP_CONTROL",
+      "churnSeverity": 3
+    }
+  }
+}

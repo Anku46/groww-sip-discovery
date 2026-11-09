@@ -1,0 +1,23 @@
+/*
+ * Design tokens (Architecture.md §16). Stored as "R G B" so Tailwind can apply opacity.
+ * The Okabe-Ito base hues (#0072B2, #D55E00, #E69F00) are for fills, borders and bars. As text on
+ * dark navy, teal and vermilion fall below WCAG AA, so text uses the lighter "-text" tints.
+ */
+:root {
+  --navy: 15 23 42;            /* #0F172A page background */
+  --slate: 30 41 59;           /* #1E293B cards / panels */
+  --slate-elevated: 51 65 85;  /* #334155 drawers, raised surfaces */
+  --line: 51 65 85;            /* #334155 borders */
+
+  --ink: 248 250 252;          /* #F8FAFC primary text */
+  --ink-muted: 148 163 184;    /* #94A3B8 secondary text (7.0:1 on navy) */
+  --ink-faint: 138 151 170;    /* #8A97AA hints (≥4.8:1 on slate and navy) */
+
+  --teal: 0 114 178;           /* #0072B2 Okabe-Ito blue: positive / verified */
+  --teal-text: 86 180 233;     /* #56B4E9 Okabe-Ito sky blue (8.0:1 on navy) */
+  --vermilion: 213 94 0;       /* #D55E00 critical / high churn */
+  --vermilion-text: 255 145 77;/* #FF914D (7.3:1 on navy) */
+  --amber: 230 159 0;          /* #E69F00 warning / medium */
+  --amber-text: 240 189 70;    /* #F0BD46 (10.5:1 on navy) */
+  --green-text: 94 214 156;    /* #5ED69C success marks */
+}

@@ -1,0 +1,290 @@
+[
+  {
+    "id": "Q1",
+    "questionText": "Why do first-time investors start a SIP, and what are their expectations?",
+    "answer": "Most starts are triggered by a creator's video rather than a plan: of the 15 records from people starting on thin understanding, 8 credit a creator, often after knowing 'not a single thing' about mutual funds. Those who name a reason anchor it to a concrete goal (a child's future, investing until 55). Expectations lean towards safety and fixed outcomes — they ask whether a 12% return will come, whether SIP money is insured like a bank deposit, and whether the money can 'doob' (vanish).",
+    "supportingVerbatimIds": [
+      "YT-58a062d811",
+      "YT-3bd904df09",
+      "YT-686d890c18"
+    ],
+    "relatedThemeIds": [
+      "THEME_THIN_ONBOARDING",
+      "THEME_ADVICE_SEEKING",
+      "THEME_LOSS_FEAR"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-58a062d811",
+        "source": "YouTube",
+        "text": "I started sip this month because of you only brother thanks alot."
+      },
+      {
+        "id": "YT-3bd904df09",
+        "source": "YouTube",
+        "text": "Im 32, just started sip after watching your videos..on thinking of better late then never.. my son is now 8 and he already saved 22k cash.. me and him together seeing your videos, started sip.. now this sip which I started is for him.. Im late but my Son on time in investing.. all thanks to you bro.."
+      },
+      {
+        "id": "YT-686d890c18",
+        "source": "YouTube",
+        "text": "Sir Ji Namaskar 🙏 \nIm From Surat, Gujarat I'm New Subscriber ❤. \nMe 10,000₹/ Month 40 saal ke Liye Nifty 50 me SIP karna Chahta Hu. To kya Safe Rahega ?  Aur 12 % Return Milega Ki nahi Kyuki Mera Short Term Invest nahi Long Time ke liye hai . \n\nI wait your Reply"
+      }
+    ]
+  },
+  {
+    "id": "Q2",
+    "questionText": "How does behavior/emotion evolve from Month 1 through Month 8–12?",
+    "answer": "Before starting (29 records) the mood is curious and cautious: concept and safety questions. At setup and the first installment (33 records) it turns into money anxiety — the ₹15,000 mandate, a debit that doesn't show in the app, autopay failing — and severity peaks here (mean 3.3 for mandate setup & execution failures, 3.0 for the debit visibility gap; every mandate record is from this stage). The few later records show panic at an early loss and a wish to stop. The corpus has only 2 records clearly past month 1, so Month 5–12 behaviour cannot be described from this data; that is a gap to close with targeted collection.",
+    "supportingVerbatimIds": [
+      "YT-ac0a7a0881",
+      "YT-a39c7d51fd",
+      "YT-c44d602746"
+    ],
+    "relatedThemeIds": [
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_DEBIT_VISIBILITY",
+      "THEME_LOSS_FEAR"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-ac0a7a0881",
+        "source": "YouTube",
+        "text": "Sir ..grow pe fund select karne ke bad payment mode pa jata hu to waha 15000 dikha raha hai jab ki mene sip amt 1000 dal raha hu ..kya mera 15000 katega ya sirf 1000 hi katega"
+      },
+      {
+        "id": "YT-a39c7d51fd",
+        "source": "YouTube",
+        "text": "Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?\n\nKy baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h"
+      },
+      {
+        "id": "YT-c44d602746",
+        "source": "YouTube",
+        "text": "Aapke kehne pr sip chalu ki Nifty 50 Main ab loss ho gya kyakre😢😢"
+      }
+    ]
+  },
+  {
+    "id": "Q3",
+    "questionText": "What triggers a decision to pause, skip, or cancel?",
+    "answer": "Four triggers appear: (1) money that leaves the bank but sits 'in progress' with no explanation — one reviewer's brother never invested again after this; (2) bank bounce charges when the balance is short, combined with not being able to close the SIP; (3) an early loss on a SIP started on someone else's recommendation; (4) mandates or SIPs that keep getting cancelled during setup.",
+    "supportingVerbatimIds": [
+      "PS-4bfd911de1",
+      "YT-781475ace9",
+      "YT-c44d602746"
+    ],
+    "relatedThemeIds": [
+      "THEME_DEBIT_VISIBILITY",
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_LOSS_FEAR"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "PS-4bfd911de1",
+        "source": "PlayStore",
+        "text": "I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this."
+      },
+      {
+        "id": "YT-781475ace9",
+        "source": "YouTube",
+        "text": "Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii."
+      },
+      {
+        "id": "YT-c44d602746",
+        "source": "YouTube",
+        "text": "Aapke kehne pr sip chalu ki Nifty 50 Main ab loss ho gya kyakre😢😢"
+      }
+    ]
+  },
+  {
+    "id": "Q4",
+    "questionText": "What do users monitor in the app, and how often?",
+    "answer": "They reconcile the bank against the app: bank SMS and OTP amounts, debits to the clearing house, and whether the dashboard reflects them. After the second installment they look for a running total. They also watch returns and react when the SIP turns red. No record states a checking frequency; monitoring clusters around debit events.",
+    "supportingVerbatimIds": [
+      "YT-a39c7d51fd",
+      "YT-091789372e",
+      "YT-4c581ec0db"
+    ],
+    "relatedThemeIds": [
+      "THEME_DEBIT_VISIBILITY",
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_LOSS_FEAR"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-a39c7d51fd",
+        "source": "YouTube",
+        "text": "Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?\n\nKy baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h"
+      },
+      {
+        "id": "YT-091789372e",
+        "source": "YouTube",
+        "text": "Sir hum apne sip amounts kaha dekh skte hain application pe jaise main mera first sip start Kiya june 16 ko 2k se and 2nd 16 july ko detect hua toh 4 k dekhegay app pe? Vo kaha check kr skte h ?"
+      },
+      {
+        "id": "YT-4c581ec0db",
+        "source": "YouTube",
+        "text": "Maine 500 Ka SIP proceed kiya tha aur bank as below msg aaya hai...usme jo “1 lakh” hai woh kya hai yeh mein samjh nhi pa raha\n\n“Dear Customer, OTP TO INITIATE E-MANDATE SBI REQUEST ID TM12471*** OF RS. 100000.00 IN A/C NO. XXXX45** IS ........ DO NOT SHARE IT WITH ANYONE. -SBI”"
+      }
+    ]
+  },
+  {
+    "id": "Q5",
+    "questionText": "What inside-app elements create confusion or misplaced blame?",
+    "answer": "The UPI Autopay screen showing ₹15,000 for a ₹500–2,000 SIP (5 records) is read as the debit amount; a ₹1 lakh bank e-mandate OTP and a mandate end date of 2064 cause the same fear. 'Allotment in progress' is read as failure or fraud, and a payable amount different from the SIP amount causes doubt. Bank bounce charges are blamed on the SIP even though the bank levies them.",
+    "supportingVerbatimIds": [
+      "YT-c55a697c2d",
+      "YT-d2b0e4b8de",
+      "YT-781475ace9"
+    ],
+    "relatedThemeIds": [
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_DEBIT_VISIBILITY"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-c55a697c2d",
+        "source": "YouTube",
+        "text": "I have selected amount of rs.500 for SIP, but after payment when it comes for autopay it shows rs.15000/month . Why?"
+      },
+      {
+        "id": "YT-d2b0e4b8de",
+        "source": "YouTube",
+        "text": "Mene first sip 1000 ka kiya to usme payable amount 559 dikha raha h"
+      },
+      {
+        "id": "YT-781475ace9",
+        "source": "YouTube",
+        "text": "Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii."
+      }
+    ]
+  },
+  {
+    "id": "Q6",
+    "questionText": "What outside-app workarounds do investors use?",
+    "answer": "The main workaround is asking strangers: 50 of the 70 records are YouTube comments, mostly questions to a creator that the app or support should have answered. Others route around SIP mechanics — placing a one-time order because the SIP date didn't fit, choosing a payment-gateway method instead of a mandate, or managing autopay from a UPI app such as Google Pay without knowing whether that stops the SIP.",
+    "supportingVerbatimIds": [
+      "YT-87f077cce3",
+      "FM-ba9e7531bc",
+      "YT-0a654eb8b6"
+    ],
+    "relatedThemeIds": [
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_SIP_CONTROL"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-87f077cce3",
+        "source": "YouTube",
+        "text": "Hello Sir.. ok now my confusion is- \n1. I chose one time investment for my monthly SIP fund coz of date issue, so will that amount be added into SIP amount. Right now it shows order of one time is processed. Don't want one time as well as SIP. Want that amount to be transferred in SIP somehow.\n2. How can I add monthly SIP amount without autopay ? N one of my fund has SIP of 500rs, n coz of date issue it asks for one time n it shows min.of 1000rs investment. What should I do ?"
+      },
+      {
+        "id": "FM-ba9e7531bc",
+        "source": "Forum",
+        "text": "How to pay using the payment gateway method for AMC SIPs?\n\nI chose the payment gateway method for funding my AMC SIPs instead of the mandate. But I couldn’t figure out how to make the payment. Please help.\n\nScreenshot_2024-08-10-15-46-28-49_4e36d33e4de36f27fb3cebd15b0869811080×1813 133 KB"
+      },
+      {
+        "id": "YT-0a654eb8b6",
+        "source": "YouTube",
+        "text": "Jab Ham Koi first time SIP activate karte hain aur Google pay se auto pey karte hain aur vah mere bank se link ho jata hai agar Ham Google per band kar dete Hain To Kya Meri SIP ruk to nahin Jayegi direct bank se paise katenge na Agar Main Google per deactivate bhi kar do."
+      }
+    ]
+  },
+  {
+    "id": "Q7",
+    "questionText": "What distinguishes continuers from drop-offs?",
+    "answer": "Evidence is indirect. People signalling persistence tie the SIP to a concrete long-term goal (a son's future, investing until 55). Drop-off signals follow an early money-mechanics problem that nobody explained (money stuck 'in progress', charges with no way to close) or a loss on conviction borrowed from a creator. Goal anchoring versus an unexplained first-month shock is the clearest contrast.",
+    "supportingVerbatimIds": [
+      "YT-c965a5aa73",
+      "YT-3bd904df09",
+      "PS-4bfd911de1"
+    ],
+    "relatedThemeIds": [
+      "THEME_THIN_ONBOARDING",
+      "THEME_DEBIT_VISIBILITY",
+      "THEME_LOSS_FEAR"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-c965a5aa73",
+        "source": "YouTube",
+        "text": "37 year old.. just started sip with 20k. And 65k lumpsum. Goal is to continue investing till 55.\nHopefully will get back to this comment in future!"
+      },
+      {
+        "id": "YT-3bd904df09",
+        "source": "YouTube",
+        "text": "Im 32, just started sip after watching your videos..on thinking of better late then never.. my son is now 8 and he already saved 22k cash.. me and him together seeing your videos, started sip.. now this sip which I started is for him.. Im late but my Son on time in investing.. all thanks to you bro.."
+      },
+      {
+        "id": "PS-4bfd911de1",
+        "source": "PlayStore",
+        "text": "I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this."
+      }
+    ]
+  },
+  {
+    "id": "Q8",
+    "questionText": "Are there different churn patterns across investor segments?",
+    "answer": "Influencer-led starters (15) are mostly thin-onboarding and concept-gap records (11 of 15) and include a loss-panic case. Self-directed forum users (13) ask about control, concepts and product mechanics (pause, cancel, SIP types). Hinglish speakers are over-represented in the money-mechanics themes — 12 of the 22 mandate and debit-visibility records (55%) versus 34% of the corpus — and wrote all 5 loss-fear records. Income type and urban/semi-urban location are rarely stated (onboarding trigger unknown for 37 of 70), so those segments cannot be compared yet.",
+    "supportingVerbatimIds": [
+      "YT-bf4e047361",
+      "FM-fe212e54a4",
+      "YT-ac0a7a0881"
+    ],
+    "relatedThemeIds": [
+      "THEME_THIN_ONBOARDING",
+      "THEME_SIP_CONTROL",
+      "THEME_MANDATE_SETUP_FAILURE"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-bf4e047361",
+        "source": "YouTube",
+        "text": "i'm 19 yo , i started my sip this month , majorly because of you , thank you boson\nand i have a doubt !! is nifty 50 , small cap 250 etc is just one entity governed by one or there are multiple version in the same such as nippon , kotak etc or am i confusing btw mutual funds and index. please guide me"
+      },
+      {
+        "id": "FM-fe212e54a4",
+        "source": "Forum",
+        "text": "How do I pause and resume a SIP on Coin?\n\nI was reading this article yesterday which said that you can pause and resume your SIP’s. But this seems like an extremely tough task of having to send a physical request letter to the AMC and having to wait for a month to stop. Is this the same way on Coin app and the web?"
+      },
+      {
+        "id": "YT-ac0a7a0881",
+        "source": "YouTube",
+        "text": "Sir ..grow pe fund select karne ke bad payment mode pa jata hu to waha 15000 dikha raha hai jab ki mene sip amt 1000 dal raha hu ..kya mera 15000 katega ya sirf 1000 hi katega"
+      }
+    ]
+  },
+  {
+    "id": "Q9",
+    "questionText": "What consistent unmet needs surface across the corpus?",
+    "answer": "(1) A plain-language note at the mandate step that ₹15,000 is a ceiling, not a charge. (2) One 'where is my money' timeline from bank debit to unit allotment, with the next debit date. (3) Visible control — pause, skip, stop, what each costs, and what turning off autopay in a UPI app does. (4) Beginner explainers (NAV, direct vs regular, is my money insured) in Hinglish. (5) A SEBI-safe response to 'which fund / will I get 12%' questions that educates without recommending.",
+    "supportingVerbatimIds": [
+      "YT-6b72ee4430",
+      "YT-a39c7d51fd",
+      "FM-fe212e54a4"
+    ],
+    "relatedThemeIds": [
+      "THEME_MANDATE_SETUP_FAILURE",
+      "THEME_DEBIT_VISIBILITY",
+      "THEME_SIP_CONTROL",
+      "THEME_CONCEPT_GAPS",
+      "THEME_ADVICE_SEEKING"
+    ],
+    "supportingQuotes": [
+      {
+        "id": "YT-6b72ee4430",
+        "source": "YouTube",
+        "text": "Autopay me 15000 ka payment dikha raha .muje 500 ki sip krni h. Kya kre"
+      },
+      {
+        "id": "YT-a39c7d51fd",
+        "source": "YouTube",
+        "text": "Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?\n\nKy baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h"
+      },
+      {
+        "id": "FM-fe212e54a4",
+        "source": "Forum",
+        "text": "How do I pause and resume a SIP on Coin?\n\nI was reading this article yesterday which said that you can pause and resume your SIP’s. But this seems like an extremely tough task of having to send a physical request letter to the AMC and having to wait for a month to stop. Is this the same way on Coin app and the web?"
+      }
+    ]
+  }
+]
