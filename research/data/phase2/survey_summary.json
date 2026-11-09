@@ -1,0 +1,13 @@
+{
+  "eligibleRespondents": 27,
+  "mandateLimitConfused": 19,
+  "instalmentFailedOrPaused": 20,
+  "debitFailed": 11,
+  "failedDontKnowWhy": 5,
+  "didNothing": 13,
+  "unitsAfter3Days": 5,
+  "statusActive": 9,
+  "statusPaused": 7,
+  "statusStopped": 7,
+  "statusUnsure": 4
+}

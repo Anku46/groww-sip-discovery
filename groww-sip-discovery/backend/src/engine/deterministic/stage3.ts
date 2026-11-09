@@ -27,6 +27,11 @@ const THEME_SIGNALS: Record<ThemeId, Signal[]> = {
     [/\b(next (sip|installment|instalment)|bank (account )?se|from (my )?bank)\b/, 1],
     [/\b(money|paisa|amount)\b.{0,30}\b(flow|come|go|transfer)/, 1],
   ],
+  THEME_CASHFLOW_MISMATCH: [
+    [/\b(salary|payday|pay day|paycheck|pay cheque|income|freelanc\w*|cash ?flow|pocket money)\b/, 3],
+    [/\b(low balance|insufficient|balance (dipped|was low|low)|not enough (money|balance)|before (salary|payday)|salary (late|delayed))\b/, 3],
+    [/\b(sip date|debit date)\b/, 1],
+  ],
   THEME_LOSS_FEAR: [
     [/\b(loss|losses|at a loss|negative|in red|minus)\b|(?<![\w.])-\d+(\.\d+)? ?%/, 3],
     [/\b(doob|dub|money gets lost|lost my money|money lost|safe|insurance|insured|fraud|risk)\b/, 2],
@@ -62,6 +67,7 @@ const RULE_THEME_BOOST: Record<string, [ThemeId, number]> = {
   RULE_UPI_REVOKE: ['THEME_MANDATE_SETUP_FAILURE', 2],
   RULE_MANDATE_REGEN: ['THEME_MANDATE_SETUP_FAILURE', 2],
   RULE_NACH_BOUNCE: ['THEME_MANDATE_SETUP_FAILURE', 2],
+  RULE_SIP_BOUNCE_NO_CIBIL: ['THEME_MANDATE_SETUP_FAILURE', 2],
   RULE_NAV_ALLOC_DELAY: ['THEME_DEBIT_VISIBILITY', 2],
   RULE_INSTALLMENT_VS_DEBIT: ['THEME_DEBIT_VISIBILITY', 2],
   RULE_SEBI_ADVISORY: ['THEME_ADVICE_SEEKING', 2],
@@ -72,7 +78,7 @@ const RULE_THEME_BOOST: Record<string, [ThemeId, number]> = {
 
 // Tie-break: higher-severity themes first.
 const PRIORITY: ThemeId[] = [
-  'THEME_MANDATE_SETUP_FAILURE', 'THEME_DEBIT_VISIBILITY', 'THEME_LOSS_FEAR', 'THEME_ADVICE_SEEKING',
+  'THEME_MANDATE_SETUP_FAILURE', 'THEME_CASHFLOW_MISMATCH', 'THEME_DEBIT_VISIBILITY', 'THEME_LOSS_FEAR', 'THEME_ADVICE_SEEKING',
   'THEME_SIP_CONTROL', 'THEME_CONCEPT_GAPS', 'THEME_THIN_ONBOARDING',
 ]
 
@@ -98,7 +104,7 @@ export function scoreThemesForText(text: string, stage2: Stage2Result): { theme:
 }
 
 const SEVERITY_RULES: { severity: ChurnSeverity; re: RegExp; why: string }[] = [
-  { severity: 5, re: /\b(want to stop|wanna stop|if i want to stop|stop (my )?sip how|never invest\w*|leave it|did not get closed|closed nhi|cancel(led)? my sip|stopped my sip|band kar du|quit)\b/, why: 'wants to stop, cannot stop, or describes abandoning SIPs' },
+  { severity: 5, re: /\b(want to stop|wanna stop|if i want to stop|stop (my )?sip how|never invest\w*|leave it|did not get closed|closed nhi|cancel(led)? my sip|stopped my sip|band kar du|quit|cancelled (the )?(sip|autopay|everything|it)|i cancelled|revoked|gave up|never opened the app)\b/, why: 'wants to stop, cannot stop, or describes abandoning SIPs' },
   { severity: 4, re: /\b(is my money lost|money lost|lost my money|i feel scared|scared|dar|now at a loss|is now at a loss|loss ho|why do they deduct|twice|2 bar|\d+ (bar|times)\b.{0,20}cancel|cancel huwa|unable to (set ?up|setup)|not getting|haven'?t (got|received))/, why: 'money stuck, repeated failure, or explicit fear' },
   { severity: 3, re: /(15,?000|\b15k\b|1 lakh|100000|mandate|in progress|refunded|deducted|debited|will be deducted|payable|charges?|initial investment|fail(ed)?|worst|disappointed|not showing|frustrat|\bloss\b|\bnegative\b|(?<![\w.])-\d+(\.\d+)? ?%)/, why: 'worry about money already committed' },
 ]

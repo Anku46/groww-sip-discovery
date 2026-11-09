@@ -17,6 +17,7 @@ export function useThemeNames() {
   const byId = new Map(themes.map((t) => [t.id, t]))
   return {
     themes,
-    name: (id: string) => byId.get(id)?.name ?? (id === 'UNCLASSIFIED' ? 'Unclassified' : humanize(id)),
+    name: (id: string) =>
+      byId.get(id)?.name ?? (id === 'UNCLASSIFIED' ? 'Unclassified' : id === 'NO_FRICTION' ? 'No friction (continuing)' : humanize(id)),
   }
 }

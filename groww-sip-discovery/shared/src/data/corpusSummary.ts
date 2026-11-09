@@ -2,24 +2,41 @@
 import type { CorpusSummary } from '../types/corpus'
 
 export const CORPUS_SUMMARY: CorpusSummary = {
-  "totalRaw": 6174,
+  "totalRaw": 6214,
   "rawPerChannel": {
     "PlayStore": 467,
     "AppStore": 105,
     "YouTube": 3871,
-    "Forum": 1731
+    "Forum": 1731,
+    "Survey": 30,
+    "Interview": 10
   },
   "afterRuleFilter": 97,
   "removedOnAnalystReview": 27,
-  "totalFiltered": 70,
+  "totalFiltered": 102,
   "filteredPerChannel": {
     "PlayStore": 4,
     "AppStore": 0,
     "YouTube": 50,
-    "Forum": 16
+    "Forum": 16,
+    "Survey": 22,
+    "Interview": 10
   },
   "filteredPerLanguage": {
-    "English": 46,
+    "English": 78,
     "Hinglish": 24
-  }
+  },
+  "primaryResearch": {
+    "surveyResponses": 30,
+    "interviews": 10,
+    "included": 32,
+    "excluded": 8
+  },
+  "noFrictionRecordIds": [
+    "SV-S06",
+    "SV-S11",
+    "SV-S17",
+    "SV-S21",
+    "IN-R09"
+  ]
 }

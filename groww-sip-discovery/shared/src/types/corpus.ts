@@ -1,6 +1,7 @@
 /** Corpus, theme and discovery-answer contracts. Values come from Phase 2 research (see src/data/). */
 
-export const SOURCE_CHANNELS = ['PlayStore', 'AppStore', 'YouTube', 'Forum'] as const
+/** Public channels (scraped) plus primary research (Google Forms survey, in-depth interviews). */
+export const SOURCE_CHANNELS = ['PlayStore', 'AppStore', 'YouTube', 'Forum', 'Survey', 'Interview'] as const
 export type SourceChannel = (typeof SOURCE_CHANNELS)[number]
 
 export const LANGUAGES = ['English', 'Hinglish', 'Hindi'] as const
@@ -28,6 +29,8 @@ export type ChurnSeverity = 1 | 2 | 3 | 4 | 5
 /** Theme IDs are data, not code: they come from frictionThemes.ts. */
 export type ThemeId = string
 export const UNCLASSIFIED_THEME = 'UNCLASSIFIED'
+/** Corpus records from investors who report no friction (continuers). Counted in the corpus, in no friction theme. */
+export const NO_FRICTION_THEME = 'NO_FRICTION'
 
 export interface Verbatim {
   id: string
@@ -69,6 +72,9 @@ export interface CorpusSummary {
   totalFiltered: number
   filteredPerChannel: Partial<Record<SourceChannel, number>>
   filteredPerLanguage: Partial<Record<Language, number>>
+  primaryResearch: { surveyResponses: number; interviews: number; included: number; excluded: number }
+  /** Records with no friction (continuers); together with theme records they make up totalFiltered. */
+  noFrictionRecordIds: string[]
 }
 
 export interface SupportingQuote {

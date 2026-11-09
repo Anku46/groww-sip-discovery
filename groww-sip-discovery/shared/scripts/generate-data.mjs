@@ -23,7 +23,8 @@ function emit(file, typeImport, constName, typeAnnotation, value) {
 
 const summary = read('corpus_summary.json')
 emit('corpusSummary.ts', { names: ['CorpusSummary'], from: '../types/corpus' }, 'CORPUS_SUMMARY', 'CorpusSummary',
-  pick(summary, ['totalRaw', 'rawPerChannel', 'afterRuleFilter', 'removedOnAnalystReview', 'totalFiltered', 'filteredPerChannel', 'filteredPerLanguage']))
+  pick(summary, ['totalRaw', 'rawPerChannel', 'afterRuleFilter', 'removedOnAnalystReview', 'totalFiltered', 'filteredPerChannel',
+    'filteredPerLanguage', 'primaryResearch', 'noFrictionRecordIds']))
 
 emit('verbatims.ts', { names: ['Verbatim'], from: '../types/corpus' }, 'VERBATIMS', 'Verbatim[]', read('verbatims.json'))
 

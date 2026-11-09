@@ -1,6 +1,6 @@
 /** Display labels for enum values. */
 export const CHANNEL_LABEL: Record<string, string> = {
-  PlayStore: 'Play Store', AppStore: 'App Store', YouTube: 'YouTube', Forum: 'Forum',
+  PlayStore: 'Play Store', AppStore: 'App Store', YouTube: 'YouTube', Forum: 'Forum', Survey: 'Survey', Interview: 'Interview',
 }
 export const STAGE_LABEL: Record<string, string> = {
   PRE_START: 'Pre-start', MONTH_0_1: 'Month 0–1', MONTH_2_4: 'Month 2–4', MONTH_5_8: 'Month 5–8', MONTH_9_12: 'Month 9–12', UNKNOWN: 'Unknown',

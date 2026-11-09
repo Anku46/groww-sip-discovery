@@ -15,16 +15,16 @@ export const VERBATIMS: Verbatim[] = [
     "churnSeverity": 3
   },
   {
-    "id": "YT-4c581ec0db",
-    "source": "YouTube",
-    "language": "Hinglish",
-    "date": "2021-05-19",
-    "url": "https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgwwgAbWDs7HYuBOTdR4AaABAg",
-    "rawText": "Maine 500 Ka SIP proceed kiya tha aur bank as below msg aaya hai...usme jo “1 lakh” hai woh kya hai yeh mein samjh nhi pa raha\n\n“Dear Customer, OTP TO INITIATE E-MANDATE SBI REQUEST ID TM12471*** OF RS. 100000.00 IN A/C NO. XXXX45** IS ........ DO NOT SHARE IT WITH ANYONE. -SBI”",
-    "lifecycleStage": "MONTH_0_1",
-    "userSegment": "UNKNOWN",
-    "primaryThemeId": "THEME_MANDATE_SETUP_FAILURE",
-    "churnSeverity": 3
+    "id": "IN-R03",
+    "source": "Interview",
+    "language": "English",
+    "date": "unknown",
+    "url": "",
+    "rawText": "My salary credits around the 7th. The SIP debited on the 5th and failed twice without explanation. Groww showed a yellow warning icon with no action. I paused it out of fear.",
+    "lifecycleStage": "MONTH_2_4",
+    "userSegment": "PEER_LED",
+    "primaryThemeId": "THEME_CASHFLOW_MISMATCH",
+    "churnSeverity": 4
   },
   {
     "id": "FM-6c24b683f9",
@@ -63,28 +63,28 @@ export const VERBATIMS: Verbatim[] = [
     "churnSeverity": 4
   },
   {
-    "id": "YT-8daa9c3e1a",
-    "source": "YouTube",
-    "language": "Hinglish",
-    "date": "2024-11-04",
-    "url": "https://www.youtube.com/watch?v=MExMf8_g4CE&lc=UgxIX6ZvfxTsoNOpUyJ4AaABAg.9tCnm1XHL8cAAQkfUtZKhc",
-    "rawText": "agar maine november 1 ko sip start kari aur payment kar diya \nsip date select kare 6th of every month toh kya sip 6th nov ko phirse amount katega ??????\n ya next mahine ke 6th date ko deduct hogi direct ?",
-    "lifecycleStage": "MONTH_0_1",
-    "userSegment": "UNKNOWN",
+    "id": "IN-R04",
+    "source": "Interview",
+    "language": "English",
+    "date": "unknown",
+    "url": "",
+    "rawText": "I thought it was running automatically, but when I checked today it had stopped 2 months ago! Nobody sent an alert, no SMS, nothing. It just died silently.",
+    "lifecycleStage": "MONTH_2_4",
+    "userSegment": "PEER_LED",
     "primaryThemeId": "THEME_DEBIT_VISIBILITY",
-    "churnSeverity": 3
+    "churnSeverity": 5
   },
   {
-    "id": "YT-091789372e",
-    "source": "YouTube",
-    "language": "Hinglish",
-    "date": "2026-07-19",
-    "url": "https://www.youtube.com/watch?v=MExMf8_g4CE&lc=Ugwa23lYy3BkfNK3Uq14AaABAg",
-    "rawText": "Sir hum apne sip amounts kaha dekh skte hain application pe jaise main mera first sip start Kiya june 16 ko 2k se and 2nd 16 july ko detect hua toh 4 k dekhegay app pe? Vo kaha check kr skte h ?",
+    "id": "IN-R08",
+    "source": "Interview",
+    "language": "English",
+    "date": "unknown",
+    "url": "",
+    "rawText": "The app showed 'In Progress' for 4 days then failed quietly. There was no 'Pay this month's instalment now' button. I felt if the tech is this fragile, I shouldn't trust it with my savings.",
     "lifecycleStage": "MONTH_2_4",
-    "userSegment": "UNKNOWN",
+    "userSegment": "PEER_LED",
     "primaryThemeId": "THEME_DEBIT_VISIBILITY",
-    "churnSeverity": 2
+    "churnSeverity": 4
   },
   {
     "id": "PS-3228b3c7fb",
@@ -135,16 +135,16 @@ export const VERBATIMS: Verbatim[] = [
     "churnSeverity": 3
   },
   {
-    "id": "FM-ba9e7531bc",
-    "source": "Forum",
+    "id": "IN-R06",
+    "source": "Interview",
     "language": "English",
-    "date": "2024-08-10",
-    "url": "https://tradingqna.com/t/how-to-pay-using-the-payment-gateway-method-for-amc-sips/171612/1",
-    "rawText": "How to pay using the payment gateway method for AMC SIPs?\n\nI chose the payment gateway method for funding my AMC SIPs instead of the mandate. But I couldn’t figure out how to make the payment. Please help.\n\nScreenshot_2024-08-10-15-46-28-49_4e36d33e4de36f27fb3cebd15b0869811080×1813 133 KB",
-    "lifecycleStage": "MONTH_0_1",
-    "userSegment": "SELF_DIRECTED",
+    "date": "unknown",
+    "url": "",
+    "rawText": "HDFC sent a message saying mandate failed and charges may apply. Groww app didn't explain what happened. I went into Google Pay Autopay settings and revoked the permission immediately to stop penalties.",
+    "lifecycleStage": "MONTH_2_4",
+    "userSegment": "INFLUENCER_LED",
     "primaryThemeId": "THEME_MANDATE_SETUP_FAILURE",
-    "churnSeverity": 3
+    "churnSeverity": 5
   },
   {
     "id": "PS-1d44112697",
@@ -207,16 +207,16 @@ export const VERBATIMS: Verbatim[] = [
     "churnSeverity": 2
   },
   {
-    "id": "YT-89218aa1f2",
-    "source": "YouTube",
-    "language": "Hinglish",
-    "date": "2020-04-02",
-    "url": "https://www.youtube.com/watch?v=L0yTgTagvL8&lc=UgzsufwY6N6A--PLEVd4AaABAg",
-    "rawText": "NAV har month sip installment k according applicable hoti h ya first installment ki jo NAV h hmesha rhti h",
-    "lifecycleStage": "MONTH_0_1",
-    "userSegment": "UNKNOWN",
-    "primaryThemeId": "THEME_CONCEPT_GAPS",
-    "churnSeverity": 2
+    "id": "SV-S19",
+    "source": "Survey",
+    "language": "English",
+    "date": "2026-11-03",
+    "url": "",
+    "rawText": "Market was falling in month 4, panicked and paused. Still sitting paused because I don't know when to restart.",
+    "lifecycleStage": "MONTH_2_4",
+    "userSegment": "INFLUENCER_LED",
+    "primaryThemeId": "THEME_LOSS_FEAR",
+    "churnSeverity": 4
   },
   {
     "id": "YT-bf4e047361",
@@ -291,15 +291,15 @@ export const VERBATIMS: Verbatim[] = [
     "churnSeverity": 1
   },
   {
-    "id": "YT-e1cd70053d",
-    "source": "YouTube",
+    "id": "SV-S24",
+    "source": "Survey",
     "language": "English",
-    "date": "2024-02-10",
-    "url": "https://www.youtube.com/watch?v=8A3s9WP_7l4&lc=UgyH619TuiQPeo3ju_N4AaABAg",
-    "rawText": "Thanks brother...I am a Girl from Assam....I am a teacher..I wanted to save and invest some money... everyone told me that mutual fund is good but I was not able to understand what is mutual funds...but thnks to you brother...my fvrt YouTuber 😊",
-    "lifecycleStage": "PRE_START",
+    "date": "2026-11-04",
+    "url": "",
+    "rawText": "Freelancer income is unpredictable so automated debits don't work for me.",
+    "lifecycleStage": "MONTH_2_4",
     "userSegment": "PEER_LED",
-    "primaryThemeId": "THEME_THIN_ONBOARDING",
-    "churnSeverity": 1
+    "primaryThemeId": "THEME_CASHFLOW_MISMATCH",
+    "churnSeverity": 4
   }
 ]

@@ -40,6 +40,17 @@ THEMES = {
             "banks, NPCI and UPI apps."
         ),
     },
+    "THEME_CASHFLOW_MISMATCH": {
+        "name": "Debit date vs cash-flow mismatch",
+        "sebiRestricted": False,
+        "platformDependent": False,
+        "summary": (
+            "The SIP date doesn't match when money actually arrives: salary lands on the 7th while the SIP debits on "
+            "the 5th, the balance dips just before payday, or income is irregular (freelancers, students). The debit "
+            "bounces, the bank charges a penalty, and the investor pauses or stops. Surfaced by the primary survey "
+            "and interviews."
+        ),
+    },
     "THEME_LOSS_FEAR": {
         "name": "Fear of loss & early negative returns",
         "sebiRestricted": False,

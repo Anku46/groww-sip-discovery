@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs'
 import { describe, expect, it } from 'vitest'
 import {
   CORPUS_SUMMARY, CORRECTION_CASE_STUDIES, DISCOVERY_ANSWERS, DOMAIN_RULES, DOMAIN_RULES_BY_ID, FRICTION_THEMES, GLOSSARY,
-  GOLDEN_SET, HINGLISH_MAP, normalizeHinglish, QUICK_LOAD_CHIPS, SEBI_CONSTRAINTS_BY_ID, VERBATIMS, enforceSEBIConstraints,
+  GOLDEN_SET, HINGLISH_MAP, NO_FRICTION_THEME, normalizeHinglish, QUICK_LOAD_CHIPS, SEBI_CONSTRAINTS_BY_ID, VERBATIMS, enforceSEBIConstraints,
 } from '../src'
 
 const phase2 = (f: string) => JSON.parse(readFileSync(new URL(`../../../research/data/phase2/${f}`, import.meta.url), 'utf8'))
@@ -77,9 +77,9 @@ describe('research data files — G1–G6', () => {
       phase2('friction_themes.json').map((t: { id: string; recordCount: number }) => [t.id, t.recordCount]))
   })
   it('G4 references resolve', () => {
-    const corpusIds = new Set(FRICTION_THEMES.flatMap((t) => t.recordIds))
+    const corpusIds = new Set([...FRICTION_THEMES.flatMap((t) => t.recordIds), ...CORPUS_SUMMARY.noFrictionRecordIds])
     for (const v of VERBATIMS) {
-      expect(themeIds.has(v.primaryThemeId), v.id).toBe(true)
+      expect(themeIds.has(v.primaryThemeId) || v.primaryThemeId === NO_FRICTION_THEME, v.id).toBe(true)
       expect(corpusIds.has(v.id), v.id).toBe(true)
     }
     for (const a of DISCOVERY_ANSWERS) {
@@ -89,9 +89,11 @@ describe('research data files — G1–G6', () => {
     for (const g of GOLDEN_SET) {
       expect(themeIds.has(g.humanLabel.theme), g.id).toBe(true)
       expect(corpusIds.has(g.verbatimId), g.id).toBe(true)
-      expect(g.labelStatus).toBe('pm_confirmed')
+      expect(['pm_confirmed', 'draft_pending_pm_review']).toContain(g.labelStatus)
       expect(g.aiLabel).toBeNull()
     }
+    // The 20-item golden set required by the plan is PM-confirmed; items added later may await review.
+    expect(GOLDEN_SET.filter((g) => g.labelStatus === 'pm_confirmed').length).toBeGreaterThanOrEqual(20)
     for (const c of QUICK_LOAD_CHIPS) expect(corpusIds.has(c.verbatimId), c.label).toBe(true)
   })
   it('G4 every theme has records, severities and a golden item', () => {
@@ -106,7 +108,10 @@ describe('research data files — G1–G6', () => {
     const sum = (o: Partial<Record<string, number>>) => Object.values(o).reduce<number>((s, v) => s + (v ?? 0), 0)
     expect(sum(CORPUS_SUMMARY.filteredPerChannel)).toBe(CORPUS_SUMMARY.totalFiltered)
     expect(sum(CORPUS_SUMMARY.rawPerChannel)).toBe(CORPUS_SUMMARY.totalRaw)
-    expect(FRICTION_THEMES.reduce((s, t) => s + t.recordCount, 0)).toBe(CORPUS_SUMMARY.totalFiltered)
+    expect(FRICTION_THEMES.reduce((s, t) => s + t.recordCount, 0) + CORPUS_SUMMARY.noFrictionRecordIds.length)
+      .toBe(CORPUS_SUMMARY.totalFiltered)
+    const primary = CORPUS_SUMMARY.primaryResearch
+    expect((CORPUS_SUMMARY.filteredPerChannel.Survey ?? 0) + (CORPUS_SUMMARY.filteredPerChannel.Interview ?? 0)).toBe(primary.included)
   })
   it('G6 quick-load chips cover SEBI, Hinglish and mandate paths', () => {
     expect(QUICK_LOAD_CHIPS.some((c) => enforceSEBIConstraints(c.text).flags.length > 0)).toBe(true)

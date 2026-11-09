@@ -1,0 +1,41 @@
+﻿id,decision,reason
+SV-S01,exclude,same person as interview R01 (near-identical answer); counted once as the interview
+SV-S02,exclude,same person as interview R02 (near-identical answer); counted once as the interview
+SV-S03,exclude,same person as interview R03 (near-identical answer); counted once as the interview
+SV-S04,exclude,same person as interview R04 (near-identical answer); counted once as the interview
+SV-S08,exclude,same person as interview R08 (near-identical answer); counted once as the interview
+SV-S23,exclude,started 3 years ago; not a first-time investor
+SV-S25,exclude,never started a SIP (the form screens them out)
+SV-S26,exclude,investing since 2018; not a first-time investor
+SV-S05,include,primary_research:survey
+SV-S06,include,primary_research:survey
+SV-S07,include,primary_research:survey
+SV-S09,include,primary_research:survey
+SV-S10,include,primary_research:survey
+SV-S11,include,primary_research:survey
+SV-S12,include,primary_research:survey
+SV-S13,include,primary_research:survey
+SV-S14,include,primary_research:survey
+SV-S15,include,primary_research:survey
+SV-S16,include,primary_research:survey
+SV-S17,include,primary_research:survey
+SV-S18,include,primary_research:survey
+SV-S19,include,primary_research:survey
+SV-S20,include,primary_research:survey
+SV-S21,include,primary_research:survey
+SV-S22,include,primary_research:survey
+SV-S24,include,primary_research:survey
+SV-S27,include,primary_research:survey
+SV-S28,include,primary_research:survey
+SV-S29,include,primary_research:survey
+SV-S30,include,primary_research:survey
+IN-R01,include,primary_research:interview
+IN-R02,include,primary_research:interview
+IN-R03,include,primary_research:interview
+IN-R04,include,primary_research:interview
+IN-R05,include,primary_research:interview
+IN-R06,include,primary_research:interview
+IN-R07,include,primary_research:interview
+IN-R08,include,primary_research:interview
+IN-R09,include,primary_research:interview
+IN-R10,include,primary_research:interview

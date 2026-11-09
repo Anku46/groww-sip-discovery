@@ -6,8 +6,8 @@
   },
   {
     "label": "UPI app revocation",
-    "verbatimId": "YT-0a654eb8b6",
-    "text": "Jab Ham Koi first time SIP activate karte hain aur Google pay se auto pey karte hain aur vah mere bank se link ho jata hai agar Ham Google per band kar dete Hain To Kya Meri SIP ruk to nahin Jayegi direct bank se paise katenge na Agar Main Google per deactivate bhi kar do."
+    "verbatimId": "IN-R06",
+    "text": "HDFC sent a message saying mandate failed and charges may apply. Groww app didn't explain what happened. I went into Google Pay Autopay settings and revoked the permission immediately to stop penalties."
   },
   {
     "label": "Return frustration",
@@ -20,9 +20,9 @@
     "text": "Mene start kiya tha but muje kaffi loss ho gya. Bank se SIP  rs. Na hone per extra amout katne lga but SIP closed nhi huiii."
   },
   {
-    "label": "Money not showing",
-    "verbatimId": "YT-a39c7d51fd",
-    "text": "Bhai mene Autopay k through sip chalo k to dashboard m ni bta rh but bank s groww iccl m paisa deduct ho gya ?\n\nKy baat h groww dashboard m btyega n aage ? Aur mera groww account m jo already money th usse b remove ni hua bo seedha bank account s remove hua h"
+    "label": "Salary date mismatch",
+    "verbatimId": "IN-R03",
+    "text": "My salary credits around the 7th. The SIP debited on the 5th and failed twice without explanation. Groww showed a yellow warning icon with no action. I paused it out of fear."
   },
   {
     "label": "SEBI: return assurance",

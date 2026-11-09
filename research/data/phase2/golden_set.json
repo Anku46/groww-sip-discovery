@@ -418,5 +418,25 @@
     "pmChanged": false,
     "whyTricky": "added after PM review so Rigid SIP controls has a golden item",
     "aiLabel": null
+  },
+  {
+    "id": "GS-22",
+    "verbatimId": "IN-R03",
+    "source": "Interview",
+    "language": "English",
+    "rawText": "My salary credits around the 7th. The SIP debited on the 5th and failed twice without explanation. Groww showed a yellow warning icon with no action. I paused it out of fear.",
+    "humanLabel": {
+      "theme": "THEME_CASHFLOW_MISMATCH",
+      "churnSeverity": 4
+    },
+    "labelStatus": "draft_pending_pm_review",
+    "reviewedOn": null,
+    "analystDraft": {
+      "theme": "THEME_CASHFLOW_MISMATCH",
+      "churnSeverity": 4
+    },
+    "pmChanged": false,
+    "whyTricky": "new theme from primary research; pending PM confirmation",
+    "aiLabel": null
   }
 ]

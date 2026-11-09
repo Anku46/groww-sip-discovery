@@ -10,129 +10,134 @@ DISCOVERY_ANSWERS = [
         "id": "Q1",
         "questionText": "Why do first-time investors start a SIP, and what are their expectations?",
         "answer": (
-            "Most starts are triggered by a creator's video rather than a plan: of the 15 records from people starting on "
-            "thin understanding, 8 credit a creator, often after knowing 'not a single thing' about mutual funds. Those who name a "
-            "reason anchor it to a concrete goal (a child's future, investing until 55). Expectations lean towards "
-            "safety and fixed outcomes — they ask whether a 12% return will come, whether SIP money is insured like a "
-            "bank deposit, and whether the money can 'doob' (vanish)."
+            "Someone else starts them. In the survey of 27 first-time investors, 14 started because a friend, "
+            "colleague, office talk or family member nudged them and 9 because of a YouTube or Instagram creator; only "
+            "4 did their own research. The public corpus shows the same pull of creators. Expectations are that a SIP "
+            "is hassle-free and automatic, and often that it is safe or that a specific return will come (“will I "
+            "get 12%?”). The first time the payment plumbing shows through, that expectation breaks."
         ),
-        "supportingVerbatimIds": ["YT-58a062d811", "YT-3bd904df09", "YT-686d890c18"],
-        "relatedThemeIds": ["THEME_THIN_ONBOARDING", "THEME_ADVICE_SEEKING", "THEME_LOSS_FEAR"],
+        "supportingVerbatimIds": ["SV-S14", "YT-58a062d811", "YT-686d890c18"],
+        "relatedThemeIds": ["THEME_THIN_ONBOARDING", "THEME_ADVICE_SEEKING", "THEME_MANDATE_SETUP_FAILURE"],
     },
     {
         "id": "Q2",
         "questionText": "How does behavior/emotion evolve from Month 1 through Month 8–12?",
         "answer": (
-            "Before starting (29 records) the mood is curious and cautious: concept and safety questions. At setup and "
-            "the first installment (33 records) it turns into money anxiety — the ₹15,000 mandate, a debit that doesn't "
-            "show in the app, autopay failing — and severity peaks here (mean 3.3 for mandate setup & execution "
-            "failures, 3.0 for the debit visibility gap; every mandate record is from this stage). The few later records show panic at an early loss and a wish to stop. The corpus has only 2 "
-            "records clearly past month 1, so Month 5–12 behaviour cannot be described from this data; that is a gap "
-            "to close with targeted collection."
+            "Before starting: curious and cautious. At setup: alarm at the mandate ceiling (19 of 27 survey "
+            "respondents were thrown by a limit far above their SIP). Months 2–4 are the danger window: 22 of the 32 "
+            "survey and interview records place their decisive moment there, nearly always the first failed debit, "
+            "followed by a bank penalty, an unexplained status, or no way to retry. Emotion moves from worry to "
+            "embarrassment or panic, then to inaction: the SIP is paused, left “to sort out later”, or silently "
+            "lapses. People who get past month 4 without a failure keep running. The data still has no records from "
+            "months 9–12."
         ),
-        "supportingVerbatimIds": ["YT-ac0a7a0881", "YT-a39c7d51fd", "YT-c44d602746"],
-        "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_DEBIT_VISIBILITY", "THEME_LOSS_FEAR"],
+        "supportingVerbatimIds": ["YT-ac0a7a0881", "IN-R01", "IN-R04"],
+        "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_CASHFLOW_MISMATCH", "THEME_DEBIT_VISIBILITY"],
     },
     {
         "id": "Q3",
         "questionText": "What triggers a decision to pause, skip, or cancel?",
         "answer": (
-            "Four triggers appear: (1) money that leaves the bank but sits 'in progress' with no explanation — one "
-            "reviewer's brother never invested again after this; (2) bank bounce charges when the balance is short, "
-            "combined with not being able to close the SIP; (3) an early loss on a SIP started on someone else's "
-            "recommendation; (4) mandates or SIPs that keep getting cancelled during setup."
+            "The first failed instalment. 20 of 27 survey respondents had an instalment fail, get skipped or get "
+            "paused, and only 2 of those 20 are still active; all 7 who never had one are still running. The failure "
+            "itself usually comes from the SIP date landing before salary or a low balance, a bank-side or UPI glitch, "
+            "or a reason the investor never learns (5 of 27). What turns it into a stop is the bank's bounce charge "
+            "(₹295–450, often felt more than the instalment), no in-app explanation, and no way to pay that month. "
+            "Early flat or negative returns trigger pauses too, and money stuck “in progress” triggers cancellations."
         ),
-        "supportingVerbatimIds": ["PS-4bfd911de1", "YT-781475ace9", "YT-c44d602746"],
-        "relatedThemeIds": ["THEME_DEBIT_VISIBILITY", "THEME_MANDATE_SETUP_FAILURE", "THEME_LOSS_FEAR"],
+        "supportingVerbatimIds": ["IN-R05", "SV-S10", "IN-R03"],
+        "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_CASHFLOW_MISMATCH", "THEME_LOSS_FEAR"],
     },
     {
         "id": "Q4",
         "questionText": "What do users monitor in the app, and how often?",
         "answer": (
-            "They reconcile the bank against the app: bank SMS and OTP amounts, debits to the clearing house, and "
-            "whether the dashboard reflects them. After the second installment they look for a running total. They "
-            "also watch returns and react when the SIP turns red. No record states a checking frequency; monitoring "
-            "clusters around debit events."
+            "They reconcile bank SMS against the app around debit dates: was money taken, and did units appear? 5 of "
+            "27 survey respondents saw units more than 3 days after the debit, and in interviews that gap was read as "
+            "money lost. Outside debit days most don't watch at all, which is why a failed instalment can go "
+            "unnoticed for two months. Continuers describe a light monthly check of the portfolio."
         ),
-        "supportingVerbatimIds": ["YT-a39c7d51fd", "YT-091789372e", "YT-4c581ec0db"],
-        "relatedThemeIds": ["THEME_DEBIT_VISIBILITY", "THEME_MANDATE_SETUP_FAILURE", "THEME_LOSS_FEAR"],
+        "supportingVerbatimIds": ["IN-R02", "IN-R04", "YT-a39c7d51fd"],
+        "relatedThemeIds": ["THEME_DEBIT_VISIBILITY", "THEME_MANDATE_SETUP_FAILURE"],
     },
     {
         "id": "Q5",
         "questionText": "What inside-app elements create confusion or misplaced blame?",
         "answer": (
-            "The UPI Autopay screen showing ₹15,000 for a ₹500–2,000 SIP (5 records) is read as the debit amount; a "
-            "₹1 lakh bank e-mandate OTP and a mandate end date of 2064 cause the same fear. 'Allotment in progress' "
-            "is read as failure or fraud, and a payable amount different from the SIP amount causes doubt. Bank bounce "
-            "charges are blamed on the SIP even though the bank levies them."
+            "The autopay screen showing ₹15,000 or ₹25,000 for a ₹500–2,500 SIP (70% of survey respondents); status "
+            "labels like “Mandate Expired”, “Payment Initiated” or “In Progress” that then fail silently; a warning "
+            "icon with no action; and no button to retry or pay the missed month. Bank bounce charges are blamed on "
+            "the investment app, and support calling them “not our problem” deepens the distrust."
         ),
-        "supportingVerbatimIds": ["YT-c55a697c2d", "YT-d2b0e4b8de", "YT-781475ace9"],
+        "supportingVerbatimIds": ["IN-R07", "IN-R08", "YT-c55a697c2d"],
         "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_DEBIT_VISIBILITY"],
     },
     {
         "id": "Q6",
         "questionText": "What outside-app workarounds do investors use?",
         "answer": (
-            "The main workaround is asking strangers: 50 of the 70 records are YouTube comments, mostly questions to a "
-            "creator that the app or support should have answered. Others route around SIP mechanics — placing a "
-            "one-time order because the SIP date didn't fit, choosing a payment-gateway method instead of a mandate, "
-            "or managing autopay from a UPI app such as Google Pay without knowing whether that stops the SIP."
+            "The main escape hatch is revoking the autopay mandate directly in a UPI app (PhonePe, Google Pay or BHIM) "
+            "to stop further bounce charges, which ends the SIP without the investment app seeing a cancellation. "
+            "Others search Google, YouTube or Reddit, ask a friend or roommate (one switched to a net-banking mandate "
+            "that way), or ask creators in YouTube comments. The most common response is no response: 13 of 27 survey "
+            "respondents did nothing, and none of those 13 are still active."
         ),
-        "supportingVerbatimIds": ["YT-87f077cce3", "FM-ba9e7531bc", "YT-0a654eb8b6"],
+        "supportingVerbatimIds": ["IN-R06", "SV-S10", "SV-S18"],
         "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_SIP_CONTROL"],
     },
     {
         "id": "Q7",
         "questionText": "What distinguishes continuers from drop-offs?",
         "answer": (
-            "Evidence is indirect. People signalling persistence tie the SIP to a concrete long-term goal (a son's "
-            "future, investing until 55). Drop-off signals follow an early money-mechanics problem that nobody "
-            "explained (money stuck 'in progress', charges with no way to close) or a loss on conviction borrowed from "
-            "a creator. Goal anchoring versus an unexplained first-month shock is the clearest contrast."
+            "Continuers had someone explain the mechanics up front (a parent, sibling or senior) and picked a SIP date "
+            "a few days after salary, so the first debits went through. Every survey respondent who never had a "
+            "failed instalment is still active, and 2 of 3 on a bank e-mandate are active versus 7 of 23 on UPI "
+            "Autopay. Drop-offs hit one failure early and had no clear way to recover. The public corpus adds that "
+            "people anchored to a concrete goal talk about continuing."
         ),
-        "supportingVerbatimIds": ["YT-c965a5aa73", "YT-3bd904df09", "PS-4bfd911de1"],
-        "relatedThemeIds": ["THEME_THIN_ONBOARDING", "THEME_DEBIT_VISIBILITY", "THEME_LOSS_FEAR"],
+        "supportingVerbatimIds": ["IN-R09", "SV-S17", "IN-R01"],
+        "relatedThemeIds": ["THEME_CASHFLOW_MISMATCH", "THEME_MANDATE_SETUP_FAILURE", "THEME_THIN_ONBOARDING"],
     },
     {
         "id": "Q8",
         "questionText": "Are there different churn patterns across investor segments?",
         "answer": (
-            "Influencer-led starters (15) are mostly thin-onboarding and concept-gap records (11 of 15) and include a "
-            "loss-panic case. Self-directed forum users (13) ask about control, concepts and product mechanics (pause, "
-            "cancel, SIP types). Hinglish speakers are over-represented in the money-mechanics themes — 12 of the 22 "
-            "mandate and debit-visibility records (55%) versus 34% of the corpus — and wrote all 5 loss-fear records. Income type and "
-            "urban/semi-urban location are rarely stated (onboarding trigger unknown for 37 of 70), so those segments "
-            "cannot be compared yet."
+            "Income type matters most: neither freelancer in the survey is still active and both students struggled, "
+            "because fixed-date automatic debits don't fit irregular income. Among salaried first-jobbers 4 of 13 are "
+            "active versus 4 of 10 with 2+ years' experience. Creator-led starters fare worst (2 of 9 active) next to "
+            "friend- or colleague-led ones (3 of 10). In the public corpus, Hinglish speakers are over-represented in "
+            "mandate and debit confusion. The survey is small, so treat these as directions to test, not rates."
         ),
-        "supportingVerbatimIds": ["YT-bf4e047361", "FM-fe212e54a4", "YT-ac0a7a0881"],
-        "relatedThemeIds": ["THEME_THIN_ONBOARDING", "THEME_SIP_CONTROL", "THEME_MANDATE_SETUP_FAILURE"],
+        "supportingVerbatimIds": ["SV-S24", "SV-S28", "YT-ac0a7a0881"],
+        "relatedThemeIds": ["THEME_CASHFLOW_MISMATCH", "THEME_THIN_ONBOARDING", "THEME_MANDATE_SETUP_FAILURE"],
     },
     {
         "id": "Q9",
         "questionText": "What consistent unmet needs surface across the corpus?",
         "answer": (
-            "(1) A plain-language note at the mandate step that ₹15,000 is a ceiling, not a charge. (2) One 'where is "
-            "my money' timeline from bank debit to unit allotment, with the next debit date. (3) Visible control — "
-            "pause, skip, stop, what each costs, and what turning off autopay in a UPI app does. (4) Beginner "
-            "explainers (NAV, direct vs regular, is my money insured) in Hinglish. (5) A SEBI-safe response to 'which "
-            "fund / will I get 12%' questions that educates without recommending."
+            "(1) A plain note at setup that the mandate amount is a ceiling, not a charge. (2) A SIP date chosen "
+            "around salary day, plus a balance reminder the day before the debit. (3) A same-day “retry / pay this "
+            "month now” after a failed debit. (4) A proactive alert when an instalment fails, with the reason in "
+            "plain language instead of jargon. (5) Reassurance on who charges the bounce fee and that a SIP bounce "
+            "doesn't touch the credit score. (6) A clear unit-allotment timeline. (7) Easy pause and resume. "
+            "(8) SEBI-safe education for “which fund / how much return” questions."
         ),
-        "supportingVerbatimIds": ["YT-6b72ee4430", "YT-a39c7d51fd", "FM-fe212e54a4"],
-        "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_DEBIT_VISIBILITY", "THEME_SIP_CONTROL",
-                            "THEME_CONCEPT_GAPS", "THEME_ADVICE_SEEKING"],
+        "supportingVerbatimIds": ["IN-R01", "IN-R10", "YT-a39c7d51fd"],
+        "relatedThemeIds": ["THEME_MANDATE_SETUP_FAILURE", "THEME_CASHFLOW_MISMATCH", "THEME_DEBIT_VISIBILITY",
+                            "THEME_SIP_CONTROL", "THEME_ADVICE_SEEKING"],
     },
 ]
 
 # 2.4 — 25 representative verbatims for the Dataset Explorer.
 REPRESENTATIVE_VERBATIM_IDS = [
-    "YT-ac0a7a0881", "YT-4c581ec0db", "FM-6c24b683f9",                                   # amount shock
-    "PS-4bfd911de1", "YT-a39c7d51fd", "YT-8daa9c3e1a", "YT-091789372e",                  # debit visibility
-    "PS-3228b3c7fb", "YT-cf09350a73", "YT-781475ace9", "YT-0a654eb8b6", "FM-ba9e7531bc", # setup failure
+    "YT-ac0a7a0881", "IN-R03", "FM-6c24b683f9",                                   # amount shock
+    "PS-4bfd911de1", "YT-a39c7d51fd", "IN-R04", "IN-R08",                  # debit visibility
+    "PS-3228b3c7fb", "YT-cf09350a73", "YT-781475ace9", "YT-0a654eb8b6", "IN-R06", # setup failure
     "PS-1d44112697", "YT-c44d602746",                                                    # loss fear
     "YT-686d890c18", "FM-36421fb26e", "FM-369e8d725a",                                   # advice seeking
-    "YT-89218aa1f2", "YT-bf4e047361", "FM-f4676ccb86",                                   # concept gaps
+    "SV-S19", "YT-bf4e047361", "FM-f4676ccb86",                                   # concept gaps
     "FM-fe212e54a4", "FM-ee9db71bab", "YT-f6c8f2912b",                                   # SIP control
-    "YT-3bd904df09", "YT-e1cd70053d",                                                    # thin onboarding
+    "YT-3bd904df09", "SV-S24",                                                    # thin onboarding
 ]
 
 # 2.5 — golden set. Labels are the analyst's draft; the PM confirms or edits them (they become ground truth).
@@ -158,6 +163,7 @@ GOLDEN_SET = [
     ("FM-61a1c6ce0b", None),
     ("YT-58a062d811", None),
     ("FM-fe212e54a4", "added after PM review so Rigid SIP controls has a golden item"),
+    ("IN-R03", "new theme from primary research; pending PM confirmation"),
 ]
 
 # PM review of the golden set (2026-11-09). Items not listed here were confirmed as drafted.
@@ -238,6 +244,19 @@ CORRECTION_CASE_STUDIES = [
         "correctAnswer": "Theme: Debit & allotment visibility gap. Severity 5 (documented abandonment).",
         "domainRuleApplied": "RULE_NAV_ALLOC_DELAY",
     },
+    {
+        "id": "CC-6",
+        "verbatimId": "IN-R10",
+        "aiOutput": "Investor panicking about the investment losing value. Theme: fear of loss. Severity 3.",
+        "rejectionReason": (
+            "The panic is about the credit score, not the market: a bank SMS about a failed mandate made the "
+            "investor think a SIP bounce would hurt their CIBIL score, as a missed loan EMI would. A SIP is not a "
+            "loan, so a failed SIP debit is not reported to credit bureaus; only the bank's return charge applies. "
+            "With no reassurance in the app, the investor cancelled everything."
+        ),
+        "correctAnswer": "Theme: Autopay mandate setup & execution failures. Severity 5 (cancelled).",
+        "domainRuleApplied": "RULE_SIP_BOUNCE_NO_CIBIL",
+    },
 ]
 
 # Phase 3 hand-off: Hinglish phrases seen in the corpus -> normalised English intent.
@@ -265,10 +284,10 @@ HINGLISH_PHRASES = [
 # Phase 3 hand-off: Tab 1 quick-load chips (real verbatims covering different pipeline paths).
 QUICK_LOAD_CHIPS = [
     ("Hinglish mandate amount", "YT-ac0a7a0881"),
-    ("UPI app revocation", "YT-0a654eb8b6"),
+    ("UPI app revocation", "IN-R06"),
     ("Return frustration", "YT-c44d602746"),
     ("Bounce charges, can't stop", "YT-781475ace9"),
-    ("Money not showing", "YT-a39c7d51fd"),
+    ("Salary date mismatch", "IN-R03"),
     ("SEBI: return assurance", "YT-686d890c18"),
 ]
 
@@ -277,6 +296,7 @@ DEFAULT_ADDRESSABILITY = {
     "THEME_DEBIT_VISIBILITY": 1.0,
     "THEME_MANDATE_SETUP_FAILURE": 0.8,  # mixed: mandate-limit copy is Groww's; bank / NPCI / UPI-app plumbing is not
     "THEME_LOSS_FEAR": 1.0,
+    "THEME_CASHFLOW_MISMATCH": 1.0,
     "THEME_ADVICE_SEEKING": 0.2,         # SEBI penalty
     "THEME_CONCEPT_GAPS": 1.0,
     "THEME_SIP_CONTROL": 1.0,

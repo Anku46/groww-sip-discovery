@@ -56,9 +56,13 @@ function VerbatimRow({ v, open, onToggle, themeName }: { v: Verbatim; open: bool
               <div><dt className="label">Date</dt><dd>{v.date}</dd></div>
               <div><dt className="label">Severity</dt><dd><Badge variant={severityVariant(v.churnSeverity)}>{v.churnSeverity} / 5</Badge></dd></div>
             </dl>
-            <a href={v.url} target="_blank" rel="noreferrer noopener" className="mt-3 inline-flex items-center gap-1 text-xs text-teal-text hover:underline">
-              View source<ExternalLink className="h-3 w-3" aria-hidden="true" /><span className="sr-only">(opens in a new tab)</span>
-            </a>
+            {v.url ? (
+              <a href={v.url} target="_blank" rel="noreferrer noopener" className="mt-3 inline-flex items-center gap-1 text-xs text-teal-text hover:underline">
+                View source<ExternalLink className="h-3 w-3" aria-hidden="true" /><span className="sr-only">(opens in a new tab)</span>
+              </a>
+            ) : (
+              <p className="mt-3 text-xs text-ink-muted">Primary research ({CHANNEL_LABEL[v.source] ?? v.source}); anonymized, no public link.</p>
+            )}
           </td>
         </tr>
       )}

@@ -46,5 +46,14 @@ export const CORRECTION_CASE_STUDIES: CorrectionCaseStudy[] = [
     "correctAnswer": "Theme: Debit & allotment visibility gap. Severity 5 (documented abandonment).",
     "domainRuleApplied": "RULE_NAV_ALLOC_DELAY",
     "verbatimText": "I invest my money in index mutual fund of motilal Oswal fund 500rs but form yesterday it the dashboard shows in progress. How much time it takes. Same thing happened with my brother when he invest in sip in grow app , but same happened with him but dashboard shows in progress for. Many days to month. He leave it . And never invest in it. In my account have enough money and i don't even get message of the money deducted. So what's this."
+  },
+  {
+    "id": "CC-6",
+    "verbatimId": "IN-R10",
+    "aiOutput": "Investor panicking about the investment losing value. Theme: fear of loss. Severity 3.",
+    "rejectionReason": "The panic is about the credit score, not the market: a bank SMS about a failed mandate made the investor think a SIP bounce would hurt their CIBIL score, as a missed loan EMI would. A SIP is not a loan, so a failed SIP debit is not reported to credit bureaus; only the bank's return charge applies. With no reassurance in the app, the investor cancelled everything.",
+    "correctAnswer": "Theme: Autopay mandate setup & execution failures. Severity 5 (cancelled).",
+    "domainRuleApplied": "RULE_SIP_BOUNCE_NO_CIBIL",
+    "verbatimText": "I got an SMS saying ECS mandate failed. I panicked thinking my CIBIL credit score would drop because of an investment bounce! Groww had zero reassurance on this, so I cancelled everything immediately."
   }
 ]

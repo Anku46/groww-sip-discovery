@@ -47,6 +47,19 @@ export const DOMAIN_RULES: DomainRule[] = [
     sebiRelevance: false,
   },
   {
+    id: 'RULE_SIP_BOUNCE_NO_CIBIL',
+    name: 'A SIP bounce does not affect the credit score',
+    category: 'PAYMENT_PLUMBING',
+    summary: 'A failed SIP debit is not a missed loan payment, so it is not reported to credit bureaus.',
+    detailedExplanation:
+      'Credit scores (CIBIL and others) are built from loan and credit-card repayment history. A SIP is an ' +
+      'investment, not a loan, so a failed SIP debit is not reported to credit bureaus. The bank may still charge a ' +
+      'mandate-return fee. Investors who get a bank SMS about a failed mandate often assume it works like a bounced ' +
+      'EMI and cancel out of fear.',
+    triggerKeywords: ['cibil', 'credit score', 'credit report', 'credit rating'],
+    sebiRelevance: false,
+  },
+  {
     id: 'RULE_UPI_MANDATE_LIMIT',
     name: 'Mandate maximum amount ≠ installment amount',
     category: 'UX_CONFUSION',

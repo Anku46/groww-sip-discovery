@@ -29,10 +29,11 @@ Opportunity score per friction theme = theme share % × mean churn severity × a
 
 ## Research findings in brief
 
-- Corpus: 6,174 public records (Play Store, App Store, YouTube, TradingQ&A / ValuePickr) → 70 first-time-investor records after rule filtering and a full manual read.
-- 7 friction themes. Highest opportunity: autopay mandate setup & execution failures (e.g. a ₹500 SIP showing a ₹15,000 UPI Autopay limit), basic concept gaps, and the gap between a bank debit and what the app shows.
-- Engine vs PM golden set (21 items): deterministic 61.9% theme / 81.0% severity agreement; Groq `gpt-oss-120b` 66.7% / 71.4%.
-- Limits: few records past month 1, and onboarding segment unknown for about half the records. See [`research/data/phase2/PHASE2_REPORT.md`](research/data/phase2/PHASE2_REPORT.md).
+- Corpus: 6,174 public records (Play Store, App Store, YouTube, TradingQ&A / ValuePickr) plus primary research (a 30-response survey and 10 in-depth interviews) → 102 first-time-investor records after rule filtering, a full manual read, and screening the survey (32 from primary research; interview files anonymized).
+- 8 friction themes. Highest opportunity: autopay mandate setup & execution failures (e.g. a ₹500 SIP showing a ₹15,000 UPI Autopay limit, then a bounced debit), the gap between a bank debit and what the app shows, basic concept gaps, and a new theme from the survey: SIP debit date vs cash-flow (salary on the 7th, SIP on the 5th; freelancers and students).
+- Survey (27 first-time investors): 70% were thrown by the mandate limit; 20 had an instalment fail, get skipped or paused and only 2 of them are still active, while all 7 who never had one are; 13 did nothing when something went wrong and none of those are active.
+- Engine vs PM golden set (22 items, 21 PM-confirmed): deterministic 63.6% theme / 81.8% severity agreement.
+- Limits: still no records from months 9–12; the survey is small, so segment differences are directions to test. See [`research/data/phase2/PHASE2_REPORT.md`](research/data/phase2/PHASE2_REPORT.md).
 
 ## Run it locally
 

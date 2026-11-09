@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-09T00:02:53.629Z",
+  "generatedAt": "2026-11-09T07:31:10.759Z",
   "engine": "deterministic",
   "labels": {
     "GS-01": {
@@ -94,6 +94,10 @@
       "theme": "THEME_SIP_CONTROL",
       "churnSeverity": 2,
       "rootCause": "Severity: engine 2 (question or confusion, no sign of wanting to stop), PM 3. Rules matched: RULE_T3_LOCKOUT."
+    },
+    "GS-22": {
+      "theme": "THEME_CASHFLOW_MISMATCH",
+      "churnSeverity": 4
     }
   }
 }

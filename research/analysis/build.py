@@ -15,11 +15,13 @@ from .content import (CORRECTION_CASE_STUDIES, DEFAULT_ADDRESSABILITY, DISCOVERY
                       GOLDEN_PM_REVIEW_DATE, GOLDEN_PM_REVIEWED, GOLDEN_SET, HINGLISH_PHRASES, QUICK_LOAD_CHIPS,
                       REPRESENTATIVE_VERBATIM_IDS)
 from .first_time_filter import classify
+from .primary import NO_FRICTION, records as primary_records, survey_stats
 
 ROOT = Path(__file__).resolve().parent.parent
 RAW = ROOT / "data" / "raw" / "raw_corpus.csv"
 OUT = ROOT / "data" / "phase2"
-CHANNEL_ORDER = ["PlayStore", "AppStore", "YouTube", "Forum"]
+CHANNEL_ORDER = ["PlayStore", "AppStore", "YouTube", "Forum", "Survey", "Interview"]
+PRIMARY_RAW = {"Survey": 30, "Interview": 10}
 
 
 def _dump(name, obj):
@@ -30,7 +32,7 @@ def main():
     OUT.mkdir(parents=True, exist_ok=True)
     raw = list(csv.DictReader(RAW.open(encoding="utf-8-sig")))
     by_id = {r["id"]: r for r in raw}
-    channels = [c for c in CHANNEL_ORDER if any(r["source"] == c for r in raw)]
+    channels = [c for c in CHANNEL_ORDER if any(r["source"] == c for r in raw) or c in PRIMARY_RAW]
 
     # 2.1 filter: rules, then analyst review
     rule_reason = {r["id"]: classify(r["rawText"], r["matchedKeywords"]) for r in raw}
@@ -49,6 +51,9 @@ def main():
             "primaryThemeId": theme, "churnSeverity": sev, "lifecycleStage": stage, "userSegment": seg,
             "ageBand": age, "analystNote": note,
         })
+    # Primary research (survey + interviews), coded in analysis/primary.py
+    primary, primary_exclusions = primary_records()
+    filtered.extend(primary)
     filtered.sort(key=lambda f: (CHANNEL_ORDER.index(f["source"]), f["date"], f["id"]))
     fid = {f["id"]: f for f in filtered}
 
@@ -65,11 +70,19 @@ def main():
                         "reviewDecision": "exclude" if i in REVIEW_EXCLUSIONS else "include",
                         "reviewReason": REVIEW_EXCLUSIONS.get(i, ""), "rawText": by_id[i]["rawText"]})
 
-    raw_per = Counter(r["source"] for r in raw)
+    with (OUT / "primary_audit.csv").open("w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.DictWriter(fh, fieldnames=["id", "decision", "reason"])
+        w.writeheader()
+        for i, why in sorted(primary_exclusions.items()):
+            w.writerow({"id": i, "decision": "exclude", "reason": why})
+        for p in primary:
+            w.writerow({"id": p["id"], "decision": "include", "reason": p["inclusionReason"]})
+
+    raw_per = Counter(r["source"] for r in raw) + Counter(PRIMARY_RAW)
     filt_per = Counter(f["source"] for f in filtered)
     rule_excl = Counter(reason for ok, reason in rule_reason.values() if not ok)
     corpus_summary = {
-        "totalRaw": len(raw),
+        "totalRaw": len(raw) + sum(PRIMARY_RAW.values()),
         "rawPerChannel": {c: raw_per[c] for c in channels},
         "afterRuleFilter": len(rule_included),
         "removedOnAnalystReview": len(REVIEW_EXCLUSIONS),
@@ -78,7 +91,11 @@ def main():
         "filteredPerLanguage": dict(Counter(f["language"] for f in filtered)),
         "ruleExclusionReasons": dict(rule_excl.most_common()),
         "inclusionReasons": dict(Counter(f["inclusionReason"] for f in filtered)),
+        "primaryResearch": {"surveyResponses": PRIMARY_RAW["Survey"], "interviews": PRIMARY_RAW["Interview"],
+                            "included": len(primary), "excluded": len(primary_exclusions)},
+        "noFrictionRecordIds": [f["id"] for f in filtered if f["primaryThemeId"] == NO_FRICTION],
     }
+    _dump("survey_summary.json", survey_stats())
     _dump("corpus_summary.json", corpus_summary)
 
     # 2.2 themes
@@ -95,7 +112,7 @@ def main():
             "proposedAddressability": DEFAULT_ADDRESSABILITY[tid],
             "recordIds": [f["id"] for f in recs],
         })
-    assert sum(t["recordCount"] for t in themes) == total
+    assert sum(t["recordCount"] for t in themes) + len(corpus_summary["noFrictionRecordIds"]) == total
     themes.sort(key=lambda t: -t["recordCount"])
     _dump("friction_themes.json", themes)
 
@@ -173,8 +190,22 @@ def _write_report(cs, themes, verbatims, golden, filtered):
           "Languages in the filtered corpus: " + ", ".join(f"{k} {v}" for k, v in cs["filteredPerLanguage"].items()), "",
           "Why records were dropped by the rules: " + ", ".join(f"{k.split(':')[1]} {v}" for k, v in cs["ruleExclusionReasons"].items()), "",
           "> App Store reviews rarely say anything that marks the writer as a first-time investor, so none survive "
-          "the filter. Store reviews in general contribute little; the first-time voice in this corpus comes mostly "
-          "from YouTube comments and forum questions.", "",
+          "the filter. Store reviews in general contribute little; in the public data the first-time voice comes "
+          "mostly from YouTube comments and forum questions.", "",
+          "### Primary research (survey + interviews)", "",
+          f"- {cs['primaryResearch']['surveyResponses']} survey responses and {cs['primaryResearch']['interviews']} "
+          f"in-depth interviews; {cs['primaryResearch']['included']} records kept, {cs['primaryResearch']['excluded']} "
+          "excluded (3 not first-time investors, 5 survey answers from people who were also interviewed and are "
+          "counted once). Details in `primary_audit.csv`.",
+          "- Interview files are anonymized (names, cities, job titles and salaries removed) before entering the repo.",
+          f"- {len(cs['noFrictionRecordIds'])} respondents report no friction (continuers). They count toward the "
+          "corpus total but no friction theme.",
+          "- Some interview demographics don't match the matched survey row exactly (e.g. age band); flagged as a "
+          "data-quality note.", "",
+          "Survey answers (first-time investors, n = {eligibleRespondents}): mandate limit confused {mandateLimitConfused}; "
+          "instalment failed/skipped/paused {instalmentFailedOrPaused}; did nothing when it went wrong {didNothing}; "
+          "status today: active {statusActive}, paused {statusPaused}, stopped {statusStopped}, unsure {statusUnsure}."
+          .format(**survey_stats()), "",
           "## 2.2 Friction themes", "",
           "| Theme | Records | Share | Mean severity | SEBI | Platform-dependent | Proposed addressability | Preview score |",
           "| :-- | --: | --: | --: | :-: | :-: | --: | --: |"]
