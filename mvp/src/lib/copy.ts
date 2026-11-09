@@ -247,3 +247,6 @@ export const RECOVERY_COPY = {
   doneTitle: 'Done',
   supportSent: 'Your request has gone to support. They’ll reply in the app with what your bank says.',
 }
+
+/** Eyebrow on the status card (MVP_ImplementationPlan.md Step 7). */
+export const STATUS_CARD_LABEL = 'Is my SIP running?'

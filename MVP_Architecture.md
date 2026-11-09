@@ -37,8 +37,7 @@ mvp branch (root)
         │   ├── SetupFlow.tsx           setup + mandate review                 (exists)
         │   ├── ScheduleList.tsx                                               (exists)
         │   ├── Tracker.tsx             timeline + simulation controls         (exists, extended)
-        │   ├── SipStatusCard.tsx       "Is my SIP running?"                   (new)
-        │   ├── AlertBanner.tsx         in-app failure alert                   (new)
+        │   ├── SipStatusCard.tsx       "Is my SIP running?" + failure alert   (new)
         │   ├── FailedInstalment.tsx    what happened + actions                (new)
         │   ├── PayNow.tsx              simulated one-time payment             (new)
         │   ├── Confirmation.tsx        calm "done" screen after each action   (new)
@@ -54,7 +53,6 @@ mvp branch (root)
 flowchart TB
   subgraph UI["UI (React components)"]
     Status[SipStatusCard]
-    Banner[AlertBanner]
     Tracker[Tracker]
     Failed[FailedInstalment]
     Pay[PayNow]
@@ -188,8 +186,8 @@ The reducer is pure and tested directly, without rendering.
 ```mermaid
 flowchart LR
   Setup[Setup flow] --> Review[Mandate review] --> Done[Setup done] --> Home
-  Home["Home<br/>SipStatusCard + AlertBanner + Tracker"]
-  Home -->|banner / card: needs attention| Failed[Failed instalment]
+  Home["Home<br/>SipStatusCard + Tracker"]
+  Home -->|card: needs attention| Failed[Failed instalment]
   Failed -->|Pay this month now| Pay[PayNow] --> Home
   Failed -->|Turn autopay back on| Reconnect[MandateReview] --> Home
   Failed -->|Skip this month| Home
@@ -225,7 +223,7 @@ Navigation is a `screen` value in `App` state (`setup | home | failed | payNow |
 | Event | Properties | Fired when |
 | :-- | :-- | :-- |
 | `instalment_failed` | n, reason | an instalment resolves to `failed` |
-| `failure_alert_viewed` | n, reason | the banner renders |
+| `failure_alert_viewed` | n, reason | the status card shows the failure alert |
 | `failure_screen_viewed` | n, reason | the failed-instalment screen opens |
 | `recovery_started` | n, action | an action button is pressed |
 | `recovery_completed` | n, action | pay-now, reconnect or skip finishes |

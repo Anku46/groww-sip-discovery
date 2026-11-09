@@ -16,6 +16,7 @@ import {
   SHOW_PENDING_COMPLIANCE,
   SMS_MAX_LENGTH,
   STATUS_CARD_COPY,
+  STATUS_CARD_LABEL,
   STATUS_COPY,
   TIMELINE_COPY,
 } from '@/lib/copy'
@@ -62,6 +63,7 @@ const failureFlowCopy = [
   ...Object.values(FAILED_SCREEN_COPY).map((v) => (typeof v === 'function' ? v(1) : v)),
   ...Object.values(RECOVERY_COPY).map((v) => (typeof v === 'function' ? v(1 as never) : v)),
   RECOVERY_COPY.payButton('₹10,00,000'),
+  STATUS_CARD_LABEL,
 ]
 
 // The explainer is the one place allowed to name the term "mandate".

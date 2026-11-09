@@ -176,3 +176,21 @@ describe('appReducer', () => {
     expect(appReducer(created, { type: 'RESET' })).toBeNull()
   })
 })
+
+describe('alertInstalment and nextDebit', () => {
+  it('points at the latest failed instalment only', async () => {
+    const { alertInstalment } = await import('@/lib/sipState')
+    const failed = run(fresh(), { type: 'SIMULATE_OUTCOME', n: 1, outcome: 'insufficient_balance' })
+    expect(alertInstalment(run(failed, on(2026, 12, 4)))).toBeNull()
+    expect(alertInstalment(run(failed, on(2026, 12, 7)))).toBe(1)
+    expect(alertInstalment(run(failed, on(2027, 1, 5)))).toBeNull() // #2 debited fine
+    expect(alertInstalment(run(failed, on(2026, 12, 8), { type: 'SKIP', n: 1 }))).toBeNull()
+  })
+
+  it('skips over a skipped instalment when giving the next debit', async () => {
+    const { nextDebit } = await import('@/lib/sipState')
+    expect(iso(nextDebit(fresh()).debitDate)).toBe('2026-12-07')
+    expect(iso(nextDebit(run(fresh(), { type: 'SKIP', n: 1 })).debitDate)).toBe('2027-01-05')
+    expect(iso(nextDebit(run(fresh(), on(2026, 12, 7))).debitDate)).toBe('2027-01-05')
+  })
+})

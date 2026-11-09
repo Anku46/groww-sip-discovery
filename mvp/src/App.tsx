@@ -1,19 +1,24 @@
 import { useReducer, useState, useSyncExternalStore } from 'react'
-import { AlertBanner } from '@/components/AlertBanner'
 import { Confirmation } from '@/components/Confirmation'
 import { FailedInstalment } from '@/components/FailedInstalment'
 import { MandateReview } from '@/components/MandateReview'
 import { NotificationPreview } from '@/components/NotificationPreview'
 import { PayNow } from '@/components/PayNow'
 import { SetupFlow } from '@/components/SetupFlow'
+import { SipStatusCard } from '@/components/SipStatusCard'
 import { Tracker } from '@/components/Tracker'
 import { CONFIRMATION_COPY, RECOVERY_COPY } from '@/lib/copy'
 import type { RecoveryAction } from '@/lib/outcome'
 import { addWorkingDays, ALLOTMENT_WORKING_DAYS, formatDay, startOfDay } from '@/lib/schedule'
-import { appReducer, nextInstalment, sipReducer, upcomingInstalment } from '@/lib/sipState'
+import { appReducer, nextDebit, nextInstalment, sipReducer } from '@/lib/sipState'
 import { getEvents, subscribe } from '@/lib/track'
 
-type Screen = { name: 'home' } | { name: 'failed' } | { name: 'payNow' } | { name: 'reconnect' } | { name: 'done'; message: string }
+type Screen =
+  | { name: 'home' }
+  | { name: 'failed' }
+  | { name: 'payNow' }
+  | { name: 'reconnect'; from: 'home' | 'failed' }
+  | { name: 'done'; message: string }
 
 const TITLES: Record<Screen['name'], string> = {
   home: 'Track your instalment',
@@ -39,7 +44,7 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
       case 'pay_now':
         return setScreen({ name: 'payNow' })
       case 'reconnect_mandate':
-        return setScreen({ name: 'reconnect' })
+        return setScreen({ name: 'reconnect', from: 'failed' })
       case 'skip':
         dispatch({ type: 'SKIP', n })
         return done(CONFIRMATION_COPY.skipped(formatDay(nextInstalment(sip, n).debitDate)))
@@ -73,11 +78,11 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
             amount={sip.config.amount}
             limit={sip.limit}
             method={sip.config.method}
-            onBack={() => setScreen({ name: 'failed' })}
+            onBack={() => setScreen(screen.from === 'home' ? { name: 'home' } : { name: 'failed' })}
             onApprove={() => {
               const after = sipReducer(sip, { type: 'RECONNECT_MANDATE' })
               dispatch({ type: 'RECONNECT_MANDATE' })
-              done(CONFIRMATION_COPY.reconnected(formatDay(upcomingInstalment(after).debitDate)))
+              done(CONFIRMATION_COPY.reconnected(formatDay(nextDebit(after).debitDate)))
             }}
           />
         )
@@ -86,12 +91,13 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
       case 'home':
         return (
           <>
-            <AlertBanner
+            <SipStatusCard
               sip={sip}
-              onOpen={(i) => {
+              onOpenFailed={(i) => {
                 setN(i)
                 setScreen({ name: 'failed' })
               }}
+              onReconnect={() => setScreen({ name: 'reconnect', from: 'home' })}
             />
             <NotificationPreview sip={sip} />
             <Tracker

@@ -1,8 +1,7 @@
 import { Bell, MessageSquare } from 'lucide-react'
 import { ALERT_COPY, SMS_MAX_LENGTH } from '@/lib/copy'
 import { formatDay, formatINR } from '@/lib/schedule'
-import { getInstalment, type SipState } from '@/lib/sipState'
-import { alertInstalment } from './AlertBanner'
+import { alertInstalment, getInstalment, type SipState } from '@/lib/sipState'
 
 /**
  * Prototype-only: what the push notification and SMS would say on the day of the failure.

@@ -119,6 +119,19 @@ export function latestDue(sip: SipState): Installment | undefined {
   return [...sip.instalments].reverse().find((i) => i.debitDate <= sip.today)
 }
 
+/** The instalment to alert about: the latest one due, if it failed and hasn't been sorted out. */
+export function alertInstalment(sip: SipState): number | null {
+  const due = latestDue(sip)
+  if (!due) return null
+  return resolveState(sip, due.number).kind === 'failed' ? due.number : null
+}
+
+/** The next instalment that will actually be debited: after today and not skipped. */
+export function nextDebit(sip: SipState): Installment {
+  const found = sip.instalments.find((i) => i.debitDate > sip.today && resolveState(sip, i.number).kind !== 'skipped')
+  return found ?? nextInstalment(sip, sip.instalments.length)
+}
+
 export function sipHealth(sip: SipState): SipHealth {
   if (mandateState(sip) !== 'active') return 'autopay_off'
   const due = latestDue(sip)

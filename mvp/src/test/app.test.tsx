@@ -69,7 +69,7 @@ describe('simulating a failed debit in the tracker', () => {
     const user = await setUpAndTrack()
     await user.selectOptions(screen.getByLabelText('Simulate this debit'), reason)
     // Before the debit day nothing has failed yet.
-    expect(screen.getByRole('heading', { level: 2 })).not.toHaveTextContent(title)
+    expect(screen.queryByRole('heading', { name: title })).not.toBeInTheDocument()
 
     await user.click(screen.getByRole('button', { name: 'Go to debit day' }))
     expect(screen.getByRole('heading', { name: title })).toBeInTheDocument()

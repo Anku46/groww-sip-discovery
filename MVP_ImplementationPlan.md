@@ -155,6 +155,8 @@ This targets the 5 of 30 survey respondents who were "not sure if it's running".
 
 **Done when:** the card agrees with the tracker in every simulated scenario (tested).
 
+**As built:** the card also carries the Step 6 failure alert, so the top of the tracker says it once instead of a banner and a card repeating each other. *Needs attention* links to the failed instalment; *Autopay off* has "Turn automatic payments back on" (straight to the mandate review) plus the failure link. The separate `AlertBanner` component was removed; the push/SMS preview stays.
+
 ### Step 8: Instrument the recovery funnel
 
 **Files:** `mvp/src/lib/track.ts`, `mvp/src/App.tsx`

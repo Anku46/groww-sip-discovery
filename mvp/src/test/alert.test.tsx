@@ -5,7 +5,8 @@ import App from '@/App'
 
 // ₹500 on the 5th via UPI, set up Mon 9 Nov 2026: #1 debits Mon 7 Dec, #2 Tue 5 Jan 2027.
 const today = new Date(2026, 10, 9)
-const BANNER = "Your ₹500 SIP instalment didn't go through. No money was taken."
+// Since Step 7 the alert lives in the status card at the top of the tracker.
+const BANNER = /Your last instalment didn.t go through.*No money was taken/
 
 async function trackWith(reason: string) {
   const user = userEvent.setup()
@@ -18,7 +19,7 @@ async function trackWith(reason: string) {
 }
 
 const setToday = (value: string) => fireEvent.change(screen.getByLabelText('Pretend today is'), { target: { value } })
-const banner = () => screen.queryByRole('alert', { name: 'Instalment alert' })
+const banner = () => screen.queryByRole('alert', { name: 'SIP status' })
 const openFromBanner = (user: ReturnType<typeof userEvent.setup>) =>
   user.click(within(banner()!).getByRole('button', { name: 'See what happened' }))
 
@@ -93,7 +94,8 @@ describe('failure alert banner', () => {
   it('keeps alerting while autopay is off, on every later instalment', async () => {
     await trackWith('mandate_revoked')
     setToday('2027-01-05')
-    expect(banner()).toHaveTextContent(BANNER)
+    expect(banner()).toHaveTextContent('Automatic payments are off')
+    expect(within(banner()!).getByRole('button', { name: 'See what happened' })).toBeInTheDocument()
   })
 })
 
