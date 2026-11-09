@@ -14,6 +14,7 @@ The discovery engine's research found the first failed debit is where first-time
 - **Setup with a clear mandate review:** the monthly debit next to the autopay limit (₹500 vs ₹15,000), explaining the limit is a ceiling, not a charge.
 - **Instalment tracker:** scheduled → request sent to bank → debited → units, with "where your money is" in plain language.
 - **Failed-instalment screen:** what happened, whether money left the account (it didn't), whether the SIP is still on, and who charges any bank fee.
+- **Failure alert:** an amber in-app banner on the day an instalment fails, plus a preview of the push notification and SMS that would be sent.
 - **Recovery:** pay this month now (one-time, simulated), turn automatic payments back on, skip this month, or ask support. Each ends on a calm confirmation.
 - **Guardrails:** every line of text is tested against the SEBI checker (no fund picks, no return claims, no urgency or fear) and a payment-jargon ban.
 - **Prototype controls:** pick an instalment, move "today", and simulate any of five failure reasons.
@@ -27,7 +28,7 @@ Everything is simulated in the browser: no real payments, mandates or notificati
 | [MVP_ImplementationPlan.md](MVP_ImplementationPlan.md) | Step-by-step plan, scope, open questions |
 | [MVP_Architecture.md](MVP_Architecture.md) | Domain model, instalment lifecycle, screens, compliance, path to a real build |
 
-**Progress:** Steps 1–5 of the plan are done (outcome model, failure copy, simulation, failed-instalment screen, recovery actions). Next: failure alert, status card, event funnel, deploy.
+**Progress:** Steps 1–6 of the plan are done (outcome model, failure copy, simulation, failed-instalment screen, recovery actions, failure alert). Next: status card, event funnel, deploy.
 
 ## Run it
 

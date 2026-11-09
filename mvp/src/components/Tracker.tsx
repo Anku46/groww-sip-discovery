@@ -6,6 +6,7 @@ import { formatDay, parseLocalDate, toInputDate } from '@/lib/schedule'
 import { getInstalment, nextInstalment, resolveState, type SipAction, type SipState } from '@/lib/sipState'
 import { statusSummary, timelineSteps, type StepStatus } from '@/lib/timeline'
 import { track } from '@/lib/track'
+import { alertInstalment } from './AlertBanner'
 
 /** Prototype-only labels for the simulation control (not investor-facing copy). */
 const OUTCOME_LABELS: Record<'success' | FailureReason, string> = {
@@ -132,7 +133,8 @@ export function Tracker({ sip, dispatch, n, onSelect, onOpenFailed }: TrackerPro
         <p className="label">Where your money is</p>
         <h2 className={`mt-1 text-lg font-semibold ${summary.kind === 'failed' ? 'text-amber-text' : ''}`}>{summary.title}</h2>
         <p className="mt-0.5 text-sm text-ink-muted">{summary.body}</p>
-        {state.kind === 'failed' && (
+        {/* The alert banner already links to the latest failure; don't repeat its button here. */}
+        {state.kind === 'failed' && alertInstalment(sip) !== n && (
           <button type="button" className="btn-primary mt-3 w-full" onClick={() => onOpenFailed(n)}>
             {FAILED_SCREEN_COPY.open}
             <ArrowRight className="h-4 w-4" aria-hidden />

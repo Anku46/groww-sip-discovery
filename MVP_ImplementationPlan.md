@@ -138,7 +138,9 @@ Layout, top to bottom:
 - In-app banner at the top of the tracker when the current instalment has failed, linking to the failed-instalment screen.
 - A preview panel showing the push and SMS text that would be sent on the day of failure (prototype only, labelled as a preview).
 
-**Done when:** the banner appears for any failed instalment and disappears once it is paid, skipped or autopay is reconnected.
+**Done when:** the banner appears when the latest due instalment has failed and disappears once it is paid or skipped, or once a later instalment debits successfully.
+
+**As built:** the banner is about the latest due instalment only, so it never stacks. Reconnecting autopay doesn't clear it on its own: the missed month is still unpaid, so the banner stays until that month is paid or skipped (matches `sipHealth`). When the banner covers the selected instalment, the tracker hides its own "See what happened" button so the action appears once.
 
 ### Step 7: Add a "Is my SIP running?" status card
 

@@ -1,7 +1,9 @@
 import { useReducer, useState, useSyncExternalStore } from 'react'
+import { AlertBanner } from '@/components/AlertBanner'
 import { Confirmation } from '@/components/Confirmation'
 import { FailedInstalment } from '@/components/FailedInstalment'
 import { MandateReview } from '@/components/MandateReview'
+import { NotificationPreview } from '@/components/NotificationPreview'
 import { PayNow } from '@/components/PayNow'
 import { SetupFlow } from '@/components/SetupFlow'
 import { Tracker } from '@/components/Tracker'
@@ -84,6 +86,14 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
       case 'home':
         return (
           <>
+            <AlertBanner
+              sip={sip}
+              onOpen={(i) => {
+                setN(i)
+                setScreen({ name: 'failed' })
+              }}
+            />
+            <NotificationPreview sip={sip} />
             <Tracker
               sip={sip}
               dispatch={dispatch}
