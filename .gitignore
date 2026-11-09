@@ -1,0 +1,12 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vercel/
+*.log
+
+# Secrets — never commit
+.env
+.env.*
+
+# Local tooling
+.claude/

@@ -1,0 +1,23 @@
+@import '@fontsource/inter/400.css';
+@import '@fontsource/inter/500.css';
+@import '@fontsource/inter/600.css';
+@import './tokens.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { color-scheme: dark; }
+  body { @apply bg-navy text-ink font-sans antialiased; font-size: 15px; }
+  :focus-visible { @apply outline-none ring-2 ring-teal-text ring-offset-2 ring-offset-navy; }
+}
+
+@layer components {
+  .card { @apply rounded-lg border border-line bg-slate; }
+  .btn { @apply inline-flex items-center justify-center gap-2 rounded-md px-4 py-2.5 text-sm font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50; }
+  .btn-primary { @apply btn bg-teal text-white hover:bg-teal/85; }
+  .btn-ghost { @apply btn border border-line text-ink hover:bg-slate-elevated; }
+  .label { @apply text-xs font-medium uppercase tracking-wide text-ink-muted; }
+  .input { @apply w-full rounded-md border border-line bg-navy px-3 py-2.5 text-ink placeholder:text-ink-faint focus:border-teal-text; }
+}
