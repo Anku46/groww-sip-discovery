@@ -169,7 +169,7 @@ GOLDEN_SET = [
 # PM review of the golden set (2026-11-09). Items not listed here were confirmed as drafted.
 # golden id: (theme, churnSeverity) — this is the ground truth.
 GOLDEN_PM_REVIEW_DATE = "2026-11-09"
-GOLDEN_PM_REVIEWED = {f"GS-{n:02d}" for n in range(1, 22)}  # GS-21 added after the first review, confirmed separately
+GOLDEN_PM_REVIEWED = {f"GS-{n:02d}" for n in range(1, 23)}  # GS-21 and GS-22 were added later and confirmed separately
 GOLDEN_PM_OVERRIDES = {
     "GS-01": ("THEME_MANDATE_SETUP_FAILURE", 3),
     "GS-02": ("THEME_MANDATE_SETUP_FAILURE", 3),

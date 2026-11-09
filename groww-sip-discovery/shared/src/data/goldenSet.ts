@@ -432,8 +432,8 @@ export const GOLDEN_SET: GoldenSetItem[] = [
       "theme": "THEME_CASHFLOW_MISMATCH",
       "churnSeverity": 4
     },
-    "labelStatus": "draft_pending_pm_review",
-    "reviewedOn": null,
+    "labelStatus": "pm_confirmed",
+    "reviewedOn": "2026-11-09",
     "analystDraft": {
       "theme": "THEME_CASHFLOW_MISMATCH",
       "churnSeverity": 4

@@ -131,7 +131,7 @@ Evidence: `IN-R01`, `IN-R10`, `YT-a39c7d51fd`
 
 ## 2.5 Golden set
 
-22 items in `golden_set.json`. 21 were PM-confirmed on 2026-11-09 (11 relabelled from the analyst draft); the corpus coding and correction cases were then aligned to those labels, which merged *Mandate & upfront amount shock* into *Autopay mandate setup & execution failures*. The PM label is the ground truth; the analyst draft is kept in `analystDraft`. AI labels stay empty until Phase 4.
+22 items in `golden_set.json`. 22 were PM-confirmed on 2026-11-09 (11 relabelled from the analyst draft); the corpus coding and correction cases were then aligned to those labels, which merged *Mandate & upfront amount shock* into *Autopay mandate setup & execution failures*. The PM label is the ground truth; the analyst draft is kept in `analystDraft`. AI labels stay empty until Phase 4.
 
 | # | Verbatim | Theme | Severity | Status | Analyst draft, if different |
 | :-- | :-- | :-- | :-: | :-- | :-- |
@@ -156,7 +156,7 @@ Evidence: `IN-R01`, `IN-R10`, `YT-a39c7d51fd`
 | GS-19 | `FM-61a1c6ce0b` | Influencer-led start on thin understanding | 2 | PM-confirmed | Influencer-led start on thin understanding, 2 |
 | GS-20 | `YT-58a062d811` | Seeking fund picks & return assurances | 1 | PM-confirmed | Seeking fund picks & return assurances, 1 |
 | GS-21 | `FM-fe212e54a4` | Rigid SIP controls (pause / skip / cancel / modify) | 3 | PM-confirmed |  |
-| GS-22 | `IN-R03` | Debit date vs cash-flow mismatch | 4 | **pending PM review** |  |
+| GS-22 | `IN-R03` | Debit date vs cash-flow mismatch | 4 | PM-confirmed |  |
 
 ## 2.6 PM correction cases
 
