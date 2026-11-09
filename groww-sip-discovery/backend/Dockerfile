@@ -3,7 +3,8 @@
 # Debian slim, not Alpine: onnxruntime-node (BGE embeddings) ships glibc binaries only.
 
 FROM node:22-bookworm-slim AS base
-ENV PNPM_HOME=/pnpm PATH=/pnpm:$PATH
+# CI=true: non-interactive pnpm (the --prod prune otherwise aborts asking to confirm removing node_modules).
+ENV PNPM_HOME=/pnpm PATH=/pnpm:$PATH CI=true
 RUN corepack enable
 WORKDIR /app
 
