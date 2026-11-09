@@ -184,6 +184,8 @@ Extend the `?debug` panel with a simple funnel: failed → screen viewed → rec
 
 **Done when:** all tests pass, the walkthrough is clean, and there is a live URL.
 
+**As built (9 Nov 2026):** 487 tests pass and the typecheck is clean. A phone-width walkthrough covered every reason with a different recovery: low balance → pay now; bank glitch → skip; no reason → support; autopay not set up → reconnect from the failed screen, then pay the missed month; autopay turned off → reconnect from the status card. A fresh page load shows no console errors. The `?debug` funnel read failed 5 → alert seen 5 → screen opened 4 → started 5 → completed 5 (one reconnect started from the card, skipping the screen). Live at https://groww-sip-mvp-iota.vercel.app (Vercel project `groww-sip-mvp`; note `groww-sip-mvp.vercel.app` is someone else's site).
+
 ### Step 10 (stretch): Prevent the failure
 
 Only after Steps 1–9.

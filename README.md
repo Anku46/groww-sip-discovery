@@ -2,6 +2,8 @@
 
 An investor-facing prototype that helps first-time SIP investors recover when a monthly instalment fails, so the SIP keeps running instead of quietly lapsing.
 
+**Live prototype:** https://groww-sip-mvp-iota.vercel.app (add [`?debug`](https://groww-sip-mvp-iota.vercel.app/?debug) for the event log and recovery funnel)
+
 > **This is the `mvp` branch.** It holds only the MVP and has its own history.
 > The research and the **SIP Discovery Engine** that found this problem live on the [`main` branch](https://github.com/Anku46/groww-sip-discovery/tree/main).
 
@@ -29,20 +31,46 @@ Everything is simulated in the browser: no real payments, mandates or notificati
 | [MVP_ImplementationPlan.md](MVP_ImplementationPlan.md) | Step-by-step plan, scope, open questions |
 | [MVP_Architecture.md](MVP_Architecture.md) | Domain model, instalment lifecycle, screens, compliance, path to a real build |
 
-**Progress:** Steps 1–8 of the plan are done (outcome model, failure copy, simulation, failed-instalment screen, recovery actions, failure alert, status card, events and funnel). Next: Step 9, full check and deploy.
+**Status:** Steps 1–9 of the plan are done and the prototype is live. Optional next: Step 10 (salary-aware SIP date and a reminder the day before the debit), then the usability test and the open questions in the plan (§4–5).
 
-## Run it
+## Try it
+
+1. Set up a SIP (₹500 on the 5th is the default) and approve the simulated mandate.
+2. In **Prototype controls**, pick a failure under **Simulate this debit**, then press **Go to debit day**.
+3. The **Is my SIP running?** card turns amber. Open **See what happened** and try a recovery: pay this month now, turn automatic payments back on, skip, or ask support.
+
+## Run it locally
 
 Requires Node.js 20+ and pnpm 10.
 
 ```bash
 cd mvp
 pnpm install
-pnpm dev          # http://localhost:5174 (add ?debug for the event log)
+pnpm dev          # http://localhost:5174 (add ?debug for the event log and funnel)
 pnpm test
 pnpm typecheck
 pnpm build
 ```
+
+## Deploy
+
+The live site is a static upload to the Vercel project `groww-sip-mvp`, the same way as the engine's dashboard:
+
+```bash
+cd mvp
+pnpm deploy:prepare        # builds, then stages dist/ + a static vercel.json in mvp/.deploy/
+cd .deploy
+vercel deploy --prod
+```
+
+`mvp/.deploy/` is git-ignored. The staging script also writes a `.vercelignore` so local `.env*` files (which `vercel link` can create there) are never uploaded.
+
+## Limits
+
+- Everything is simulated: no real payments, mandates, notifications or support requests.
+- Bank holidays are ignored; units are assumed 2 working days after the debit; the pay-now window (until 3 working days before the next cutoff) is a prototype assumption.
+- State lives in memory and resets on reload.
+- The credit-score reassurance is written but switched off until compliance confirms it.
 
 ## Link to the discovery engine
 

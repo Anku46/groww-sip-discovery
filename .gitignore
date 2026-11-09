@@ -10,3 +10,6 @@ dist/
 
 # Local tooling
 .claude/
+
+# Static upload folder for Vercel (built locally)
+mvp/.deploy/
