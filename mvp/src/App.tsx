@@ -1,5 +1,6 @@
-import { useReducer, useState, useSyncExternalStore } from 'react'
+import { useLayoutEffect, useReducer, useRef, useState } from 'react'
 import { Confirmation } from '@/components/Confirmation'
+import { DebugPanel } from '@/components/DebugPanel'
 import { FailedInstalment } from '@/components/FailedInstalment'
 import { MandateReview } from '@/components/MandateReview'
 import { NotificationPreview } from '@/components/NotificationPreview'
@@ -10,14 +11,14 @@ import { Tracker } from '@/components/Tracker'
 import { CONFIRMATION_COPY, RECOVERY_COPY } from '@/lib/copy'
 import type { RecoveryAction } from '@/lib/outcome'
 import { addWorkingDays, ALLOTMENT_WORKING_DAYS, formatDay, startOfDay } from '@/lib/schedule'
-import { appReducer, nextDebit, nextInstalment, sipReducer } from '@/lib/sipState'
-import { getEvents, subscribe } from '@/lib/track'
+import { alertInstalment, appReducer, nextDebit, nextInstalment, resolveState, sipReducer } from '@/lib/sipState'
+import { track } from '@/lib/track'
 
 type Screen =
   | { name: 'home' }
   | { name: 'failed' }
   | { name: 'payNow' }
-  | { name: 'reconnect'; from: 'home' | 'failed' }
+  | { name: 'reconnect'; from: 'home' | 'failed'; n: number }
   | { name: 'done'; message: string }
 
 const TITLES: Record<Screen['name'], string> = {
@@ -35,20 +36,43 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
   const [screen, setScreen] = useState<Screen>({ name: 'home' })
   const showDebug = debug ?? (typeof location !== 'undefined' && new URLSearchParams(location.search).has('debug'))
 
+  // instalment_failed: once per instalment and reason, when it first resolves to failed. A layout effect so it is
+  // logged before the children's regular effects (the status card's failure_alert_viewed), keeping the funnel order.
+  const reportedFailures = useRef(new Set<string>())
+  useLayoutEffect(() => {
+    if (!sip) {
+      reportedFailures.current.clear()
+      return
+    }
+    for (const inst of sip.instalments) {
+      if (inst.debitDate > sip.today) break
+      const state = resolveState(sip, inst.number)
+      if (state.kind !== 'failed') continue
+      const key = `${inst.number}:${state.reason}`
+      if (reportedFailures.current.has(key)) continue
+      reportedFailures.current.add(key)
+      track('instalment_failed', { n: inst.number, reason: state.reason })
+    }
+  }, [sip])
+
   const home = () => setScreen({ name: 'home' })
   const done = (message: string) => setScreen({ name: 'done', message })
+  const completed = (i: number, action: RecoveryAction) => track('recovery_completed', { n: i, action })
 
   const onAction = (action: RecoveryAction) => {
     if (!sip) return
+    track('recovery_started', { n, action, source: 'failed_screen' })
     switch (action) {
       case 'pay_now':
         return setScreen({ name: 'payNow' })
       case 'reconnect_mandate':
-        return setScreen({ name: 'reconnect', from: 'failed' })
+        return setScreen({ name: 'reconnect', from: 'failed', n })
       case 'skip':
         dispatch({ type: 'SKIP', n })
+        completed(n, 'skip')
         return done(CONFIRMATION_COPY.skipped(formatDay(nextInstalment(sip, n).debitDate)))
       case 'contact_support':
+        completed(n, 'contact_support')
         return done(RECOVERY_COPY.supportSent)
     }
   }
@@ -68,6 +92,7 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
             onBack={() => setScreen({ name: 'failed' })}
             onPay={() => {
               dispatch({ type: 'PAY_NOW', n })
+              completed(n, 'pay_now')
               done(CONFIRMATION_COPY.paid(formatDay(addWorkingDays(sip.today, ALLOTMENT_WORKING_DAYS))))
             }}
           />
@@ -82,6 +107,7 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
             onApprove={() => {
               const after = sipReducer(sip, { type: 'RECONNECT_MANDATE' })
               dispatch({ type: 'RECONNECT_MANDATE' })
+              completed(screen.n, 'reconnect_mandate')
               done(CONFIRMATION_COPY.reconnected(formatDay(nextDebit(after).debitDate)))
             }}
           />
@@ -97,7 +123,11 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
                 setN(i)
                 setScreen({ name: 'failed' })
               }}
-              onReconnect={() => setScreen({ name: 'reconnect', from: 'home' })}
+              onReconnect={() => {
+                const i = alertInstalment(sip) ?? n
+                track('recovery_started', { n: i, action: 'reconnect_mandate', source: 'status_card' })
+                setScreen({ name: 'reconnect', from: 'home', n: i })
+              }}
             />
             <NotificationPreview sip={sip} />
             <Tracker
@@ -135,23 +165,7 @@ export default function App({ today = new Date(), debug }: { today?: Date; debug
 
       {body()}
 
-      {showDebug && <EventLog />}
+      {showDebug && <DebugPanel />}
     </div>
-  )
-}
-
-function EventLog() {
-  const events = useSyncExternalStore(subscribe, getEvents)
-  return (
-    <details className="card mt-6 p-3 text-xs" open>
-      <summary className="label cursor-pointer">Events ({events.length})</summary>
-      <ul className="mt-2 space-y-1 font-mono">
-        {[...events].reverse().map((e, i) => (
-          <li key={`${e.at}-${i}`}>
-            {e.name} {Object.keys(e.props).length > 0 && <span className="text-ink-faint">{JSON.stringify(e.props)}</span>}
-          </li>
-        ))}
-      </ul>
-    </details>
   )
 }

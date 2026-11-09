@@ -225,12 +225,12 @@ Navigation is a `screen` value in `App` state (`setup | home | failed | payNow |
 | `instalment_failed` | n, reason | an instalment resolves to `failed` |
 | `failure_alert_viewed` | n, reason | the status card shows the failure alert |
 | `failure_screen_viewed` | n, reason | the failed-instalment screen opens |
-| `recovery_started` | n, action | an action button is pressed |
+| `recovery_started` | n, action, source | an action button is pressed (`failed_screen` or `status_card`) |
 | `recovery_completed` | n, action | pay-now, reconnect or skip finishes |
 | `status_card_viewed` | state | the status card renders |
 | existing setup events | | unchanged |
 
-**Funnel:** failed → screen viewed → recovery started → recovery completed.
+**Funnel:** failed → alert seen → screen viewed → recovery started → recovery completed, counted over distinct failed instalments (`recoveryFunnel` in `track.ts`).
 
 In a real build, `track()` is the single place to swap in the analytics client.
 

@@ -1,7 +1,9 @@
 import { AlertCircle, ArrowRight, CheckCircle2, PauseCircle } from 'lucide-react'
+import { useEffect } from 'react'
 import { ACTION_COPY, ALERT_COPY, STATUS_CARD_COPY, STATUS_CARD_LABEL } from '@/lib/copy'
 import { formatDay, formatINR } from '@/lib/schedule'
-import { alertInstalment, nextDebit, sipHealth, type SipState } from '@/lib/sipState'
+import { alertInstalment, nextDebit, resolveState, sipHealth, type SipState } from '@/lib/sipState'
+import { track } from '@/lib/track'
 
 /**
  * "Is my SIP running?" (MVP_ImplementationPlan.md Step 7). One card at the top of the tracker:
@@ -19,6 +21,14 @@ export function SipStatusCard({
 }) {
   const health = sipHealth(sip)
   const alertN = alertInstalment(sip)
+  const alertState = alertN === null ? null : resolveState(sip, alertN)
+  const alertReason = alertState?.kind === 'failed' ? alertState.reason : null
+
+  useEffect(() => track('status_card_viewed', { state: health }), [health])
+  useEffect(() => {
+    if (alertN !== null && alertReason) track('failure_alert_viewed', { n: alertN, reason: alertReason })
+  }, [alertN, alertReason])
+
   const copy = STATUS_CARD_COPY[health]
   const body = copy.body({ amount: formatINR(sip.config.amount), nextDate: formatDay(nextDebit(sip).debitDate) })
   const amber = health !== 'running'

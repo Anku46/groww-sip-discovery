@@ -173,6 +173,8 @@ Extend the `?debug` panel with a simple funnel: failed → screen viewed → rec
 
 **Done when:** a component test walks a failure through to recovery and checks the event sequence.
 
+**As built:** the funnel counts *distinct failed instalments* at each stage, so repeat views don't inflate it, and events for instalments that never failed are ignored. `recovery_started` also records where it began (`failed_screen` or `status_card`). The debug panel shows the funnel with percentages, completions by action, and the raw event log, with a "Clear events" button. `instalment_failed` is logged once per instalment and reason, in a layout effect so it lands before the alert-view event.
+
 ### Step 9: Verify, document and deploy
 
 - Run `pnpm typecheck` and `pnpm test` from `mvp/`.

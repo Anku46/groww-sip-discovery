@@ -17,6 +17,7 @@ The discovery engine's research found the first failed debit is where first-time
 - **"Is my SIP running?" card:** at the top of the tracker: running (with the next debit), needs attention (links to what happened), or automatic payments off (with a button to turn them back on). It doubles as the failure alert, alongside a preview of the push notification and SMS that would be sent.
 - **Recovery:** pay this month now (one-time, simulated), turn automatic payments back on, skip this month, or ask support. Each ends on a calm confirmation.
 - **Guardrails:** every line of text is tested against the SEBI checker (no fund picks, no return claims, no urgency or fear) and a payment-jargon ban.
+- **Measurement:** events for every step of a recovery, and a funnel (failed → alert seen → screen viewed → recovery started → completed) in the `?debug` panel.
 - **Prototype controls:** pick an instalment, move "today", and simulate any of five failure reasons.
 
 Everything is simulated in the browser: no real payments, mandates or notifications.
@@ -28,7 +29,7 @@ Everything is simulated in the browser: no real payments, mandates or notificati
 | [MVP_ImplementationPlan.md](MVP_ImplementationPlan.md) | Step-by-step plan, scope, open questions |
 | [MVP_Architecture.md](MVP_Architecture.md) | Domain model, instalment lifecycle, screens, compliance, path to a real build |
 
-**Progress:** Steps 1–7 of the plan are done (outcome model, failure copy, simulation, failed-instalment screen, recovery actions, failure alert, status card). Next: event funnel, then verify and deploy.
+**Progress:** Steps 1–8 of the plan are done (outcome model, failure copy, simulation, failed-instalment screen, recovery actions, failure alert, status card, events and funnel). Next: Step 9, full check and deploy.
 
 ## Run it
 

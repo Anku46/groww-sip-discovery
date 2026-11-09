@@ -1,5 +1,5 @@
 import { AlertCircle, ArrowLeft, CalendarClock, ChevronDown, Landmark, Wallet } from 'lucide-react'
-import type { ReactNode } from 'react'
+import { useEffect, type ReactNode } from 'react'
 import {
   ACTION_COPY,
   AUTOPAY_EXPLAINER,
@@ -12,6 +12,7 @@ import {
 import { bankChargeLikely, isMandateFailure, recoveryOptions, type RecoveryAction } from '@/lib/outcome'
 import { formatDay, formatINR } from '@/lib/schedule'
 import { mandateState, nextInstalment, resolveState, type SipState } from '@/lib/sipState'
+import { track } from '@/lib/track'
 
 /**
  * What happened to a failed instalment, in plain language, and what the investor can do about it
@@ -29,6 +30,11 @@ export function FailedInstalment({
   onAction: (action: RecoveryAction) => void
 }) {
   const state = resolveState(sip, n)
+  const reason = state.kind === 'failed' ? state.reason : null
+
+  useEffect(() => {
+    if (reason) track('failure_screen_viewed', { n, reason })
+  }, [n, reason])
 
   if (state.kind !== 'failed') {
     return (
